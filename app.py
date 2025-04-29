@@ -3,7 +3,8 @@ import whois
 import re
 import datetime
 import requests
-import urllib.parse
+import pandas as pd
+from config import OPENPAGERANK_API_KEY
 
 # Fonction pour extraire l'extension
 def get_extension(domain):
@@ -39,29 +40,28 @@ def get_domain_age(domain):
     except:
         return 0
 
-# Fonction pour obtenir un volume de recherche approximatif via API (placeholder ici)
-def get_search_volume(keyword):
+# Fonction pour obtenir Domain Authority via OpenPageRank
+def get_openpagerank(domain):
     try:
-        encoded_keyword = urllib.parse.quote(keyword)
-        response = requests.get(f"https://api.publicapis.io/keywordvolume/{encoded_keyword}")  # Exemple fictif
-        if response.status_code == 200:
-            data = response.json()
-            return data.get('volume', 100)
-        else:
-            return 100
+        url = f"https://openpagerank.com/api/v1.0/getPageRank?domains[]={domain}"
+        headers = {"API-OPR": OPENPAGERANK_API_KEY}
+        response = requests.get(url, headers=headers)
+        data = response.json()
+        opr = data['response'][0]['page_rank_integer']
+        return opr
     except:
-        return 100
+        return 0
 
-# Fonction pour simuler Domain Authority (simple bonus pour démo)
-def get_domain_authority(domain):
-    return 10  # Valeur fixe pour démo (entre 10 et 30 selon évaluations simplistes)
+# Fonction pour simuler Volume Mot-clé (faute de meilleure API simple gratuite)
+def get_search_volume(keyword):
+    return 500  # Placeholder pour l'instant
 
-# Fonction pour estimer l'intention du mot-clé
+# Fonction pour estimer si mot-clé est transactionnel
 def is_transactional_keyword(keyword):
     transactional_keywords = ['acheter', 'devis', 'urgent', 'commande', 'prix', 'solution', 'comparatif']
     return any(kw in keyword.lower() for kw in transactional_keywords)
 
-# Fonction pour estimer la valeur
+# Fonction pour estimer la valeur du domaine
 def estimate_value(extension, length, brandable, no_numbers, age, volume, authority, transactional):
     value = 0
     value += 40 if extension == ".com" else 20 if extension == ".fr" else 10
@@ -74,40 +74,62 @@ def estimate_value(extension, length, brandable, no_numbers, age, volume, author
     value += (age) * 5
     return round(value, 2)
 
-# Streamlit Interface
-st.title("Domain Value Estimator 📈 (Version Avancée)")
+# --- INTERFACE STREAMLIT ---
 
-# Input
-domain = st.text_input("Entrez le nom du domaine (ex: exemple.com)")
+st.title("Domain Value Estimator PRO 🚀")
 
-if domain:
-    extension = get_extension(domain)
-    length = domain_length(domain)
-    brandable = is_brandable(domain)
-    no_numbers = has_no_numbers_hyphens(domain)
-    age = get_domain_age(domain)
-    keyword = domain.split('.')[0]
-    volume = get_search_volume(keyword)
-    authority = get_domain_authority(domain)
-    transactional = is_transactional_keyword(keyword)
+mode = st.radio("Mode d'analyse :", ("1 Domaine", "Batch (plusieurs domaines)"))
 
-    estimated_value = estimate_value(extension, length, brandable, no_numbers, age, volume, authority, transactional)
+if mode == "1 Domaine":
+    domain = st.text_input("Entrez le nom du domaine (ex: exemple.com)")
+    if domain:
+        extension = get_extension(domain)
+        length = domain_length(domain)
+        brandable = is_brandable(domain)
+        no_numbers = has_no_numbers_hyphens(domain)
+        age = get_domain_age(domain)
+        keyword = domain.split('.')[0]
+        volume = get_search_volume(keyword)
+        authority = get_openpagerank(domain)
+        transactional = is_transactional_keyword(keyword)
 
-    st.subheader("🔢 Metrics Analysés")
-    st.write(f"**Extension:** {extension}")
-    st.write(f"**Longueur:** {length}")
-    st.write(f"**Brandable:** {'Oui' if brandable else 'Non'}")
-    st.write(f"**Pas de chiffres/tirets:** {'Oui' if no_numbers else 'Non'}")
-    st.write(f"**\u00c2ge du domaine:** {age} ans")
-    st.write(f"**Volume de recherche estimé:** {volume} recherches/mois")
-    st.write(f"**Autorité de domaine estimée:** {authority}")
-    st.write(f"**Intention Transactionnelle:** {'Oui' if transactional else 'Non'}")
+        estimated_value = estimate_value(extension, length, brandable, no_numbers, age, volume, authority, transactional)
 
-    st.subheader("📈 Estimation Finale de la Valeur")
-    st.success(f"Valeur estimée: {estimated_value} €")
+        st.subheader("📊 Résultats")
+        st.write(f"Extension : {extension}")
+        st.write(f"Longueur : {length}")
+        st.write(f"Brandable : {'Oui' if brandable else 'Non'}")
+        st.write(f"Pas de chiffres/tirets : {'Oui' if no_numbers else 'Non'}")
+        st.write(f"Âge du domaine : {age} ans")
+        st.write(f"Volume mot-clé estimé : {volume}")
+        st.write(f"Autorité OpenPageRank : {authority}")
+        st.write(f"Transactionnel : {'Oui' if transactional else 'Non'}")
+        st.success(f"💰 Valeur estimée : {estimated_value} €")
 
-    if estimated_value >= 300:
-        st.balloons()
-        st.info("Ce domaine a un potentiel de revente supérieur à 300 €. GO!")
-    else:
-        st.warning("Potentiel plus faible pour revente rapide.")
+elif mode == "Batch (plusieurs domaines)":
+    uploaded_file = st.file_uploader("Upload ton fichier CSV (1 domaine par ligne)", type=["csv"])
+    if uploaded_file is not None:
+        df = pd.read_csv(uploaded_file)
+        results = []
+        for domain in df['domaine']:
+            extension = get_extension(domain)
+            length = domain_length(domain)
+            brandable = is_brandable(domain)
+            no_numbers = has_no_numbers_hyphens(domain)
+            age = get_domain_age(domain)
+            keyword = domain.split('.')[0]
+            volume = get_search_volume(keyword)
+            authority = get_openpagerank(domain)
+            transactional = is_transactional_keyword(keyword)
+
+            estimated_value = estimate_value(extension, length, brandable, no_numbers, age, volume, authority, transactional)
+
+            results.append({
+                "Domaine": domain,
+                "Valeur Estimée (€)": estimated_value
+            })
+
+        result_df = pd.DataFrame(results)
+        st.dataframe(result_df)
+        st.download_button("Télécharger les résultats", result_df.to_csv(index=False), "résultats.csv")
+

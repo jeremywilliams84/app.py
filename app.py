@@ -3,6 +3,7 @@ import whois
 import re
 import datetime
 import requests
+import urllib.parse
 
 # Fonction pour extraire l'extension
 def get_extension(domain):
@@ -30,7 +31,9 @@ def get_domain_age(domain):
         if isinstance(creation_date, list):
             creation_date = creation_date[0]
         if creation_date:
-            return datetime.datetime.now().year - creation_date.year
+            today = datetime.datetime.now()
+            age = today.year - creation_date.year - ((today.month, today.day) < (creation_date.month, creation_date.day))
+            return max(age, 0)
         else:
             return 0
     except:
@@ -38,22 +41,41 @@ def get_domain_age(domain):
 
 # Fonction pour obtenir un volume de recherche approximatif via API (placeholder ici)
 def get_search_volume(keyword):
-    return 1000  # Supposons un volume moyen pour la démo
+    try:
+        encoded_keyword = urllib.parse.quote(keyword)
+        response = requests.get(f"https://api.publicapis.io/keywordvolume/{encoded_keyword}")  # Exemple fictif
+        if response.status_code == 200:
+            data = response.json()
+            return data.get('volume', 100)
+        else:
+            return 100
+    except:
+        return 100
+
+# Fonction pour simuler Domain Authority (simple bonus pour démo)
+def get_domain_authority(domain):
+    return 10  # Valeur fixe pour démo (entre 10 et 30 selon évaluations simplistes)
+
+# Fonction pour estimer l'intention du mot-clé
+def is_transactional_keyword(keyword):
+    transactional_keywords = ['acheter', 'devis', 'urgent', 'commande', 'prix', 'solution', 'comparatif']
+    return any(kw in keyword.lower() for kw in transactional_keywords)
 
 # Fonction pour estimer la valeur
-def estimate_value(extension, length, brandable, no_numbers, age, volume):
+def estimate_value(extension, length, brandable, no_numbers, age, volume, authority, transactional):
     value = 0
-    value += 30 if extension == ".com" else 15 if extension == ".fr" else 0
+    value += 40 if extension == ".com" else 20 if extension == ".fr" else 10
     value += 20 if length <= 12 else 0
     value += 30 if brandable else 0
-    value += 20  # Hypothèse : tendance probable pour cette démo
+    value += 10 if no_numbers else 0
     value += (volume / 500) * 10
+    value += (authority / 5) * 10
+    value += 30 if transactional else 0
     value += (age) * 5
-    value += (no_numbers * 2)
     return round(value, 2)
 
 # Streamlit Interface
-st.title("Domain Value Estimator 📈")
+st.title("Domain Value Estimator 📈 (Version Avancée)")
 
 # Input
 domain = st.text_input("Entrez le nom du domaine (ex: exemple.com)")
@@ -66,18 +88,22 @@ if domain:
     age = get_domain_age(domain)
     keyword = domain.split('.')[0]
     volume = get_search_volume(keyword)
+    authority = get_domain_authority(domain)
+    transactional = is_transactional_keyword(keyword)
 
-    estimated_value = estimate_value(extension, length, brandable, no_numbers, age, volume)
+    estimated_value = estimate_value(extension, length, brandable, no_numbers, age, volume, authority, transactional)
 
-    st.subheader("🔢 Metrics")
+    st.subheader("🔢 Metrics Analysés")
     st.write(f"**Extension:** {extension}")
     st.write(f"**Longueur:** {length}")
     st.write(f"**Brandable:** {'Oui' if brandable else 'Non'}")
     st.write(f"**Pas de chiffres/tirets:** {'Oui' if no_numbers else 'Non'}")
-    st.write(f"**Âge du domaine:** {age} ans")
+    st.write(f"**\u00c2ge du domaine:** {age} ans")
     st.write(f"**Volume de recherche estimé:** {volume} recherches/mois")
+    st.write(f"**Autorité de domaine estimée:** {authority}")
+    st.write(f"**Intention Transactionnelle:** {'Oui' if transactional else 'Non'}")
 
-    st.subheader("📈 Estimation de Valeur")
+    st.subheader("📈 Estimation Finale de la Valeur")
     st.success(f"Valeur estimée: {estimated_value} €")
 
     if estimated_value >= 300:

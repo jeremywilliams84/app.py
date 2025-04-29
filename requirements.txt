@@ -1,3 +1,4 @@
 streamlit
 whois
 requests
+pandas

@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Mentions légales' }
+];
+---
+
+<Layout
+  title="Mentions légales | LocalServices"
+  description="Mentions légales du site LocalServices. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation."
+  canonical="/mentions-legales/"
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <div class="container section">
+    <article class="content legal-content">
+      <h1>Mentions légales</h1>
+
+      <section>
+        <h2>Éditeur du site</h2>
+        <p>
+          <strong>Raison sociale :</strong> [Nom de votre société]<br>
+          <strong>Forme juridique :</strong> [SARL, SAS, etc.]<br>
+          <strong>Capital social :</strong> [Montant] €<br>
+          <strong>Siège social :</strong> [Adresse complète]<br>
+          <strong>SIRET :</strong> [Numéro SIRET]<br>
+          <strong>RCS :</strong> [Ville] [Numéro]<br>
+          <strong>TVA intracommunautaire :</strong> [Numéro]
+        </p>
+        <p>
+          <strong>Directeur de la publication :</strong> [Nom du responsable]<br>
+          <strong>Email :</strong> contact@votre-domaine.fr<br>
+          <strong>Téléphone :</strong> [Numéro]
+        </p>
+      </section>
+
+      <section>
+        <h2>Hébergement</h2>
+        <p>
+          Ce site est hébergé par :<br>
+          <strong>[Nom de l'hébergeur]</strong><br>
+          [Adresse de l'hébergeur]<br>
+          [Téléphone de l'hébergeur]
+        </p>
+      </section>
+
+      <section>
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          L'ensemble du contenu de ce site (textes, images, vidéos, logos, etc.)
+          est protégé par le droit d'auteur. Toute reproduction, même partielle,
+          est interdite sans autorisation préalable.
+        </p>
+      </section>
+
+      <section>
+        <h2>Responsabilité</h2>
+        <p>
+          Les informations contenues sur ce site sont aussi précises que possible
+          et le site est périodiquement remis à jour. Toutefois, des erreurs ou
+          omissions peuvent survenir. L'utilisateur s'engage à vérifier
+          l'exactitude des informations auprès de l'éditeur.
+        </p>
+      </section>
+
+      <section>
+        <h2>Liens hypertextes</h2>
+        <p>
+          Ce site peut contenir des liens vers d'autres sites internet.
+          L'éditeur ne saurait être tenu responsable du contenu de ces sites
+          externes.
+        </p>
+      </section>
+
+      <section>
+        <h2>Droit applicable</h2>
+        <p>
+          Le présent site et ses mentions légales sont soumis au droit français.
+          En cas de litige, les tribunaux français seront seuls compétents.
+        </p>
+      </section>
+
+      <p class="update-date">
+        <em>Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}</em>
+      </p>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .legal-content section {
+    margin-bottom: 2rem;
+  }
+
+  .update-date {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-light);
+  }
+</style>

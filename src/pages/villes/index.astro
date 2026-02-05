@@ -1,0 +1,166 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getVilles, getDepartement, getServices } from '../../utils/content-generator';
+
+const villes = getVilles();
+const services = getServices();
+
+// Grouper les villes par département
+const villesByDept = villes.reduce((acc, ville) => {
+  if (!acc[ville.departementSlug]) {
+    acc[ville.departementSlug] = [];
+  }
+  acc[ville.departementSlug].push(ville);
+  return acc;
+}, {} as Record<string, typeof villes>);
+
+const metaTitle = "Toutes les villes - Nos zones d'intervention | LocalServices";
+const metaDescription = `Retrouvez nos services dans ${villes.length} villes. Plombier, électricien disponibles près de chez vous.`;
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Villes' }
+];
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical="/villes/">
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>Toutes nos villes d'intervention</h1>
+      <p class="hero-subtitle">{villes.length} villes couvertes par nos professionnels</p>
+    </div>
+  </section>
+
+  <div class="container section">
+    {Object.entries(villesByDept).map(([deptSlug, deptVilles]) => {
+      const dept = getDepartement(deptSlug);
+      if (!dept) return null;
+
+      return (
+        <section class="dept-section">
+          <h2>
+            <span class="dept-code">{dept.code}</span>
+            {dept.name}
+          </h2>
+
+          <div class="villes-grid">
+            {deptVilles.map(ville => (
+              <article class="ville-card">
+                <div class="ville-header">
+                  <h3>{ville.name}</h3>
+                  <span class="ville-cp">{ville.codePostal}</span>
+                </div>
+
+                <div class="ville-info">
+                  <p class="ville-quartiers">
+                    <strong>Quartiers :</strong> {ville.quartiers.slice(0, 3).join(', ')}
+                    {ville.quartiers.length > 3 && '...'}
+                  </p>
+                </div>
+
+                <div class="ville-services">
+                  {services.map(service => (
+                    <a href={`/${service.slug}/${ville.departementSlug}/${ville.slug}/`}>
+                      {service.icon} {service.name}
+                    </a>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      );
+    })}
+  </div>
+</Layout>
+
+<style>
+  .dept-section {
+    margin-bottom: 3rem;
+  }
+
+  .dept-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .dept-code {
+    background: var(--color-primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius);
+    font-size: 1rem;
+  }
+
+  .villes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .ville-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+  }
+
+  .ville-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .ville-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .ville-cp {
+    background: var(--color-bg-alt);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .ville-info {
+    margin-bottom: 1rem;
+  }
+
+  .ville-quartiers {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .ville-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .ville-services a {
+    background: var(--color-bg-alt);
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .ville-services a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+</style>

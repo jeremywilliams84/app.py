@@ -1,0 +1,73 @@
+---
+import type { Service, Ville, Departement } from '../utils/content-generator';
+
+interface Props {
+  service: Service;
+  ville: Ville;
+  departement: Departement;
+  pageUrl: string;
+}
+
+const { service, ville, departement, pageUrl } = Astro.props;
+const siteUrl = import.meta.env.SITE || 'https://votre-domaine.fr';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": service.schemaType,
+  "name": `${service.name} ${ville.prefix} ${ville.name}`,
+  "description": `Service de ${service.name.toLowerCase()} professionnel ${ville.prefix} ${ville.name} (${departement.code}). Intervention rapide, devis gratuit.`,
+  "url": new URL(pageUrl, siteUrl).href,
+  "telephone": "+33-X-XX-XX-XX-XX",
+  "email": "contact@votre-domaine.fr",
+  "priceRange": service.priceRange,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": ville.name,
+    "postalCode": ville.codePostal,
+    "addressRegion": departement.name,
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": ville.latitude,
+    "longitude": ville.longitude
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": ville.name,
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": departement.name
+    }
+  },
+  "serviceType": service.serviceType,
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": `Services de ${service.name.toLowerCase()}`,
+    "itemListElement": service.keywords.map((keyword, index) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": keyword.charAt(0).toUpperCase() + keyword.slice(1)
+      }
+    }))
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

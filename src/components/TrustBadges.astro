@@ -1,0 +1,36 @@
+---
+interface Props {
+  variant?: 'default' | 'compact';
+}
+
+const { variant = 'default' } = Astro.props;
+
+const badges = [
+  { icon: '✓', text: 'Devis gratuit' },
+  { icon: '⚡', text: 'Intervention rapide' },
+  { icon: '🛡️', text: 'Travail garanti' },
+  { icon: '💶', text: 'Prix transparents' },
+  { icon: '📞', text: 'Disponible 7j/7' },
+];
+---
+
+<div class={`trust-badges ${variant === 'compact' ? 'trust-badges-compact' : ''}`}>
+  {badges.map(badge => (
+    <div class="trust-badge">
+      <span class="trust-badge-icon">{badge.icon}</span>
+      <span>{badge.text}</span>
+    </div>
+  ))}
+</div>
+
+<style>
+  .trust-badges-compact {
+    gap: 1rem;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+
+  .trust-badges-compact .trust-badge-icon {
+    font-size: 1rem;
+  }
+</style>

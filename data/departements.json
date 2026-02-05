@@ -1,0 +1,24 @@
+[
+  {
+    "id": "75",
+    "code": "75",
+    "slug": "paris",
+    "name": "Paris",
+    "nameFull": "Paris (75)",
+    "region": "Île-de-France",
+    "population": 2161000,
+    "prefix": "à",
+    "article": "de"
+  },
+  {
+    "id": "69",
+    "code": "69",
+    "slug": "rhone",
+    "name": "Rhône",
+    "nameFull": "Rhône (69)",
+    "region": "Auvergne-Rhône-Alpes",
+    "population": 1876000,
+    "prefix": "dans le",
+    "article": "du"
+  }
+]

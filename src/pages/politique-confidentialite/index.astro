@@ -1,0 +1,154 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Politique de confidentialité' }
+];
+---
+
+<Layout
+  title="Politique de confidentialité | LocalServices"
+  description="Politique de confidentialité et protection des données personnelles de LocalServices."
+  canonical="/politique-confidentialite/"
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <div class="container section">
+    <article class="content legal-content">
+      <h1>Politique de confidentialité</h1>
+
+      <p class="intro">
+        La protection de vos données personnelles est importante pour nous.
+        Cette politique explique comment nous collectons, utilisons et protégeons
+        vos informations.
+      </p>
+
+      <section>
+        <h2>1. Collecte des données</h2>
+        <p>Nous collectons les données suivantes :</p>
+        <ul>
+          <li><strong>Données d'identification :</strong> nom, prénom</li>
+          <li><strong>Coordonnées :</strong> email, téléphone, adresse</li>
+          <li><strong>Données de navigation :</strong> pages visitées, durée des visites</li>
+          <li><strong>Données de formulaire :</strong> description de votre besoin</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. Utilisation des données</h2>
+        <p>Vos données sont utilisées pour :</p>
+        <ul>
+          <li>Répondre à vos demandes de devis</li>
+          <li>Vous mettre en relation avec nos professionnels</li>
+          <li>Améliorer nos services</li>
+          <li>Vous envoyer des informations commerciales (avec votre accord)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Conservation des données</h2>
+        <p>
+          Vos données sont conservées pendant une durée de 3 ans à compter de
+          votre dernier contact avec nous, conformément aux recommandations
+          de la CNIL.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Partage des données</h2>
+        <p>
+          Vos données peuvent être partagées avec nos professionnels partenaires
+          dans le seul but de répondre à votre demande. Nous ne vendons jamais
+          vos données à des tiers.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Vos droits</h2>
+        <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+        <ul>
+          <li><strong>Droit d'accès :</strong> consulter vos données</li>
+          <li><strong>Droit de rectification :</strong> modifier vos données</li>
+          <li><strong>Droit à l'effacement :</strong> supprimer vos données</li>
+          <li><strong>Droit à la portabilité :</strong> récupérer vos données</li>
+          <li><strong>Droit d'opposition :</strong> vous opposer au traitement</li>
+        </ul>
+        <p>
+          Pour exercer ces droits, contactez-nous à :
+          <a href="mailto:rgpd@votre-domaine.fr">rgpd@votre-domaine.fr</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Cookies</h2>
+        <p>
+          Ce site utilise des cookies pour améliorer votre expérience.
+          Les cookies essentiels sont nécessaires au fonctionnement du site.
+          Vous pouvez gérer vos préférences de cookies à tout moment.
+        </p>
+        <h3>Types de cookies utilisés :</h3>
+        <ul>
+          <li><strong>Cookies essentiels :</strong> fonctionnement du site</li>
+          <li><strong>Cookies analytiques :</strong> statistiques de visite (si applicable)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Sécurité</h2>
+        <p>
+          Nous mettons en œuvre des mesures de sécurité appropriées pour
+          protéger vos données contre tout accès non autorisé, modification,
+          divulgation ou destruction.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <p>
+          Pour toute question concernant cette politique, contactez notre
+          Délégué à la Protection des Données :<br>
+          <strong>Email :</strong> <a href="mailto:rgpd@votre-domaine.fr">rgpd@votre-domaine.fr</a><br>
+          <strong>Adresse :</strong> [Votre adresse]
+        </p>
+        <p>
+          Vous pouvez également introduire une réclamation auprès de la CNIL :
+          <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>
+        </p>
+      </section>
+
+      <p class="update-date">
+        <em>Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}</em>
+      </p>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+  }
+
+  .legal-content section {
+    margin-bottom: 2rem;
+  }
+
+  .legal-content h3 {
+    margin-top: 1rem;
+  }
+
+  .update-date {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-light);
+  }
+</style>

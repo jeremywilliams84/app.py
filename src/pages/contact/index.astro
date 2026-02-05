@@ -1,0 +1,165 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import TrustBadges from '../../components/TrustBadges.astro';
+
+const metaTitle = "Contactez-nous - Devis gratuit | LocalServices";
+const metaDescription = "Contactez notre équipe pour un devis gratuit. Réponse rapide garantie. Plombier, électricien disponibles 7j/7 dans toute la France.";
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Contact' }
+];
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical="/contact/">
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>Contactez-nous</h1>
+      <p class="hero-subtitle">Devis gratuit et réponse rapide garantie</p>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Nous sommes là pour vous aider</h2>
+        <p>
+          Besoin d'un professionnel ? Remplissez le formulaire ci-contre ou
+          utilisez l'un de nos moyens de contact. Notre équipe vous répond
+          dans les plus brefs délais.
+        </p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <span class="info-icon">📞</span>
+            <div>
+              <h3>Par téléphone</h3>
+              <p>Du lundi au dimanche, 24h/24</p>
+              <a href="tel:+33XXXXXXXXX" class="info-link">01 XX XX XX XX</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-icon">📧</span>
+            <div>
+              <h3>Par email</h3>
+              <p>Réponse sous 24h</p>
+              <a href="mailto:contact@votre-domaine.fr" class="info-link">contact@votre-domaine.fr</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-icon">⏰</span>
+            <div>
+              <h3>Horaires</h3>
+              <p>Service d'urgence 24h/24</p>
+              <span class="info-link">7 jours sur 7</span>
+            </div>
+          </div>
+        </div>
+
+        <TrustBadges />
+
+        <div class="garanties">
+          <h3>Nos garanties</h3>
+          <ul>
+            <li>Devis 100% gratuit et sans engagement</li>
+            <li>Réponse garantie sous 2 heures</li>
+            <li>Professionnels qualifiés et assurés</li>
+            <li>Prix transparents, pas de surprises</li>
+            <li>Travaux garantis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-form-section">
+        <ContactForm formId="contact-page-form" />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  @media (max-width: 1024px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form-section {
+      order: -1;
+    }
+  }
+
+  .contact-info h2 {
+    margin-top: 0;
+  }
+
+  .info-cards {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .info-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+  }
+
+  .info-icon {
+    font-size: 2rem;
+  }
+
+  .info-card h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+
+  .info-link {
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .garanties {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+  }
+
+  .garanties h3 {
+    margin-top: 0;
+  }
+
+  .garanties ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .garanties li {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-form-section :global(.contact-form-wrapper) {
+    max-width: none;
+  }
+</style>

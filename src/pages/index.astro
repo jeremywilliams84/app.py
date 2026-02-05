@@ -1,0 +1,364 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TrustBadges from '../components/TrustBadges.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { getServices, getDepartements, getVilles } from '../utils/content-generator';
+
+const services = getServices();
+const departements = getDepartements();
+const villes = getVilles();
+
+const metaTitle = "Services locaux - Plombier, Électricien | Intervention rapide";
+const metaDescription = "Trouvez un professionnel qualifié près de chez vous : plombier, électricien. Intervention rapide, devis gratuit, disponible 7j/7 dans toute la France.";
+---
+
+<Layout title={metaTitle} description={metaDescription}>
+  <section class="hero-home">
+    <div class="container">
+      <h1>Trouvez un professionnel qualifié près de chez vous</h1>
+      <p class="hero-subtitle">
+        Plombier, électricien... Intervention rapide et devis gratuit dans toute la France
+      </p>
+
+      <div class="hero-services">
+        {services.map(service => (
+          <a href={`/${service.slug}/`} class="hero-service-card">
+            <span class="service-icon">{service.icon}</span>
+            <span class="service-name">{service.name}</span>
+          </a>
+        ))}
+      </div>
+
+      <TrustBadges />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Nos services</h2>
+      <p class="text-center text-muted mb-3">
+        Des professionnels qualifiés pour tous vos besoins
+      </p>
+
+      <div class="services-grid">
+        {services.map(service => (
+          <div class="service-card">
+            <span class="service-card-icon">{service.icon}</span>
+            <h3>{service.namePlural}</h3>
+            <p>{service.keywords.slice(0, 3).join(', ')}...</p>
+            <ul class="service-keywords">
+              {service.keywords.slice(0, 4).map(keyword => (
+                <li>{keyword}</li>
+              ))}
+            </ul>
+            <a href={`/${service.slug}/`} class="btn btn-outline">
+              Trouver un {service.name.toLowerCase()}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Nos zones d'intervention</h2>
+      <p class="text-center text-muted mb-3">
+        Nous intervenons dans {departements.length} départements et {villes.length} villes
+      </p>
+
+      <div class="zones-grid">
+        <div class="zone-section">
+          <h3>Départements</h3>
+          <div class="zone-links">
+            {departements.map(dept => (
+              <a href={`/${services[0].slug}/${dept.slug}/`}>
+                {dept.nameFull}
+              </a>
+            ))}
+          </div>
+          <a href="/departements/" class="btn btn-outline mt-2">
+            Voir tous les départements
+          </a>
+        </div>
+
+        <div class="zone-section">
+          <h3>Villes populaires</h3>
+          <div class="zone-links">
+            {villes.slice(0, 6).map(ville => (
+              <a href={`/${services[0].slug}/${ville.departementSlug}/${ville.slug}/`}>
+                {ville.name}
+              </a>
+            ))}
+          </div>
+          <a href="/villes/" class="btn btn-outline mt-2">
+            Voir toutes les villes
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Pourquoi nous choisir ?</h2>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <span class="why-icon">⚡</span>
+          <h4>Intervention rapide</h4>
+          <p>Nos professionnels interviennent rapidement, souvent dans l'heure pour les urgences.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-icon">💶</span>
+          <h4>Devis gratuit</h4>
+          <p>Estimation détaillée et transparente avant toute intervention, sans engagement.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-icon">🛡️</span>
+          <h4>Travail garanti</h4>
+          <p>Tous nos artisans sont assurés et leur travail est garanti pour votre tranquillité.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-icon">📞</span>
+          <h4>Disponible 7j/7</h4>
+          <p>Service d'urgence disponible tous les jours, y compris week-ends et jours fériés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-section">
+        <div class="cta-content">
+          <h2>Besoin d'un professionnel ?</h2>
+          <p>Décrivez votre besoin et recevez un devis gratuit sous 2h</p>
+        </div>
+        <div class="cta-form">
+          <ContactForm formId="home-contact" />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero-home {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-home h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero-home h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+
+  .hero-services {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .hero-service-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255,255,255,0.15);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .hero-service-card:hover {
+    background: rgba(255,255,255,0.25);
+    text-decoration: none;
+  }
+
+  .service-icon {
+    font-size: 1.5rem;
+  }
+
+  .service-name {
+    font-weight: 600;
+  }
+
+  .hero-home :global(.trust-badges) {
+    color: white;
+  }
+
+  .hero-home :global(.trust-badge) {
+    color: white;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .service-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .service-card-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .service-card h3 {
+    margin: 0 0 0.5rem;
+  }
+
+  .service-card > p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+  }
+
+  .service-keywords {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .service-keywords li {
+    background: var(--color-bg-alt);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .zones-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .zones-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .zone-section {
+    background: var(--color-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+  }
+
+  .zone-section h3 {
+    margin-top: 0;
+  }
+
+  .zone-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .zone-links a {
+    background: var(--color-bg-alt);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .zone-links a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    .why-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .why-item {
+    text-align: center;
+  }
+
+  .why-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .why-item h4 {
+    margin: 0 0 0.5rem;
+  }
+
+  .why-item p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+  }
+
+  .cta-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (max-width: 1024px) {
+    .cta-section {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .cta-content h2 {
+    margin-top: 0;
+  }
+
+  .cta-content p {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+  }
+</style>

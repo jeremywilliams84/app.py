@@ -1,0 +1,83 @@
+---
+import type { Service, Ville, Departement } from '../utils/content-generator';
+import { getServices, getNearbyVilles, getVillesByDepartement } from '../utils/content-generator';
+
+interface Props {
+  currentService: Service;
+  currentVille: Ville;
+  currentDepartement: Departement;
+}
+
+const { currentService, currentVille, currentDepartement } = Astro.props;
+
+// Autres services dans la même ville
+const allServices = getServices();
+const otherServices = allServices.filter(s => s.slug !== currentService.slug);
+
+// Villes proches (même service)
+const nearbyVilles = getNearbyVilles(currentVille, 4);
+
+// Autres villes du département (si différentes des villes proches)
+const deptVilles = getVillesByDepartement(currentDepartement.slug)
+  .filter(v => v.slug !== currentVille.slug && !nearbyVilles.find(nv => nv.slug === v.slug))
+  .slice(0, 4);
+---
+
+<div class="internal-links-section">
+  {otherServices.length > 0 && (
+    <div class="internal-links">
+      <h3>Autres services {currentVille.prefix} {currentVille.name}</h3>
+      <div class="links-grid">
+        {otherServices.map(service => (
+          <a href={`/${service.slug}/${currentDepartement.slug}/${currentVille.slug}/`}>
+            {service.icon} {service.name} {currentVille.prefix} {currentVille.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {nearbyVilles.length > 0 && (
+    <div class="internal-links">
+      <h3>{currentService.name} dans les villes proches</h3>
+      <div class="links-grid">
+        {nearbyVilles.map(ville => (
+          <a href={`/${currentService.slug}/${ville.departementSlug}/${ville.slug}/`}>
+            {currentService.name} {ville.prefix} {ville.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="internal-links">
+    <h3>Liens utiles</h3>
+    <div class="links-grid">
+      <a href={`/${currentService.slug}/`}>
+        Tous nos {currentService.namePlural.toLowerCase()}
+      </a>
+      <a href={`/${currentService.slug}/${currentDepartement.slug}/`}>
+        {currentService.name} {currentDepartement.prefix} {currentDepartement.name}
+      </a>
+      <a href="/villes/">
+        Toutes les villes
+      </a>
+      <a href="/departements/">
+        Tous les départements
+      </a>
+      <a href="/contact/">
+        Nous contacter
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .internal-links-section {
+    margin: 3rem 0;
+  }
+
+  .internal-links {
+    margin-bottom: 1.5rem;
+  }
+</style>

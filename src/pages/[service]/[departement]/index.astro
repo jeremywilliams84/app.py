@@ -1,0 +1,296 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import TrustBadges from '../../../components/TrustBadges.astro';
+import ContactForm from '../../../components/ContactForm.astro';
+import CTASticky from '../../../components/CTASticky.astro';
+import {
+  getServices,
+  getDepartements,
+  getVillesByDepartement,
+  getService,
+  getDepartement
+} from '../../../utils/content-generator';
+
+export async function getStaticPaths() {
+  const services = getServices();
+  const departements = getDepartements();
+
+  const paths: Array<{ params: { service: string; departement: string } }> = [];
+
+  for (const service of services) {
+    for (const departement of departements) {
+      paths.push({
+        params: {
+          service: service.slug,
+          departement: departement.slug
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { service: serviceSlug, departement: departementSlug } = Astro.params;
+
+const service = getService(serviceSlug!);
+const departement = getDepartement(departementSlug!);
+
+if (!service || !departement) {
+  return Astro.redirect('/404');
+}
+
+const villes = getVillesByDepartement(departement.slug);
+
+const metaTitle = `${service.name} ${departement.prefix} ${departement.name} (${departement.code}) - Toutes les villes`;
+const metaDescription = `Trouvez un ${service.name.toLowerCase()} professionnel ${departement.prefix} ${departement.name}. ${villes.length} villes couvertes. Intervention rapide, devis gratuit.`;
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: service.namePlural, href: `/${service.slug}/` },
+  { label: departement.name }
+];
+
+const pageUrl = `/${service.slug}/${departement.slug}/`;
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical={pageUrl}>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>{service.name} {departement.prefix} {departement.name} ({departement.code})</h1>
+      <p class="hero-subtitle">
+        Trouvez un {service.name.toLowerCase()} professionnel dans votre ville du {departement.name}
+      </p>
+      <TrustBadges variant="compact" />
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="content-grid">
+      <main class="content">
+        <section>
+          <h2>Nos {service.namePlural.toLowerCase()} {departement.prefix} {departement.name}</h2>
+          <p>
+            Vous recherchez un <strong>{service.name.toLowerCase()} {departement.prefix} {departement.name}</strong> ?
+            Notre réseau de professionnels qualifiés couvre l'ensemble du département {departement.code}.
+            Sélectionnez votre ville ci-dessous pour trouver un {service.name.toLowerCase()} près de chez vous.
+          </p>
+        </section>
+
+        <section class="villes-section">
+          <h2>Choisissez votre ville ({departement.name})</h2>
+
+          <div class="villes-grid">
+            {villes.map(ville => (
+              <a href={`/${service.slug}/${departement.slug}/${ville.slug}/`} class="ville-card">
+                <div class="ville-card-content">
+                  <h3>{service.name} {ville.prefix} {ville.name}</h3>
+                  <p class="ville-cp">{ville.codePostal}</p>
+                  <p class="ville-quartiers">
+                    {ville.quartiers.slice(0, 3).join(', ')}
+                    {ville.quartiers.length > 3 && '...'}
+                  </p>
+                </div>
+                <span class="ville-arrow">→</span>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2>Pourquoi choisir notre service {departement.prefix} {departement.name} ?</h2>
+
+          <p>
+            Le {departement.name} est un département de la région {departement.region},
+            avec une population d'environ {(departement.population / 1000000).toFixed(1)} millions d'habitants.
+            Notre réseau de {service.namePlural.toLowerCase()} couvre l'ensemble du territoire
+            pour vous garantir une intervention rapide, où que vous soyez.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature">
+              <span class="feature-icon">📍</span>
+              <h4>Couverture complète</h4>
+              <p>{villes.length} villes couvertes {departement.prefix} {departement.name}</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">⚡</span>
+              <h4>Intervention rapide</h4>
+              <p>Techniciens disponibles 7j/7 dans tout le {departement.code}</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✓</span>
+              <h4>Professionnels certifiés</h4>
+              <p>Artisans qualifiés et assurés</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="other-services">
+          <h2>Autres services {departement.prefix} {departement.name}</h2>
+          <div class="links-grid">
+            {getServices().filter(s => s.slug !== service.slug).map(s => (
+              <a href={`/${s.slug}/${departement.slug}/`}>
+                {s.icon} {s.name} {departement.prefix} {departement.name}
+              </a>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-sticky">
+          <ContactForm
+            service={service.name}
+            departement={departement.name}
+          />
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <CTASticky
+    text={`${service.name} ${departement.prefix} ${departement.name}`}
+    buttonText="Devis gratuit"
+    buttonHref="#contact-form"
+  />
+</Layout>
+
+<style>
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sidebar-sticky {
+    position: sticky;
+    top: 100px;
+  }
+
+  .villes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .villes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ville-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+
+  .ville-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+  }
+
+  .ville-card h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    color: var(--color-primary);
+  }
+
+  .ville-cp {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .ville-quartiers {
+    margin: 0.25rem 0 0;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  .ville-arrow {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .feature {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature h4 {
+    margin: 0 0 0.5rem;
+  }
+
+  .feature p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+
+  .other-services {
+    margin-top: 3rem;
+  }
+
+  .links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .links-grid a {
+    background: var(--color-bg-alt);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    transition: all 0.2s;
+  }
+
+  .links-grid a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+</style>

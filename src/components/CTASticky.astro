@@ -1,0 +1,38 @@
+---
+interface Props {
+  text?: string;
+  buttonText?: string;
+  buttonHref?: string;
+  phone?: string;
+}
+
+const {
+  text = "Besoin d'un professionnel ?",
+  buttonText = "Devis gratuit",
+  buttonHref = "#contact-form",
+  phone
+} = Astro.props;
+---
+
+<div class="cta-sticky">
+  <div class="cta-sticky-content">
+    <span class="cta-sticky-text">{text}</span>
+    <a href={buttonHref} class="btn">{buttonText}</a>
+    {phone && (
+      <a href={`tel:${phone.replace(/\s/g, '')}`} class="btn btn-phone">
+        📞 {phone}
+      </a>
+    )}
+  </div>
+</div>
+
+<style>
+  .btn-phone {
+    background: var(--color-secondary);
+    color: white !important;
+  }
+
+  .btn-phone:hover {
+    opacity: 0.9;
+  }
+</style>

@@ -1,0 +1,135 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getServices, getDepartements } from '../../utils/content-generator';
+
+const services = getServices();
+const departements = getDepartements();
+
+const metaTitle = "Tous nos services - Plombier, Électricien | LocalServices";
+const metaDescription = "Découvrez tous nos services : plombier, électricien. Professionnels qualifiés, intervention rapide, devis gratuit partout en France.";
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Services' }
+];
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical="/services/">
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>Tous nos services</h1>
+      <p class="hero-subtitle">Trouvez le professionnel qu'il vous faut</p>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="services-list">
+      {services.map(service => (
+        <article class="service-item">
+          <div class="service-header">
+            <span class="service-icon">{service.icon}</span>
+            <div>
+              <h2>{service.namePlural}</h2>
+              <p class="service-type">{service.serviceType}</p>
+            </div>
+          </div>
+
+          <div class="service-content">
+            <h3>Prestations</h3>
+            <ul>
+              {service.keywords.map(keyword => (
+                <li>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</li>
+              ))}
+            </ul>
+
+            <h3>Zones d'intervention</h3>
+            <div class="service-zones">
+              {departements.map(dept => (
+                <a href={`/${service.slug}/${dept.slug}/`}>
+                  {service.name} {dept.prefix} {dept.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div class="service-footer">
+            <a href={`/${service.slug}/`} class="btn btn-primary">
+              Trouver un {service.name.toLowerCase()}
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .services-list {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .service-item {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+  }
+
+  .service-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .service-icon {
+    font-size: 3rem;
+  }
+
+  .service-header h2 {
+    margin: 0;
+  }
+
+  .service-type {
+    margin: 0;
+    color: var(--color-text-light);
+  }
+
+  .service-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .service-zones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .service-zones a {
+    background: var(--color-bg-alt);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .service-zones a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+
+  .service-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+</style>

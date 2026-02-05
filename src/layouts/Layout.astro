@@ -1,0 +1,113 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogImage = '/og-default.jpg',
+  noindex = false
+} = Astro.props;
+
+const siteUrl = import.meta.env.SITE || 'https://votre-domaine.fr';
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <link rel="canonical" href={canonicalUrl} />
+
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={new URL(ogImage, siteUrl).href} />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={new URL(ogImage, siteUrl).href} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <slot name="head" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">LocalServices</a>
+      <nav class="nav">
+        <a href="/services/" class="nav-link">Services</a>
+        <a href="/departements/" class="nav-link">Départements</a>
+        <a href="/villes/" class="nav-link">Villes</a>
+        <a href="/contact/" class="btn btn-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="/plombier/">Plombier</a></li>
+            <li><a href="/electricien/">Électricien</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Départements</h4>
+          <ul class="footer-links">
+            <li><a href="/plombier/paris/">Paris (75)</a></li>
+            <li><a href="/plombier/rhone/">Rhône (69)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Informations</h4>
+          <ul class="footer-links">
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/mentions-legales/">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p class="text-sm">Disponible 7j/7</p>
+          <p class="text-sm">contact@votre-domaine.fr</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} LocalServices. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <slot name="footer" />
+</body>
+</html>

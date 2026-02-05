@@ -1,0 +1,52 @@
+---
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props;
+const siteUrl = import.meta.env.SITE || 'https://votre-domaine.fr';
+
+// Schema.org BreadcrumbList
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.label,
+    "item": item.href ? new URL(item.href, siteUrl).href : undefined
+  }))
+};
+---
+
+<nav class="breadcrumbs" aria-label="Fil d'Ariane">
+  <div class="container">
+    <ol class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      {items.map((item, index) => (
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          {item.href ? (
+            <>
+              <a href={item.href} itemprop="item">
+                <span itemprop="name">{item.label}</span>
+              </a>
+              <meta itemprop="position" content={String(index + 1)} />
+              {index < items.length - 1 && <span class="breadcrumbs-separator" aria-hidden="true">›</span>}
+            </>
+          ) : (
+            <>
+              <span class="breadcrumbs-current" itemprop="name">{item.label}</span>
+              <meta itemprop="position" content={String(index + 1)} />
+            </>
+          )}
+        </li>
+      ))}
+    </ol>
+  </div>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

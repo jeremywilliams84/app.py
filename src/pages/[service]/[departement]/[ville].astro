@@ -1,0 +1,339 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import ContactForm from '../../../components/ContactForm.astro';
+import CTASticky from '../../../components/CTASticky.astro';
+import TrustBadges from '../../../components/TrustBadges.astro';
+import FAQSection from '../../../components/FAQSection.astro';
+import LocalBusinessSchema from '../../../components/LocalBusinessSchema.astro';
+import InternalLinks from '../../../components/InternalLinks.astro';
+import {
+  generatePageContent,
+  getAllLocalePaths,
+  getServices,
+  getDepartements,
+  getVilles
+} from '../../../utils/content-generator';
+
+export async function getStaticPaths() {
+  const paths = getAllLocalePaths();
+
+  return paths.map(({ service, departement, ville }) => ({
+    params: { service, departement, ville }
+  }));
+}
+
+const { service: serviceSlug, departement: departementSlug, ville: villeSlug } = Astro.params;
+
+const content = generatePageContent(serviceSlug!, departementSlug!, villeSlug!);
+
+if (!content) {
+  return Astro.redirect('/404');
+}
+
+const {
+  service,
+  departement,
+  ville,
+  metaTitle,
+  metaDescription,
+  h1,
+  intro,
+  sectionServices,
+  sectionZone,
+  sectionTarifs,
+  cta,
+  faqs
+} = content;
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: service.namePlural, href: `/${service.slug}/` },
+  { label: departement.name, href: `/${service.slug}/${departement.slug}/` },
+  { label: ville.name }
+];
+
+const pageUrl = `/${service.slug}/${departement.slug}/${ville.slug}/`;
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical={pageUrl}>
+  <LocalBusinessSchema
+    service={service}
+    ville={ville}
+    departement={departement}
+    pageUrl={pageUrl}
+  />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>{h1}</h1>
+      <p class="hero-subtitle">
+        Intervention rapide {ville.prefix} {ville.name} et dans tout le {departement.name} ({departement.code})
+      </p>
+      <TrustBadges variant="compact" />
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="content-grid">
+      <article class="content">
+        <!-- Introduction -->
+        <section class="intro-section">
+          <p class="text-lg" set:html={intro.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')} />
+        </section>
+
+        <!-- Services -->
+        <section class="services-section" set:html={sectionServices.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/## (.*)/g, '<h2>$1</h2>').replace(/- (.*)/g, '<li>$1</li>').replace(/<li>/g, '</ul><ul><li>').replace('</ul><ul>', '<ul>')} />
+
+        <!-- Zone d'intervention -->
+        <section class="zone-section" set:html={sectionZone.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/## (.*)/g, '<h2>$1</h2>')} />
+
+        <!-- Section informations locales -->
+        <section class="local-info-section">
+          <h2>Pourquoi choisir notre service {ville.prefix} {ville.name} ?</h2>
+
+          <p>
+            Faire appel à un <strong>{service.name.toLowerCase()} local</strong> {ville.prefix} {ville.name}
+            présente de nombreux avantages. Notre équipe connaît parfaitement les spécificités
+            du secteur et peut intervenir rapidement grâce à notre implantation locale.
+          </p>
+
+          <h3>Une connaissance approfondie de {ville.name}</h3>
+          <p>
+            {ville.name} est un secteur {ville.caracteristiques.join(', ')}.
+            Nos techniciens maîtrisent les particularités des installations dans ce type de quartier,
+            qu'il s'agisse d'immeubles anciens ou de constructions récentes.
+          </p>
+
+          <h3>Accessibilité optimale</h3>
+          <p>
+            Bien desservi par les transports ({ville.transports.join(', ')}),
+            {ville.name} nous permet d'intervenir rapidement. Nous connaissons également
+            les meilleures options de stationnement pour minimiser les délais.
+          </p>
+
+          <h3>Un service de proximité</h3>
+          <p>
+            En choisissant un {service.name.toLowerCase()} basé près de {ville.name},
+            vous bénéficiez d'un interlocuteur disponible et réactif.
+            Notre proximité garantit des interventions rapides et un suivi personnalisé.
+          </p>
+        </section>
+
+        <!-- Tarifs -->
+        <section class="tarifs-section" set:html={sectionTarifs.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/## (.*)/g, '<h2>$1</h2>').replace(/\|(.*)\|/g, (match) => `<tr><td>${match.replace(/\|/g, '</td><td>').slice(5, -5)}</td></tr>`)} />
+
+        <!-- CTA intermédiaire -->
+        <div class="cta-box" set:html={cta.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}>
+        </div>
+        <div class="cta-box-btn">
+          <a href="#contact-form" class="btn btn-primary btn-lg">Demander un devis gratuit</a>
+        </div>
+
+        <!-- Nos engagements -->
+        <section class="engagements-section">
+          <h2>Nos engagements qualité</h2>
+
+          <div class="engagements-grid">
+            <div class="engagement-item">
+              <span class="engagement-icon">⏱️</span>
+              <h4>Réactivité</h4>
+              <p>Intervention rapide {ville.prefix} {ville.name}, prise en charge de votre demande sous 2h.</p>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💶</span>
+              <h4>Transparence</h4>
+              <p>Devis détaillé et gratuit avant toute intervention. Pas de surprise sur la facture.</p>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🛡️</span>
+              <h4>Garantie</h4>
+              <p>Travaux garantis, assurance responsabilité civile professionnelle et décennale.</p>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">👷</span>
+              <h4>Expertise</h4>
+              <p>Techniciens qualifiés et formés aux dernières techniques du métier.</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Sidebar avec formulaire -->
+      <aside class="sidebar">
+        <div class="sidebar-sticky">
+          <ContactForm
+            service={service.name}
+            ville={ville.name}
+            departement={departement.name}
+          />
+
+          <div class="sidebar-trust">
+            <h4>Ils nous font confiance</h4>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8/5 basé sur 127 avis</span>
+            </div>
+            <div class="testimonial">
+              <p>"Intervention rapide et efficace. Je recommande !"</p>
+              <span class="testimonial-author">— Client {ville.prefix} {ville.name}</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FAQ -->
+    <FAQSection faqs={faqs} service={service.name} ville={ville.name} />
+
+    <!-- Maillage interne -->
+    <InternalLinks
+      currentService={service}
+      currentVille={ville}
+      currentDepartement={departement}
+    />
+  </div>
+
+  <CTASticky
+    text={`Besoin d'un ${service.name.toLowerCase()} ${ville.prefix} ${ville.name} ?`}
+    buttonText="Devis gratuit"
+    buttonHref="#contact-form"
+  />
+</Layout>
+
+<style>
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      order: -1;
+    }
+  }
+
+  .sidebar-sticky {
+    position: sticky;
+    top: 100px;
+  }
+
+  .sidebar-trust {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+  }
+
+  .sidebar-trust h4 {
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+
+  .rating {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .stars {
+    color: #fbbf24;
+    font-size: 1.25rem;
+  }
+
+  .rating-text {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+
+  .testimonial {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .testimonial-author {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .cta-box {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+
+  .cta-box strong {
+    color: white;
+  }
+
+  .cta-box-btn {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .engagements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .engagements-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .engagement-item {
+    background: var(--color-bg-alt);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+  }
+
+  .engagement-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .engagement-item h4 {
+    margin: 0 0 0.5rem;
+  }
+
+  .engagement-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+  }
+
+  .intro-section {
+    margin-bottom: 2rem;
+  }
+
+  .content section {
+    margin-bottom: 2rem;
+  }
+
+  .content :global(ul) {
+    margin: 1rem 0;
+  }
+
+  .content :global(table) {
+    margin: 1rem 0;
+  }
+</style>

@@ -1,0 +1,176 @@
+{
+  "plombier": {
+    "intros": [
+      "Vous recherchez un **plombier professionnel {prefix} {ville}** ? Notre équipe de plombiers qualifiés intervient rapidement pour tous vos travaux de plomberie. Que ce soit pour une urgence, une installation ou un entretien, nous sommes à votre service dans tout le {departement}.",
+      "Besoin d'un **plombier {prefix} {ville}** en urgence ou pour des travaux planifiés ? Nos artisans plombiers certifiés vous garantissent un travail soigné et des tarifs transparents. Intervention possible 7j/7 dans le {departement}.",
+      "Notre entreprise de **plomberie {prefix} {ville}** met à votre disposition des professionnels expérimentés pour tous types d'interventions. De la simple réparation à la rénovation complète, nous vous accompagnons dans le {departement}.",
+      "Faites appel à un **plombier de confiance {prefix} {ville}** pour vos travaux de plomberie. Avec plus de 15 ans d'expérience, notre équipe assure des prestations de qualité dans tout le {departement}.",
+      "Un **plombier compétent {prefix} {ville}** à votre service ! Nous intervenons rapidement pour résoudre tous vos problèmes de plomberie. Devis gratuit et sans engagement dans le {departement}."
+    ],
+    "sections_services": [
+      "## Nos services de plomberie {prefix} {ville}\n\nNotre équipe de plombiers professionnels propose une gamme complète de services adaptés à vos besoins :\n\n- **Dépannage en urgence** : fuites d'eau, canalisations bouchées, robinetterie défaillante\n- **Installation sanitaire** : douche, baignoire, WC, lavabo, lave-linge\n- **Rénovation de salle de bain** : création, modification, mise aux normes\n- **Recherche de fuites** : détection non destructive avec équipement professionnel\n- **Débouchage** : canalisation, WC, évier, colonne d'immeuble",
+      "## Services de plomberie disponibles {prefix} {ville}\n\nProfitez de l'expertise de nos plombiers pour tous vos projets :\n\n- **Urgences 24h/24** : intervention rapide pour fuites et dégâts des eaux\n- **Travaux neufs** : installation complète de votre réseau de plomberie\n- **Remplacement d'équipements** : chauffe-eau, cumulus, robinetterie\n- **Entretien préventif** : contrat de maintenance pour éviter les pannes\n- **Mise en conformité** : adaptation aux normes en vigueur",
+      "## L'expertise plomberie à votre service {prefix} {ville}\n\nDécouvrez notre offre complète de prestations en plomberie :\n\n- **Interventions d'urgence** : disponibilité 7j/7, jours fériés inclus\n- **Aménagement sanitaire** : conception et réalisation de vos projets\n- **Réparations courantes** : chasse d'eau, siphon, joints, flexible\n- **Plomberie industrielle** : solutions pour professionnels et copropriétés\n- **Conseil et diagnostic** : expertise gratuite de votre installation",
+      "## Prestations de plomberie {prefix} {ville}\n\nNotre savoir-faire couvre l'ensemble des besoins en plomberie :\n\n- **Service d'urgence** : déplacement sous 30 minutes en cas de sinistre\n- **Installation neuve** : maison, appartement, local commercial\n- **Réhabilitation** : remise en état de réseaux anciens\n- **Détection de fuite** : caméra thermique et gaz traceur\n- **Assainissement** : raccordement, fosse septique, pompe de relevage",
+      "## Tous travaux de plomberie {prefix} {ville}\n\nBénéficiez de notre expertise reconnue pour vos travaux :\n\n- **Dépannage express** : résolution rapide de vos urgences\n- **Pose de sanitaires** : du standard au haut de gamme\n- **Chauffage** : installation et dépannage de chaudières\n- **Adoucisseur d'eau** : installation et entretien\n- **Plomberie écologique** : récupération d'eau de pluie, économiseurs"
+    ],
+    "sections_zone": [
+      "## Zone d'intervention {prefix} {ville}\n\nNos plombiers interviennent dans tous les quartiers de {ville} : {quartiers}. Nous couvrons également les communes environnantes : {communes_proches}.\n\nGrâce à notre connaissance du terrain et des spécificités locales, nous optimisons nos délais d'intervention. Proche de {reperes}, notre équipe se déplace rapidement pour répondre à vos urgences.\n\nLes habitants de {ville} apprécient particulièrement notre réactivité et notre capacité à nous adapter aux contraintes locales, notamment en termes de stationnement et d'accès aux immeubles.",
+      "## Intervention rapide dans votre quartier de {ville}\n\nQue vous habitiez à {quartiers}, notre équipe connaît parfaitement votre secteur. Cette expertise locale nous permet d'intervenir efficacement dans tout {ville}.\n\nNous desservons aussi les villes voisines : {communes_proches}. Nos techniciens maîtrisent les particularités du bâti local et les réglementations en vigueur {prefix} {ville}.\n\nÀ proximité de {reperes}, nos plombiers se tiennent prêts à intervenir rapidement chez vous.",
+      "## Couverture complète de {ville} et environs\n\nNotre équipe intervient dans l'ensemble des quartiers de {ville}, notamment : {quartiers}. Nous assurons également nos services dans les communes limitrophes : {communes_proches}.\n\nLa connaissance approfondie de {ville} par nos plombiers garantit des interventions efficaces. Situés stratégiquement près de {reperes}, nous minimisons les temps de trajet.\n\nL'architecture spécifique de {ville} (immeubles anciens, résidences récentes) n'a pas de secret pour nos techniciens qualifiés.",
+      "## Nos plombiers connaissent {ville}\n\nIntervention garantie dans tous les secteurs : {quartiers}. Notre couverture s'étend aux communes adjacentes : {communes_proches}.\n\nFamiliarisés avec les installations typiques de {ville} et ses environs, nos plombiers diagnostiquent rapidement l'origine des problèmes. Proches de {reperes}, nous assurons des délais d'intervention optimaux.\n\nChaque quartier de {ville} bénéficie d'une attention particulière de la part de nos équipes.",
+      "## Service de proximité {prefix} {ville}\n\nNos plombiers quadrillent efficacement {ville} et ses quartiers : {quartiers}. Les habitants des communes voisines peuvent également faire appel à nous : {communes_proches}.\n\nGrâce à notre implantation locale et notre connaissance de {reperes}, nous intervenons dans les meilleurs délais. Les caractéristiques de votre logement {prefix} {ville} sont prises en compte pour une prestation sur-mesure."
+    ],
+    "sections_tarifs": [
+      "## Tarifs plombier {prefix} {ville}\n\nNos tarifs sont **clairs et sans surprise**. Avant chaque intervention, vous recevez un devis détaillé gratuit.\n\n| Prestation | Prix indicatif |\n|------------|----------------|\n| Déplacement + diagnostic | Offert |\n| Débouchage simple | À partir de 89€ |\n| Réparation de fuite | À partir de 119€ |\n| Remplacement robinet | À partir de 149€ |\n| Installation WC | À partir de 250€ |\n\n*Tarifs TTC, hors pièces. Devis personnalisé sur demande.*",
+      "## Combien coûte un plombier {prefix} {ville} ?\n\nTransparence totale sur nos tarifs. Le devis est **gratuit et sans engagement**.\n\n| Service | Tarif de base |\n|---------|---------------|\n| Intervention + devis | Gratuit |\n| Débouchage WC/évier | Dès 79€ |\n| Fuite robinetterie | Dès 99€ |\n| Chasse d'eau | Dès 129€ |\n| Cumulus 200L | Dès 890€ installé |\n\n*Prix TTC indicatifs, fournitures non incluses.*",
+      "## Grille tarifaire plomberie {ville}\n\nDes prix justes pour un travail de qualité. **Devis gratuit** avant intervention.\n\n| Intervention | À partir de |\n|--------------|-------------|\n| Diagnostic | 0€ |\n| Débouchage canalisation | 85€ |\n| Réparation fuite | 110€ |\n| Pose mitigeur | 139€ |\n| Salle de bain complète | Sur devis |\n\n*Forfaits tout compris disponibles. TVA 10% applicable.*",
+      "## Prix de nos prestations {prefix} {ville}\n\nPas de mauvaise surprise : nos tarifs sont établis **avant le début des travaux**.\n\n| Type de travaux | Estimation |\n|-----------------|------------|\n| Déplacement | Inclus |\n| Débouchage | 75€ - 150€ |\n| Fuite apparente | 95€ - 180€ |\n| Changement flexible | 49€ - 89€ |\n| Rénovation complète | Devis personnalisé |\n\n*Tarifs moyens constatés {prefix} {ville}, hors pièces détachées.*",
+      "## Nos engagements tarifaires {prefix} {ville}\n\nChoisir notre service, c'est opter pour des **tarifs honnêtes** et un travail garantit.\n\n| Prestation | Fourchette de prix |\n|------------|--------------------|\n| Visite + devis | Offerts |\n| Petit dépannage | 70€ - 130€ |\n| Réparation standard | 120€ - 220€ |\n| Installation équipement | 180€ - 400€ |\n| Projet sur-mesure | Étude gratuite |\n\n*Prix TTC, main d'œuvre incluse, pièces en sus.*"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le délai d'intervention d'un plombier {prefix} {ville} ?",
+        "answers": [
+          "En cas d'urgence, nos plombiers interviennent généralement sous 30 à 60 minutes {prefix} {ville}. Pour les travaux planifiés, nous proposons des rendez-vous sous 24 à 48h selon vos disponibilités.",
+          "Notre équipe basée près de {ville} garantit une intervention rapide : moins d'une heure en urgence, et sous 24h pour les demandes standard. Nous nous adaptons à votre emploi du temps.",
+          "Les délais d'intervention varient selon l'urgence : immédiat pour les dégâts des eaux, sous 2h pour les fuites importantes, et sur rendez-vous pour les travaux courants {prefix} {ville}."
+        ]
+      },
+      {
+        "question": "Comment obtenir un devis gratuit pour mes travaux de plomberie {prefix} {ville} ?",
+        "answers": [
+          "Contactez-nous via notre formulaire ou par téléphone. Un technicien évalue votre besoin et vous propose un devis détaillé gratuit, généralement sous 24h pour les demandes standard.",
+          "Le devis est entièrement gratuit et sans engagement. Décrivez-nous votre projet et nous vous envoyons une estimation chiffrée. Pour les travaux complexes, une visite sur place est organisée.",
+          "Obtenez votre devis en quelques clics ! Remplissez le formulaire de contact, notre équipe vous rappelle rapidement pour affiner votre demande et vous transmettre une proposition détaillée."
+        ]
+      },
+      {
+        "question": "Intervenez-vous le week-end et les jours fériés {prefix} {ville} ?",
+        "answers": [
+          "Oui, notre service d'urgence fonctionne 7j/7 et 24h/24, y compris les dimanches et jours fériés. Un supplément peut s'appliquer pour les interventions en dehors des heures ouvrées.",
+          "Absolument ! Les urgences de plomberie n'attendent pas. Notre permanence est assurée tous les jours de l'année {prefix} {ville} et dans le {departement}.",
+          "Notre équipe reste disponible le week-end pour les urgences. Les travaux planifiés sont généralement programmés en semaine, mais nous pouvons nous adapter à vos contraintes."
+        ]
+      },
+      {
+        "question": "Quelles garanties proposez-vous sur vos interventions de plomberie ?",
+        "answers": [
+          "Toutes nos interventions sont garanties. La main d'œuvre bénéficie d'une garantie de 1 an, et les pièces installées sont couvertes par la garantie fabricant (2 à 5 ans selon les équipements).",
+          "Nous garantissons la qualité de notre travail : garantie décennale pour les gros travaux, garantie de parfait achèvement d'un an, et garantie constructeur sur les équipements posés.",
+          "La garantie fait partie de nos engagements : intervention assurée par des professionnels certifiés, pièces de qualité garanties, et SAV réactif en cas de problème après intervention."
+        ]
+      },
+      {
+        "question": "Quels modes de paiement acceptez-vous {prefix} {ville} ?",
+        "answers": [
+          "Nous acceptons les paiements par carte bancaire, chèque, espèces et virement. Pour les travaux importants, des facilités de paiement peuvent être proposées. TVA à 10% applicable sur la main d'œuvre.",
+          "Plusieurs options de paiement sont disponibles : CB, chèque, espèces. Nous proposons également le paiement en plusieurs fois pour les projets conséquents (rénovation, installation).",
+          "Le règlement peut s'effectuer par carte, chèque ou espèces à la fin de l'intervention. Une facture détaillée vous est systématiquement remise. Financement possible pour les gros travaux."
+        ]
+      },
+      {
+        "question": "Fournissez-vous les pièces et équipements pour les travaux ?",
+        "answers": [
+          "Oui, nous fournissons l'ensemble des pièces nécessaires (robinetterie, joints, tuyauterie, équipements sanitaires). Nous travaillons avec des marques reconnues pour garantir la durabilité des installations.",
+          "Notre équipe dispose d'un stock de pièces courantes pour intervenir immédiatement. Pour les équipements spécifiques, nous vous proposons différentes gammes (standard, milieu de gamme, premium) selon votre budget.",
+          "Nous assurons la fourniture du matériel : pièces détachées de qualité, équipements sanitaires de grandes marques. Vous pouvez aussi fournir vos propres équipements si vous le souhaitez."
+        ]
+      }
+    ],
+    "ctas": [
+      "**Besoin d'un plombier {prefix} {ville} ?** Contactez-nous maintenant pour un devis gratuit. Intervention rapide garantie dans le {departement}.",
+      "**Urgence plomberie {prefix} {ville} ?** Ne restez pas avec une fuite ! Nos plombiers interviennent rapidement. Appelez-nous ou remplissez le formulaire.",
+      "**Obtenez votre devis gratuit** pour vos travaux de plomberie {prefix} {ville}. Réponse sous 2h, intervention rapide dans tout le {departement}.",
+      "**Plombier disponible {prefix} {ville}** 7j/7. Demandez votre devis en ligne ou par téléphone. Tarifs transparents, travail garanti.",
+      "**Faites confiance à un plombier local** {prefix} {ville}. Devis gratuit, intervention rapide, satisfaction garantie. Contactez-nous !"
+    ]
+  },
+  "electricien": {
+    "intros": [
+      "Vous cherchez un **électricien qualifié {prefix} {ville}** ? Notre équipe de professionnels certifiés intervient pour tous vos travaux électriques. Installation, dépannage, mise aux normes : nous sommes à votre service dans tout le {departement}.",
+      "Besoin d'un **électricien {prefix} {ville}** ? Nos artisans certifiés garantissent des interventions conformes aux normes NF C 15-100. Dépannage 24h/24 et travaux planifiés dans le {departement}.",
+      "Notre entreprise d'**électricité {prefix} {ville}** met à votre disposition des électriciens expérimentés pour tous types de prestations. De la réparation d'urgence à l'installation complète, nous intervenons dans le {departement}.",
+      "Faites appel à un **électricien de confiance {prefix} {ville}** pour vos travaux électriques. Qualifiés et assurés, nos techniciens assurent des prestations de qualité dans tout le {departement}.",
+      "Un **électricien compétent {prefix} {ville}** à votre écoute ! Nous intervenons rapidement pour tous vos problèmes électriques. Devis gratuit et sans engagement dans le {departement}."
+    ],
+    "sections_services": [
+      "## Nos services d'électricité {prefix} {ville}\n\nNotre équipe d'électriciens professionnels propose une gamme complète de services :\n\n- **Dépannage en urgence** : panne de courant, court-circuit, disjoncteur qui saute\n- **Installation électrique** : tableau, prises, interrupteurs, éclairage\n- **Mise aux normes** : diagnostic, remise en conformité NF C 15-100\n- **Rénovation électrique** : modernisation de votre installation\n- **Domotique** : automatisation, maison connectée",
+      "## Services électriques disponibles {prefix} {ville}\n\nProfitez de l'expertise de nos électriciens pour tous vos projets :\n\n- **Urgences 24h/24** : intervention rapide pour coupures et pannes\n- **Travaux neufs** : installation complète de votre réseau électrique\n- **Remplacement tableau** : mise à niveau de votre installation\n- **Éclairage** : intérieur, extérieur, LED, économie d'énergie\n- **Bornes de recharge** : installation pour véhicules électriques",
+      "## L'expertise électrique à votre service {prefix} {ville}\n\nDécouvrez notre offre complète de prestations en électricité :\n\n- **Interventions d'urgence** : disponibilité 7j/7 pour les pannes\n- **Installation complète** : construction neuve et rénovation\n- **Diagnostic électrique** : bilan de sécurité de votre installation\n- **Câblage réseau** : informatique, téléphone, TV\n- **Énergies renouvelables** : panneaux solaires, autoconsommation",
+      "## Prestations électricité {prefix} {ville}\n\nNotre savoir-faire couvre l'ensemble des besoins électriques :\n\n- **Service d'urgence** : intervention sous 1h en cas de panne grave\n- **Installation neuve** : maison, appartement, local professionnel\n- **Réhabilitation** : remise aux normes d'installations anciennes\n- **Interphonie/vidéophonie** : sécurisation des accès\n- **Alarmes** : systèmes de protection incendie et intrusion",
+      "## Tous travaux d'électricité {prefix} {ville}\n\nBénéficiez de notre expertise reconnue pour vos travaux :\n\n- **Dépannage express** : résolution rapide de vos urgences\n- **Pose d'équipements** : du basique au haut de gamme\n- **Chauffage électrique** : installation et optimisation\n- **VMC** : ventilation mécanique contrôlée\n- **Contrôle d'accès** : badges, digicodes, serrures connectées"
+    ],
+    "sections_zone": [
+      "## Zone d'intervention {prefix} {ville}\n\nNos électriciens interviennent dans tous les quartiers de {ville} : {quartiers}. Nous couvrons également les communes environnantes : {communes_proches}.\n\nGrâce à notre connaissance du terrain et des spécificités locales, nous optimisons nos délais d'intervention. Proche de {reperes}, notre équipe se déplace rapidement pour répondre à vos urgences.\n\nLes habitants de {ville} apprécient particulièrement notre réactivité et notre connaissance des installations électriques typiques de la région.",
+      "## Intervention rapide dans votre quartier de {ville}\n\nQue vous habitiez à {quartiers}, notre équipe connaît parfaitement votre secteur. Cette expertise locale nous permet d'intervenir efficacement dans tout {ville}.\n\nNous desservons aussi les villes voisines : {communes_proches}. Nos techniciens maîtrisent les particularités des installations électriques {prefix} {ville}.\n\nÀ proximité de {reperes}, nos électriciens se tiennent prêts à intervenir rapidement chez vous.",
+      "## Couverture complète de {ville} et environs\n\nNotre équipe intervient dans l'ensemble des quartiers de {ville}, notamment : {quartiers}. Nous assurons également nos services dans les communes limitrophes : {communes_proches}.\n\nLa connaissance approfondie de {ville} par nos électriciens garantit des interventions efficaces. Situés stratégiquement près de {reperes}, nous minimisons les temps de trajet.\n\nL'architecture et les installations électriques spécifiques de {ville} n'ont pas de secret pour nos techniciens qualifiés.",
+      "## Nos électriciens connaissent {ville}\n\nIntervention garantie dans tous les secteurs : {quartiers}. Notre couverture s'étend aux communes adjacentes : {communes_proches}.\n\nFamiliarisés avec les installations typiques de {ville} et ses environs, nos électriciens diagnostiquent rapidement l'origine des problèmes. Proches de {reperes}, nous assurons des délais d'intervention optimaux.\n\nChaque quartier de {ville} bénéficie d'une attention particulière de la part de nos équipes.",
+      "## Service de proximité {prefix} {ville}\n\nNos électriciens quadrillent efficacement {ville} et ses quartiers : {quartiers}. Les habitants des communes voisines peuvent également faire appel à nous : {communes_proches}.\n\nGrâce à notre implantation locale et notre connaissance de {reperes}, nous intervenons dans les meilleurs délais. Les caractéristiques de votre logement {prefix} {ville} sont prises en compte pour une prestation sur-mesure."
+    ],
+    "sections_tarifs": [
+      "## Tarifs électricien {prefix} {ville}\n\nNos tarifs sont **clairs et sans surprise**. Avant chaque intervention, vous recevez un devis détaillé gratuit.\n\n| Prestation | Prix indicatif |\n|------------|----------------|\n| Déplacement + diagnostic | Offert |\n| Dépannage simple | À partir de 89€ |\n| Remplacement prise/interrupteur | À partir de 69€ |\n| Installation point lumineux | À partir de 149€ |\n| Mise aux normes tableau | À partir de 450€ |\n\n*Tarifs TTC, hors fournitures. Devis personnalisé sur demande.*",
+      "## Combien coûte un électricien {prefix} {ville} ?\n\nTransparence totale sur nos tarifs. Le devis est **gratuit et sans engagement**.\n\n| Service | Tarif de base |\n|---------|---------------|\n| Intervention + devis | Gratuit |\n| Recherche de panne | Dès 79€ |\n| Pose prise électrique | Dès 59€ |\n| Installation lustre | Dès 89€ |\n| Rénovation complète | Sur devis |\n\n*Prix TTC indicatifs, fournitures non incluses.*",
+      "## Grille tarifaire électricité {ville}\n\nDes prix justes pour un travail de qualité. **Devis gratuit** avant intervention.\n\n| Intervention | À partir de |\n|--------------|-------------|\n| Diagnostic | 0€ |\n| Dépannage disjoncteur | 85€ |\n| Ajout circuit électrique | 180€ |\n| Remplacement tableau | 650€ |\n| Installation complète | Sur devis |\n\n*Forfaits tout compris disponibles. TVA 10% applicable.*",
+      "## Prix de nos prestations {prefix} {ville}\n\nPas de mauvaise surprise : nos tarifs sont établis **avant le début des travaux**.\n\n| Type de travaux | Estimation |\n|-----------------|------------|\n| Déplacement | Inclus |\n| Petite réparation | 65€ - 120€ |\n| Installation équipement | 90€ - 200€ |\n| Mise en sécurité | 350€ - 800€ |\n| Rénovation totale | Devis personnalisé |\n\n*Tarifs moyens constatés {prefix} {ville}, hors fournitures.*",
+      "## Nos engagements tarifaires {prefix} {ville}\n\nChoisir notre service, c'est opter pour des **tarifs honnêtes** et un travail garanti.\n\n| Prestation | Fourchette de prix |\n|------------|--------------------|\n| Visite + devis | Offerts |\n| Petit dépannage | 60€ - 110€ |\n| Travaux standard | 150€ - 350€ |\n| Installation équipement | 200€ - 500€ |\n| Projet sur-mesure | Étude gratuite |\n\n*Prix TTC, main d'œuvre incluse, fournitures en sus.*"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le délai d'intervention d'un électricien {prefix} {ville} ?",
+        "answers": [
+          "En cas d'urgence (panne totale, risque de sécurité), nos électriciens interviennent généralement sous 1 à 2 heures {prefix} {ville}. Pour les travaux planifiés, nous proposons des rendez-vous sous 48 à 72h.",
+          "Notre équipe basée près de {ville} garantit une intervention rapide : moins de 2 heures en urgence, et sous 48h pour les demandes standard. Nous nous adaptons à vos contraintes.",
+          "Les délais varient selon l'urgence : immédiat pour les pannes dangereuses, sous 2h pour les coupures, et sur rendez-vous pour les installations {prefix} {ville}."
+        ]
+      },
+      {
+        "question": "Mon installation électrique est ancienne, dois-je la mettre aux normes ?",
+        "answers": [
+          "Une installation de plus de 15 ans mérite un diagnostic. La mise aux normes NF C 15-100 n'est obligatoire qu'en cas de vente ou de rénovation importante, mais elle est recommandée pour votre sécurité.",
+          "Nous vous conseillons un diagnostic électrique gratuit pour évaluer l'état de votre installation. Selon les résultats, une mise en sécurité partielle ou totale peut être nécessaire.",
+          "Les installations anciennes présentent souvent des risques (fils dénudés, absence de terre, disjoncteur obsolète). Un bilan permet de définir les travaux prioritaires pour sécuriser votre logement."
+        ]
+      },
+      {
+        "question": "Intervenez-vous pour les pannes électriques le week-end {prefix} {ville} ?",
+        "answers": [
+          "Oui, notre service d'urgence fonctionne 7j/7 et 24h/24, y compris les dimanches et jours fériés. Un supplément peut s'appliquer pour les interventions en dehors des heures ouvrées.",
+          "Absolument ! Les pannes électriques peuvent être dangereuses. Notre permanence est assurée tous les jours de l'année {prefix} {ville} et dans le {departement}.",
+          "Notre équipe reste disponible le week-end pour les urgences électriques. Les travaux planifiés sont généralement programmés en semaine, mais nous pouvons nous adapter."
+        ]
+      },
+      {
+        "question": "Vos électriciens sont-ils certifiés et assurés ?",
+        "answers": [
+          "Tous nos électriciens sont titulaires d'habilitations électriques à jour (BR, B2V, BC) et notre entreprise dispose d'une assurance responsabilité civile professionnelle et d'une garantie décennale.",
+          "Oui, nos techniciens sont formés et habilités conformément à la norme NF C 18-510. Nous fournissons sur demande nos attestations d'assurance et qualifications.",
+          "Nos électriciens possèdent les certifications requises (Qualifelec, habilitations électriques). Chaque intervention est couverte par notre assurance professionnelle."
+        ]
+      },
+      {
+        "question": "Pouvez-vous installer une borne de recharge pour véhicule électrique {prefix} {ville} ?",
+        "answers": [
+          "Oui, nous sommes qualifiés IRVE (Infrastructure de Recharge pour Véhicule Électrique). Nous installons des bornes de 7 à 22 kW pour particuliers et copropriétés, avec possibilité d'aides financières.",
+          "Absolument ! L'installation de bornes de recharge fait partie de nos spécialités. Nous étudions votre installation électrique et vous proposons la solution adaptée (prise renforcée ou borne).",
+          "Nous installons tous types de bornes de recharge {prefix} {ville}. Un diagnostic préalable permet de vérifier la capacité de votre installation et de dimensionner la borne idéale."
+        ]
+      },
+      {
+        "question": "Quels modes de paiement acceptez-vous pour les travaux électriques ?",
+        "answers": [
+          "Nous acceptons les paiements par carte bancaire, chèque, espèces et virement. Pour les travaux importants, des facilités de paiement peuvent être proposées. TVA à 10% applicable sur la main d'œuvre.",
+          "Plusieurs options de paiement sont disponibles : CB, chèque, espèces. Nous proposons également le paiement en plusieurs fois pour les projets conséquents (rénovation électrique).",
+          "Le règlement peut s'effectuer par carte, chèque ou espèces. Une facture détaillée vous est systématiquement remise. Financement possible pour les gros travaux."
+        ]
+      }
+    ],
+    "ctas": [
+      "**Besoin d'un électricien {prefix} {ville} ?** Contactez-nous maintenant pour un devis gratuit. Intervention rapide garantie dans le {departement}.",
+      "**Panne électrique {prefix} {ville} ?** Ne restez pas dans le noir ! Nos électriciens interviennent rapidement. Appelez-nous ou remplissez le formulaire.",
+      "**Obtenez votre devis gratuit** pour vos travaux électriques {prefix} {ville}. Réponse sous 2h, intervention rapide dans tout le {departement}.",
+      "**Électricien disponible {prefix} {ville}** 7j/7. Demandez votre devis en ligne ou par téléphone. Tarifs transparents, travail garanti.",
+      "**Faites confiance à un électricien local** {prefix} {ville}. Devis gratuit, intervention rapide, satisfaction garantie. Contactez-nous !"
+    ]
+  }
+}

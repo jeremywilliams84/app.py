@@ -1,0 +1,32 @@
+[
+  {
+    "id": "plombier",
+    "slug": "plombier",
+    "name": "Plombier",
+    "namePlural": "Plombiers",
+    "metaTitle": "Plombier {ville} ({departement}) - Dépannage & Installation",
+    "metaDescription": "Besoin d'un plombier à {ville} ? Intervention rapide, devis gratuit. Dépannage, installation, réparation de plomberie dans le {departement}.",
+    "schemaType": "ProfessionalService",
+    "serviceType": "Plumber",
+    "keywords": ["plombier", "dépannage plomberie", "fuite d'eau", "débouchage", "installation sanitaire"],
+    "priceRange": "€€",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "areaServed": "{departement}",
+    "icon": "🔧"
+  },
+  {
+    "id": "electricien",
+    "slug": "electricien",
+    "name": "Électricien",
+    "namePlural": "Électriciens",
+    "metaTitle": "Électricien {ville} ({departement}) - Dépannage & Rénovation",
+    "metaDescription": "Électricien qualifié à {ville}. Dépannage électrique 24h/24, installation, mise aux normes. Devis gratuit dans le {departement}.",
+    "schemaType": "ProfessionalService",
+    "serviceType": "Electrician",
+    "keywords": ["électricien", "dépannage électrique", "installation électrique", "mise aux normes", "tableau électrique"],
+    "priceRange": "€€",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "areaServed": "{departement}",
+    "icon": "⚡"
+  }
+]

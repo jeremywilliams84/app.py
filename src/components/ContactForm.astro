@@ -1,0 +1,213 @@
+---
+interface Props {
+  service?: string;
+  ville?: string;
+  departement?: string;
+  formId?: string;
+}
+
+const { service, ville, departement, formId = 'contact-form' } = Astro.props;
+---
+
+<div class="contact-form-wrapper" id={formId}>
+  <h3>Demandez votre devis gratuit</h3>
+  <p class="text-muted mb-2">Réponse sous 2h - Sans engagement</p>
+
+  <form
+    class="contact-form"
+    action="/api/contact"
+    method="POST"
+    data-form-id={formId}
+  >
+    <input type="hidden" name="service" value={service || ''} />
+    <input type="hidden" name="ville" value={ville || ''} />
+    <input type="hidden" name="departement" value={departement || ''} />
+    <input type="hidden" name="page_url" value="" id="page-url" />
+
+    <div class="form-group">
+      <label for={`${formId}-nom`} class="form-label">Votre nom *</label>
+      <input
+        type="text"
+        id={`${formId}-nom`}
+        name="nom"
+        class="form-input"
+        required
+        placeholder="Jean Dupont"
+      />
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for={`${formId}-email`} class="form-label">Email</label>
+        <input
+          type="email"
+          id={`${formId}-email`}
+          name="email"
+          class="form-input"
+          placeholder="jean@exemple.fr"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for={`${formId}-telephone`} class="form-label">Téléphone *</label>
+        <input
+          type="tel"
+          id={`${formId}-telephone`}
+          name="telephone"
+          class="form-input"
+          required
+          placeholder="06 12 34 56 78"
+          pattern="[0-9\s\+\-\.]+"
+        />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for={`${formId}-ville-input`} class="form-label">Votre ville *</label>
+      <input
+        type="text"
+        id={`${formId}-ville-input`}
+        name="ville_input"
+        class="form-input"
+        required
+        placeholder="Paris 15ème"
+        value={ville || ''}
+      />
+    </div>
+
+    <div class="form-group">
+      <label for={`${formId}-besoin`} class="form-label">Décrivez votre besoin *</label>
+      <textarea
+        id={`${formId}-besoin`}
+        name="besoin"
+        class="form-textarea"
+        required
+        placeholder="Décrivez brièvement votre problème ou projet..."
+        rows="4"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input type="checkbox" name="urgence" value="oui" />
+        <span>C'est urgent (intervention rapide souhaitée)</span>
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+      Envoyer ma demande
+    </button>
+
+    <p class="form-footer text-sm text-muted text-center mt-2">
+      En soumettant ce formulaire, vous acceptez d'être recontacté pour votre demande.
+      Vos données sont traitées conformément à notre
+      <a href="/politique-confidentialite/">politique de confidentialité</a>.
+    </p>
+  </form>
+
+  <div class="form-success" style="display: none;">
+    <div class="success-icon">✓</div>
+    <h4>Demande envoyée !</h4>
+    <p>Nous vous recontactons dans les plus brefs délais.</p>
+  </div>
+</div>
+
+<style>
+  .contact-form-wrapper {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-form-wrapper h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .checkbox-label input {
+    width: auto;
+  }
+
+  .form-footer {
+    margin-top: 1rem;
+  }
+
+  .form-success {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-success);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+  }
+
+  .form-success h4 {
+    color: var(--color-success);
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<script>
+  // Set page URL
+  document.addEventListener('DOMContentLoaded', () => {
+    const pageUrlInput = document.getElementById('page-url') as HTMLInputElement;
+    if (pageUrlInput) {
+      pageUrlInput.value = window.location.href;
+    }
+
+    // Simple form handling (replace with your actual submission logic)
+    const forms = document.querySelectorAll('.contact-form');
+    forms.forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formEl = e.target as HTMLFormElement;
+        const wrapper = formEl.closest('.contact-form-wrapper');
+        const successEl = wrapper?.querySelector('.form-success') as HTMLElement;
+
+        // Simulate form submission
+        // In production, replace with actual API call
+        try {
+          // const formData = new FormData(formEl);
+          // await fetch('/api/contact', { method: 'POST', body: formData });
+
+          formEl.style.display = 'none';
+          if (successEl) successEl.style.display = 'block';
+        } catch (error) {
+          alert('Une erreur est survenue. Veuillez réessayer.');
+        }
+      });
+    });
+  });
+</script>

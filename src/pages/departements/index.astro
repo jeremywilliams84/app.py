@@ -1,0 +1,191 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getDepartements, getVillesByDepartement, getServices } from '../../utils/content-generator';
+
+const departements = getDepartements();
+const services = getServices();
+
+const metaTitle = "Tous les départements - Nos zones d'intervention | LocalServices";
+const metaDescription = `Retrouvez nos services dans ${departements.length} départements. Plombier, électricien disponibles partout en France.`;
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Départements' }
+];
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical="/departements/">
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>Nos départements d'intervention</h1>
+      <p class="hero-subtitle">{departements.length} départements couverts par nos professionnels</p>
+    </div>
+  </section>
+
+  <div class="container section">
+    <div class="departements-grid">
+      {departements.map(dept => {
+        const villes = getVillesByDepartement(dept.slug);
+        return (
+          <article class="dept-card">
+            <div class="dept-header">
+              <span class="dept-code">{dept.code}</span>
+              <div>
+                <h2>{dept.name}</h2>
+                <p class="dept-region">{dept.region}</p>
+              </div>
+            </div>
+
+            <div class="dept-stats">
+              <div class="stat">
+                <span class="stat-value">{villes.length}</span>
+                <span class="stat-label">villes</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">{(dept.population / 1000000).toFixed(1)}M</span>
+                <span class="stat-label">habitants</span>
+              </div>
+            </div>
+
+            <div class="dept-services">
+              <h3>Services disponibles</h3>
+              <div class="services-links">
+                {services.map(service => (
+                  <a href={`/${service.slug}/${dept.slug}/`}>
+                    {service.icon} {service.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="dept-villes">
+              <h3>Villes ({villes.length})</h3>
+              <div class="villes-links">
+                {villes.slice(0, 4).map(ville => (
+                  <a href={`/${services[0].slug}/${dept.slug}/${ville.slug}/`}>
+                    {ville.name}
+                  </a>
+                ))}
+                {villes.length > 4 && (
+                  <a href={`/${services[0].slug}/${dept.slug}/`} class="more-link">
+                    +{villes.length - 4} autres
+                  </a>
+                )}
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .departements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .dept-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+
+  .dept-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .dept-code {
+    width: 60px;
+    height: 60px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .dept-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .dept-region {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  .dept-stats {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+  }
+
+  .dept-services, .dept-villes {
+    margin-top: 1rem;
+  }
+
+  .dept-services h3, .dept-villes h3 {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  .services-links, .villes-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .services-links a, .villes-links a {
+    background: var(--color-bg-alt);
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .services-links a:hover, .villes-links a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+
+  .more-link {
+    background: transparent !important;
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+</style>

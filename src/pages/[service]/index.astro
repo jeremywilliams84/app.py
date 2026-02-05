@@ -1,0 +1,300 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import TrustBadges from '../../components/TrustBadges.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import CTASticky from '../../components/CTASticky.astro';
+import {
+  getServices,
+  getDepartements,
+  getVilles,
+  getService
+} from '../../utils/content-generator';
+
+export async function getStaticPaths() {
+  const services = getServices();
+
+  return services.map(service => ({
+    params: { service: service.slug }
+  }));
+}
+
+const { service: serviceSlug } = Astro.params;
+const service = getService(serviceSlug!);
+
+if (!service) {
+  return Astro.redirect('/404');
+}
+
+const departements = getDepartements();
+const villes = getVilles();
+
+const metaTitle = `${service.name} - Trouvez un professionnel près de chez vous`;
+const metaDescription = `Besoin d'un ${service.name.toLowerCase()} ? Trouvez un professionnel qualifié dans votre ville. ${departements.length} départements couverts, intervention rapide, devis gratuit.`;
+
+const breadcrumbs = [
+  { label: 'Accueil', href: '/' },
+  { label: service.namePlural }
+];
+
+const pageUrl = `/${service.slug}/`;
+---
+
+<Layout title={metaTitle} description={metaDescription} canonical={pageUrl}>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="hero">
+    <div class="container">
+      <h1>{service.name} - Intervention rapide partout en France</h1>
+      <p class="hero-subtitle">
+        Trouvez un {service.name.toLowerCase()} professionnel dans votre département
+      </p>
+      <TrustBadges variant="compact" />
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="content-grid">
+      <main class="content">
+        <section>
+          <h2>Nos services de {service.name.toLowerCase()}</h2>
+          <p>
+            Vous recherchez un <strong>{service.name.toLowerCase()} professionnel</strong> ?
+            Notre réseau d'artisans qualifiés intervient dans toute la France pour tous vos besoins :
+          </p>
+          <ul>
+            {service.keywords.map(keyword => (
+              <li>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section class="departements-section">
+          <h2>Choisissez votre département</h2>
+
+          <div class="departements-grid">
+            {departements.map(dept => {
+              const deptVilles = villes.filter(v => v.departementSlug === dept.slug);
+              return (
+                <a href={`/${service.slug}/${dept.slug}/`} class="dept-card">
+                  <div class="dept-code">{dept.code}</div>
+                  <div class="dept-info">
+                    <h3>{dept.name}</h3>
+                    <p>{deptVilles.length} ville{deptVilles.length > 1 ? 's' : ''}</p>
+                  </div>
+                  <span class="dept-arrow">→</span>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+
+        <section>
+          <h2>Pourquoi nous choisir ?</h2>
+
+          <div class="features-grid">
+            <div class="feature">
+              <span class="feature-icon">{service.icon}</span>
+              <h4>Experts qualifiés</h4>
+              <p>Tous nos {service.namePlural.toLowerCase()} sont certifiés et assurés pour garantir un travail de qualité.</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">⏰</span>
+              <h4>Disponibilité 24h/24</h4>
+              <p>Service d'urgence disponible 7 jours sur 7, jours fériés inclus.</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">💰</span>
+              <h4>Devis gratuit</h4>
+              <p>Estimation détaillée et transparente avant toute intervention.</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✓</span>
+              <h4>Satisfaction garantie</h4>
+              <p>Travaux garantis et suivi après intervention pour votre tranquillité.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="villes-populaires">
+          <h2>Villes populaires</h2>
+          <div class="links-grid">
+            {villes.slice(0, 8).map(ville => (
+              <a href={`/${service.slug}/${ville.departementSlug}/${ville.slug}/`}>
+                {service.name} {ville.prefix} {ville.name}
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section class="other-services">
+          <h2>Nos autres services</h2>
+          <div class="links-grid">
+            {getServices().filter(s => s.slug !== service.slug).map(s => (
+              <a href={`/${s.slug}/`}>
+                {s.icon} {s.namePlural}
+              </a>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-sticky">
+          <ContactForm service={service.name} />
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <CTASticky
+    text={`Besoin d'un ${service.name.toLowerCase()} ?`}
+    buttonText="Devis gratuit"
+    buttonHref="#contact-form"
+  />
+</Layout>
+
+<style>
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sidebar-sticky {
+    position: sticky;
+    top: 100px;
+  }
+
+  .departements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .departements-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .dept-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+
+  .dept-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+  }
+
+  .dept-code {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .dept-info {
+    flex: 1;
+  }
+
+  .dept-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .dept-info p {
+    margin: 0.25rem 0 0;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+
+  .dept-arrow {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .feature {
+    padding: 1.5rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature h4 {
+    margin: 0 0 0.5rem;
+  }
+
+  .feature p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+  }
+
+  .villes-populaires, .other-services {
+    margin-top: 3rem;
+  }
+
+  .links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .links-grid a {
+    background: var(--color-bg-alt);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    transition: all 0.2s;
+  }
+
+  .links-grid a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+</style>

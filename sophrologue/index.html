@@ -329,40 +329,23 @@
       border-radius: var(--radius-card);
       overflow: hidden;
       margin-bottom: 16px;
-      height: 220px;
+      height: 280px;
       background: var(--bg);
       border: 1.5px solid var(--gray-light);
     }
-    .portfolio-screen {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    /* Scaled-down full website mockup */
+    .site-preview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1500px;
+      transform: scale(0.25);
+      transform-origin: top left;
+      pointer-events: none;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
     }
-    .screen-bar {
-      background: #f1f3f4;
-      padding: 8px 12px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      border-bottom: 1px solid #e2e4e7;
-      flex-shrink: 0;
-    }
-    .sdot { width: 9px; height: 9px; border-radius: 50%; }
-    .sdot-r { background: #ff5f57; } .sdot-y { background: #febc2e; } .sdot-g { background: #28c840; }
-    .screen-url { font-size: 0.62rem; color: #9ca3af; margin-left: 6px; }
-    .screen-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 12px; }
-    .screen-content { width: 100%; }
-    .sc-hero-strip {
-      border-radius: 8px;
-      padding: 14px 16px;
-      margin-bottom: 10px;
-    }
-    .sc-hero-strip h4 { font-size: 0.75rem; font-weight: 800; color: #fff; margin-bottom: 3px; }
-    .sc-hero-strip p { font-size: 0.62rem; color: rgba(255,255,255,.8); margin-bottom: 8px; }
-    .sc-btn { display: inline-block; background: #fff; color: var(--dark); padding: 4px 10px; border-radius: 50px; font-size: 0.6rem; font-weight: 700; }
-    .sc-chips { display: flex; gap: 5px; flex-wrap: wrap; }
-    .sc-chip { font-size: 0.6rem; background: rgba(255,255,255,.2); color: #fff; padding: 2px 7px; border-radius: 50px; }
     .delivered-badge {
       position: absolute;
       top: 14px;
@@ -825,59 +808,114 @@
     </div>
 
     <div class="portfolio-grid">
-      <!-- Card 1 -->
+
+      <!-- ===== CARD 1 — Sérénité Studio · Lyon · Dark green split ===== -->
       <div class="portfolio-card">
         <div class="portfolio-thumb">
-          <div class="portfolio-screen">
-            <div class="screen-bar">
-              <div class="sdot sdot-r"></div><div class="sdot sdot-y"></div><div class="sdot sdot-g"></div>
-              <span class="screen-url">www.claire-dupont-sophrologue.fr</span>
+          <div class="site-preview">
+            <!-- NAV -->
+            <div style="background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:66px;border-bottom:1px solid #e5e7eb;">
+              <div style="font-size:21px;font-weight:900;color:#16a34a;letter-spacing:-0.5px;">Sérénité<span style="color:#0f172a;">Studio</span></div>
+              <div style="display:flex;gap:34px;font-size:14px;color:#374151;font-weight:500;"><span>Accueil</span><span>Séances</span><span>À propos</span><span>Tarifs</span><span>Contact</span></div>
+              <div style="background:#16a34a;color:#fff;padding:11px 26px;border-radius:50px;font-size:13px;font-weight:700;">Prendre RDV →</div>
             </div>
-            <div class="screen-body">
-              <div class="screen-content">
-                <div class="sc-hero-strip" style="background:linear-gradient(135deg,#16a34a,#065f46);">
-                  <h4>Claire Dupont – Sophrologue à Lyon</h4>
-                  <p>Stress · Anxiété · Sommeil · Confiance</p>
-                  <span class="sc-btn">Prendre rendez-vous</span>
+            <!-- HERO SPLIT -->
+            <div style="display:grid;grid-template-columns:1.1fr 0.9fr;height:580px;">
+              <!-- Left dark green -->
+              <div style="background:#0c2e1a;padding:72px 60px;display:flex;flex-direction:column;justify-content:center;">
+                <div style="display:inline-block;background:rgba(74,222,128,.14);color:#4ade80;padding:7px 18px;border-radius:50px;font-size:12px;font-weight:700;margin-bottom:26px;letter-spacing:.3px;border:1px solid rgba(74,222,128,.2);">✦ Sophrologue certifiée RNCP · Lyon 3e</div>
+                <div style="font-size:52px;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;">Retrouvez<br>la sérénité<br>au quotidien.</div>
+                <div style="color:rgba(255,255,255,.62);font-size:16px;line-height:1.75;margin-bottom:34px;max-width:400px;">Accompagnement personnalisé pour gérer le stress, l'anxiété et retrouver un sommeil réparateur.</div>
+                <div style="display:flex;gap:14px;margin-bottom:30px;">
+                  <div style="background:#16a34a;color:#fff;padding:13px 30px;border-radius:50px;font-weight:700;font-size:14px;">Prendre rendez-vous</div>
+                  <div style="border:1.5px solid rgba(255,255,255,.28);color:#fff;padding:12px 24px;border-radius:50px;font-size:14px;">En savoir plus</div>
                 </div>
-                <div class="sc-chips">
-                  <span class="sc-chip" style="background:#16a34a;">Adultes</span>
-                  <span class="sc-chip" style="background:#0369a1;">Entreprises</span>
-                  <span class="sc-chip" style="background:#7c3aed;">Visio</span>
-                </div>
+                <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.5);font-size:13px;"><span style="color:#fbbf24;font-size:15px;">★★★★★</span> 4.9/5 · 127 avis Google</div>
               </div>
+              <!-- Right photo sim -->
+              <div style="background:linear-gradient(155deg,#1a5c38 0%,#0a3320 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;position:relative;overflow:hidden;">
+                <div style="position:absolute;width:440px;height:440px;border-radius:50%;border:1px solid rgba(255,255,255,.07);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+                <div style="position:absolute;width:320px;height:320px;border-radius:50%;border:1px solid rgba(255,255,255,.1);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+                <div style="font-size:96px;filter:drop-shadow(0 10px 36px rgba(0,0,0,.4));position:relative;z-index:1;margin-bottom:22px;">🧘‍♀️</div>
+                <div style="background:rgba(255,255,255,.11);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:16px 26px;position:relative;z-index:1;text-align:center;">
+                  <div style="color:rgba(255,255,255,.65);font-size:12px;margin-bottom:5px;font-weight:500;">🗓 Prochaine disponibilité</div>
+                  <div style="color:#fff;font-weight:800;font-size:17px;">Demain · 10h00</div>
+                </div>
+                <div style="position:absolute;bottom:28px;right:28px;font-size:36px;opacity:.25;">🌿</div>
+              </div>
+            </div>
+            <!-- SERVICES STRIP -->
+            <div style="background:#f8f9fa;padding:22px 56px;display:flex;align-items:center;gap:10px;border-top:1px solid #e5e7eb;">
+              <div style="font-size:13px;font-weight:700;color:#374151;margin-right:4px;white-space:nowrap;">Mes accompagnements :</div>
+              <div style="background:#fff;border:1.5px solid #e5e7eb;padding:7px 18px;border-radius:50px;font-size:13px;font-weight:600;white-space:nowrap;">🌿 Gestion du stress</div>
+              <div style="background:#fff;border:1.5px solid #e5e7eb;padding:7px 18px;border-radius:50px;font-size:13px;font-weight:600;white-space:nowrap;">💤 Sommeil</div>
+              <div style="background:#fff;border:1.5px solid #e5e7eb;padding:7px 18px;border-radius:50px;font-size:13px;font-weight:600;white-space:nowrap;">🏢 Entreprises</div>
+              <div style="background:#fff;border:1.5px solid #e5e7eb;padding:7px 18px;border-radius:50px;font-size:13px;font-weight:600;white-space:nowrap;">👶 Enfants</div>
+            </div>
+            <!-- STATS -->
+            <div style="background:#fff;padding:30px 56px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #e5e7eb;">
+              <div style="text-align:center;border-right:1px solid #e5e7eb;padding:0 20px;"><div style="font-size:30px;font-weight:900;color:#0f172a;letter-spacing:-1px;">127</div><div style="font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-top:4px;">Patients accompagnés</div></div>
+              <div style="text-align:center;border-right:1px solid #e5e7eb;padding:0 20px;"><div style="font-size:30px;font-weight:900;color:#0f172a;letter-spacing:-1px;">8 ans</div><div style="font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-top:4px;">D'expérience</div></div>
+              <div style="text-align:center;padding:0 20px;"><div style="font-size:30px;font-weight:900;color:#0f172a;letter-spacing:-1px;">4.9/5</div><div style="font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-top:4px;">Satisfaction</div></div>
             </div>
           </div>
           <div class="delivered-badge">Livré en 2 jours</div>
           <div class="arrow-circle">↗</div>
         </div>
         <div class="portfolio-info">
-          <h3>Cabinet Claire Dupont</h3>
-          <p class="meta">Sophrologue · Lyon 3e</p>
+          <h3>Sérénité Studio – Sophie M.</h3>
+          <p class="meta">Sophrologue certifiée · Lyon 3e</p>
           <p class="portfolio-result">Agenda complet en 5 semaines</p>
         </div>
       </div>
 
-      <!-- Card 2 -->
+      <!-- ===== CARD 2 — SophroFamille · Paris · Warm lavender ===== -->
       <div class="portfolio-card">
         <div class="portfolio-thumb">
-          <div class="portfolio-screen">
-            <div class="screen-bar">
-              <div class="sdot sdot-r"></div><div class="sdot sdot-y"></div><div class="sdot sdot-g"></div>
-              <span class="screen-url">www.marc-leroy-sophrologie.fr</span>
+          <div class="site-preview">
+            <!-- NAV -->
+            <div style="background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:66px;border-bottom:1px solid #ede9fe;">
+              <div style="font-size:21px;font-weight:900;color:#7c3aed;letter-spacing:-0.5px;">Sophro<span style="color:#0f172a;">Famille</span></div>
+              <div style="display:flex;gap:34px;font-size:14px;color:#374151;font-weight:500;"><span>Accueil</span><span>Enfants</span><span>Adultes</span><span>Tarifs</span><span>Contact</span></div>
+              <div style="background:#7c3aed;color:#fff;padding:11px 26px;border-radius:50px;font-size:13px;font-weight:700;">Prendre RDV →</div>
             </div>
-            <div class="screen-body">
-              <div class="screen-content">
-                <div class="sc-hero-strip" style="background:linear-gradient(135deg,#7c3aed,#4c1d95);">
-                  <h4>Marc Leroy – Sophrologue Bordeaux</h4>
-                  <p>Enfants · Adolescents · Soutien scolaire</p>
-                  <span class="sc-btn">Découvrir mes séances</span>
+            <!-- HERO gradient lavender/peach -->
+            <div style="background:linear-gradient(135deg,#fdf4ff 0%,#ede9fe 55%,#fce7f3 100%);padding:72px 72px 56px;display:flex;align-items:center;gap:72px;">
+              <!-- Left text -->
+              <div style="flex:1;">
+                <div style="display:inline-block;background:rgba(124,58,237,.12);color:#7c3aed;padding:7px 18px;border-radius:50px;font-size:12px;font-weight:700;margin-bottom:26px;border:1px solid rgba(124,58,237,.18);">👨‍👩‍👧‍👦 Sophrologue enfants &amp; adultes · Paris 11e</div>
+                <div style="font-size:50px;font-weight:900;color:#1e1b4b;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;">La sophro<br>pour <span style="color:#7c3aed;">toute</span><br>la famille.</div>
+                <div style="color:#4c4f69;font-size:16px;line-height:1.75;margin-bottom:34px;max-width:380px;">Séances individuelles et ateliers pour enfants dès 5 ans, adolescents et adultes. Cabinet ou visio.</div>
+                <div style="display:flex;gap:14px;margin-bottom:28px;">
+                  <div style="background:#7c3aed;color:#fff;padding:13px 30px;border-radius:50px;font-weight:700;font-size:14px;">Réserver une séance</div>
+                  <div style="background:#fff;color:#7c3aed;border:1.5px solid #7c3aed;padding:12px 24px;border-radius:50px;font-size:14px;font-weight:600;">Découvrir mes tarifs</div>
                 </div>
-                <div class="sc-chips">
-                  <span class="sc-chip" style="background:#7c3aed;">Enfants</span>
-                  <span class="sc-chip" style="background:#be185d;">Ados</span>
-                  <span class="sc-chip" style="background:#0369a1;">Cabinet</span>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                  <div style="background:#fff;padding:7px 14px;border-radius:50px;font-size:12px;font-weight:600;color:#374151;box-shadow:0 1px 6px rgba(0,0,0,.08);">✓ Séance découverte offerte</div>
+                  <div style="background:#fff;padding:7px 14px;border-radius:50px;font-size:12px;font-weight:600;color:#374151;box-shadow:0 1px 6px rgba(0,0,0,.08);">✓ Visio possible</div>
                 </div>
+              </div>
+              <!-- Right illustration + cards -->
+              <div style="flex:.85;display:flex;flex-direction:column;align-items:center;gap:14px;">
+                <div style="font-size:88px;filter:drop-shadow(0 8px 24px rgba(124,58,237,.25));">🦋</div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;">
+                  <div style="background:#fff;border-radius:16px;padding:16px 12px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.08);"><div style="font-size:24px;margin-bottom:6px;">🧒</div><div style="font-size:12px;font-weight:700;color:#1e1b4b;">Enfants</div><div style="font-size:11px;color:#6b7280;margin-top:3px;">Dès 5 ans</div></div>
+                  <div style="background:#7c3aed;border-radius:16px;padding:16px 12px;text-align:center;"><div style="font-size:24px;margin-bottom:6px;">🧑</div><div style="font-size:12px;font-weight:700;color:#fff;">Ados</div><div style="font-size:11px;color:rgba(255,255,255,.7);margin-top:3px;">10–18 ans</div></div>
+                  <div style="background:#fff;border-radius:16px;padding:16px 12px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.08);"><div style="font-size:24px;margin-bottom:6px;">🧘</div><div style="font-size:12px;font-weight:700;color:#1e1b4b;">Adultes</div><div style="font-size:11px;color:#6b7280;margin-top:3px;">Tous publics</div></div>
+                </div>
+              </div>
+            </div>
+            <!-- TESTIMONIALS STRIP -->
+            <div style="background:#fff;padding:26px 56px;display:flex;gap:18px;border-top:1px solid #ede9fe;">
+              <div style="flex:1;background:#fdf4ff;border-radius:14px;padding:18px 20px;border:1px solid #e9d5ff;">
+                <div style="color:#fbbf24;font-size:13px;margin-bottom:8px;letter-spacing:1px;">★★★★★</div>
+                <div style="font-size:13px;color:#374151;line-height:1.6;">"Ma fille de 8 ans a retrouvé confiance en elle en 6 séances. Incroyable !"</div>
+                <div style="font-size:12px;color:#7c3aed;font-weight:700;margin-top:10px;">— Camille R., mère de famille</div>
+              </div>
+              <div style="flex:1;background:#fdf4ff;border-radius:14px;padding:18px 20px;border:1px solid #e9d5ff;">
+                <div style="color:#fbbf24;font-size:13px;margin-bottom:8px;letter-spacing:1px;">★★★★★</div>
+                <div style="font-size:13px;color:#374151;line-height:1.6;">"Mon fils adolescent dort enfin bien. Merci pour votre écoute et bienveillance."</div>
+                <div style="font-size:12px;color:#7c3aed;font-weight:700;margin-top:10px;">— Thomas B., père</div>
               </div>
             </div>
           </div>
@@ -885,32 +923,55 @@
           <div class="arrow-circle">↗</div>
         </div>
         <div class="portfolio-info">
-          <h3>Marc Leroy Sophrologie</h3>
-          <p class="meta">Sophrologue enfants · Bordeaux</p>
+          <h3>SophroFamille – Marie B.</h3>
+          <p class="meta">Sophrologue enfants &amp; ados · Paris 11e</p>
           <p class="portfolio-result">+45% de nouveaux patients</p>
         </div>
       </div>
 
-      <!-- Card 3 -->
+      <!-- ===== CARD 3 — BienÊtrePro · Bordeaux · Dark navy corporate ===== -->
       <div class="portfolio-card">
         <div class="portfolio-thumb">
-          <div class="portfolio-screen">
-            <div class="screen-bar">
-              <div class="sdot sdot-r"></div><div class="sdot sdot-y"></div><div class="sdot sdot-g"></div>
-              <span class="screen-url">www.sophro-bien-etre-paris.fr</span>
+          <div class="site-preview">
+            <!-- NAV dark -->
+            <div style="background:#0f172a;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:66px;">
+              <div style="font-size:21px;font-weight:900;color:#fff;letter-spacing:-0.5px;">BienÊtre<span style="color:#38bdf8;">Pro</span></div>
+              <div style="display:flex;gap:34px;font-size:14px;color:rgba(255,255,255,.65);font-weight:500;"><span>Accueil</span><span>Services</span><span>Entreprises</span><span>Tarifs</span><span>Contact</span></div>
+              <div style="background:#38bdf8;color:#0f172a;padding:11px 26px;border-radius:50px;font-size:13px;font-weight:700;">Réserver un appel →</div>
             </div>
-            <div class="screen-body">
-              <div class="screen-content">
-                <div class="sc-hero-strip" style="background:linear-gradient(135deg,#0369a1,#0c4a6e);">
-                  <h4>Sophro Bien-Être – Paris 15e</h4>
-                  <p>Burn-out · Performance · Sommeil</p>
-                  <span class="sc-btn">Première séance offerte</span>
+            <!-- HERO navy -->
+            <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 60%,#0c4a6e 100%);padding:72px 72px 56px;display:flex;align-items:center;gap:72px;min-height:480px;">
+              <!-- Left -->
+              <div style="flex:1.1;">
+                <div style="display:inline-block;background:rgba(56,189,248,.14);color:#38bdf8;padding:7px 18px;border-radius:50px;font-size:12px;font-weight:700;margin-bottom:26px;border:1px solid rgba(56,189,248,.22);">🏢 Sophrologue en entreprise · Bordeaux</div>
+                <div style="font-size:48px;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;">Réduisez le stress<br>de vos équipes.<br><span style="color:#38bdf8;">Durablement.</span></div>
+                <div style="color:rgba(255,255,255,.58);font-size:16px;line-height:1.75;margin-bottom:34px;max-width:420px;">Ateliers collectifs, accompagnement individuel et programmes de prévention du burn-out.</div>
+                <div style="display:flex;gap:14px;margin-bottom:34px;">
+                  <div style="background:#38bdf8;color:#0f172a;padding:13px 30px;border-radius:50px;font-weight:700;font-size:14px;">Demander un devis</div>
+                  <div style="border:1.5px solid rgba(255,255,255,.24);color:#fff;padding:12px 24px;border-radius:50px;font-size:14px;">Voir nos programmes</div>
                 </div>
-                <div class="sc-chips">
-                  <span class="sc-chip" style="background:#0369a1;">Entreprises</span>
-                  <span class="sc-chip" style="background:#16a34a;">Cabinet</span>
-                  <span class="sc-chip" style="background:#b45309;">Visio</span>
+                <!-- Stats -->
+                <div style="display:flex;gap:32px;">
+                  <div><div style="font-size:28px;font-weight:900;color:#fff;letter-spacing:-1px;">200+</div><div style="font-size:11px;color:rgba(255,255,255,.45);font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-top:3px;">Salariés accompagnés</div></div>
+                  <div style="border-left:1px solid rgba(255,255,255,.1);padding-left:32px;"><div style="font-size:28px;font-weight:900;color:#fff;letter-spacing:-1px;">35+</div><div style="font-size:11px;color:rgba(255,255,255,.45);font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-top:3px;">Entreprises clientes</div></div>
+                  <div style="border-left:1px solid rgba(255,255,255,.1);padding-left:32px;"><div style="font-size:28px;font-weight:900;color:#38bdf8;letter-spacing:-1px;">-42%</div><div style="font-size:11px;color:rgba(255,255,255,.45);font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-top:3px;">Absentéisme moyen</div></div>
                 </div>
+              </div>
+              <!-- Right program cards -->
+              <div style="flex:.82;display:flex;flex-direction:column;gap:11px;">
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:16px;"><div style="font-size:30px;">🧘</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px;">Séances individuelles</div><div style="font-size:12px;color:rgba(255,255,255,.45);">En cabinet ou sur site · 45 min</div></div></div>
+                <div style="background:#38bdf8;border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:16px;"><div style="font-size:30px;">👥</div><div><div style="font-size:14px;font-weight:700;color:#0f172a;margin-bottom:3px;">Ateliers collectifs</div><div style="font-size:12px;color:rgba(15,23,42,.55);">Groupes 6–15 · Format sur mesure</div></div></div>
+                <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:16px;"><div style="font-size:30px;">📋</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px;">Programmes annuels</div><div style="font-size:12px;color:rgba(255,255,255,.45);">Engagement sur mesure · Bilan mensuel</div></div></div>
+              </div>
+            </div>
+            <!-- CLIENT LOGOS STRIP -->
+            <div style="background:#fff;padding:22px 56px;display:flex;align-items:center;gap:44px;border-top:1px solid #e5e7eb;">
+              <div style="font-size:12px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1.2px;white-space:nowrap;">Ils nous font confiance</div>
+              <div style="display:flex;gap:40px;align-items:center;">
+                <div style="font-size:16px;font-weight:800;color:#cbd5e1;letter-spacing:-0.5px;">Agence A.</div>
+                <div style="font-size:16px;font-weight:800;color:#cbd5e1;letter-spacing:-0.5px;">TechCorp</div>
+                <div style="font-size:16px;font-weight:800;color:#cbd5e1;letter-spacing:-0.5px;">Studio B.</div>
+                <div style="font-size:16px;font-weight:800;color:#cbd5e1;letter-spacing:-0.5px;">Groupe C.</div>
               </div>
             </div>
           </div>
@@ -918,11 +979,12 @@
           <div class="arrow-circle">↗</div>
         </div>
         <div class="portfolio-info">
-          <h3>Sophro Bien-Être Paris</h3>
-          <p class="meta">Sophrologue entreprises · Paris 15e</p>
+          <h3>BienÊtrePro – Nathalie C.</h3>
+          <p class="meta">Sophrologue entreprises · Bordeaux</p>
           <p class="portfolio-result">+38% de prises de rendez-vous</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>

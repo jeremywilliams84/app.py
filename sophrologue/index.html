@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Création Site Internet Sophrologue – Offre clé en main à 299€</title>
+  <meta name="description" content="Créez votre site internet de sophrologue en 48h pour seulement 299€. Template professionnel, SEO local inclus, prise de rendez-vous en ligne. Développez votre cabinet dès aujourd'hui." />
+  <meta name="keywords" content="création site internet sophrologue, site web sophrologue, sophrologue site professionnel, créer site sophrologue pas cher" />
+  <link rel="canonical" href="https://votredomaine.fr/sophrologue/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Création Site Internet Sophrologue – 299€ clé en main" />
+  <meta property="og:description" content="Site professionnel pour sophrologue livré en 48h. SEO local, prise de RDV, design soigné." />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Création de site internet pour sophrologue",
+    "description": "Site internet professionnel clé en main pour sophrologue à 299€. Livraison en 48h, SEO local inclus.",
+    "provider": {
+      "@type": "Organization",
+      "name": "VotreSiteMetier.fr"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "299",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+
+  <style>
+    /* ====== RESET & BASE ====== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #1a1a2e;
+      background: #fff;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; }
+
+    /* ====== VARIABLES ====== */
+    :root {
+      --green: #2e8b57;
+      --green-light: #3cb371;
+      --green-pale: #e8f5ee;
+      --gold: #c9a84c;
+      --dark: #1a1a2e;
+      --gray: #6b7280;
+      --light: #f9fafb;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    /* ====== NAVBAR ====== */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo { font-weight: 800; font-size: 1.2rem; color: var(--green); }
+    .logo span { color: var(--dark); }
+    .nav-cta {
+      background: var(--green);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--green-light); }
+
+    /* ====== HERO ====== */
+    .hero {
+      background: linear-gradient(135deg, #f0faf4 0%, #e8f5ee 100%);
+      padding: 80px 5% 70px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green);
+      border: 1px solid var(--green);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: .5px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      color: var(--dark);
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--green);
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--gray);
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: transform .15s, background .2s;
+      box-shadow: 0 4px 18px rgba(46,139,87,.35);
+    }
+    .btn-primary:hover { background: var(--green-light); transform: translateY(-2px); }
+    .btn-secondary {
+      background: #fff;
+      color: var(--green);
+      border: 2px solid var(--green);
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background .2s;
+    }
+    .btn-secondary:hover { background: var(--green-pale); }
+    .hero-proof {
+      margin-top: 42px;
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+    .proof-item .check {
+      width: 22px; height: 22px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    /* ====== MOCK SITE PREVIEW ====== */
+    .preview-section {
+      padding: 70px 5%;
+      background: #fff;
+      text-align: center;
+    }
+    .section-label {
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+    .preview-section h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .preview-section p.sub {
+      color: var(--gray);
+      max-width: 540px;
+      margin: 0 auto 48px;
+    }
+    .mockup-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow), 0 0 0 1px #e5e7eb;
+    }
+    .mockup-bar {
+      background: #f3f4f6;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot-r { background: #ff5f57; }
+    .dot-y { background: #febc2e; }
+    .dot-g { background: #28c840; }
+    .url-bar {
+      flex: 1;
+      background: #fff;
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      color: var(--gray);
+      text-align: left;
+      margin: 0 10px;
+    }
+    /* Inline site mockup */
+    .site-mockup {
+      background: #f9fafb;
+      text-align: left;
+      font-size: 0.82rem;
+    }
+    .mockup-hero-strip {
+      background: linear-gradient(135deg, #2e8b57, #1e6640);
+      color: #fff;
+      padding: 36px 32px;
+    }
+    .mockup-hero-strip h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; }
+    .mockup-hero-strip p { opacity: .85; font-size: 0.9rem; margin-bottom: 18px; }
+    .mockup-btn {
+      display: inline-block;
+      background: #fff;
+      color: #2e8b57;
+      padding: 9px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+    .mockup-cards {
+      display: flex;
+      gap: 16px;
+      padding: 24px 32px;
+      flex-wrap: wrap;
+    }
+    .mockup-card {
+      flex: 1;
+      min-width: 140px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      text-align: center;
+    }
+    .mockup-card .icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .mockup-card strong { display: block; font-size: 0.85rem; margin-bottom: 4px; }
+    .mockup-card span { font-size: 0.75rem; color: var(--gray); }
+    .mockup-rdv {
+      background: #fff;
+      margin: 0 32px 24px;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .mockup-rdv strong { font-size: 0.9rem; }
+    .mockup-rdv span { font-size: 0.8rem; color: var(--gray); display: block; }
+    .mockup-rdv-btn {
+      background: #2e8b57;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* ====== FEATURES ====== */
+    .features {
+      padding: 80px 5%;
+      background: var(--light);
+    }
+    .features-header { text-align: center; margin-bottom: 52px; }
+    .features-header h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .features-header p { color: var(--gray); max-width: 500px; margin: 0 auto; }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      transition: transform .2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); }
+    .feature-icon {
+      width: 52px; height: 52px;
+      background: var(--green-pale);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .feature-card p { font-size: 0.9rem; color: var(--gray); }
+
+    /* ====== PRICING ====== */
+    .pricing {
+      padding: 80px 5%;
+      background: #fff;
+      text-align: center;
+    }
+    .pricing h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .pricing p.sub { color: var(--gray); max-width: 480px; margin: 0 auto 52px; }
+    .pricing-cards {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      flex: 1;
+      min-width: 260px;
+      max-width: 360px;
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      border: 2px solid #e5e7eb;
+      position: relative;
+    }
+    .pricing-card.featured {
+      background: var(--dark);
+      border-color: var(--green);
+      color: #fff;
+    }
+    .badge-pop {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+    .plan-name { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--green); margin-bottom: 10px; }
+    .plan-price { font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 4px; }
+    .plan-price sup { font-size: 1.2rem; vertical-align: top; margin-top: 10px; }
+    .plan-freq { font-size: 0.85rem; color: var(--gray); margin-bottom: 24px; }
+    .pricing-card.featured .plan-freq { color: #9ca3af; }
+    .plan-features { list-style: none; text-align: left; margin-bottom: 28px; }
+    .plan-features li {
+      padding: 7px 0;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .pricing-card.featured .plan-features li { border-bottom-color: #2a2a40; }
+    .plan-features li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .btn-plan {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      background: var(--green);
+      color: #fff;
+      transition: background .2s, transform .15s;
+    }
+    .btn-plan:hover { background: var(--green-light); transform: translateY(-2px); }
+    .pricing-card.featured .btn-plan { background: var(--green); }
+
+    /* ====== PROCESS ====== */
+    .process {
+      padding: 80px 5%;
+      background: var(--light);
+      text-align: center;
+    }
+    .process h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .process p.sub { color: var(--gray); max-width: 480px; margin: 0 auto 52px; }
+    .steps {
+      display: flex;
+      gap: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .step {
+      flex: 1;
+      min-width: 180px;
+      max-width: 200px;
+      text-align: center;
+      padding: 0 10px;
+      position: relative;
+    }
+    .step-num {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .step p { font-size: 0.82rem; color: var(--gray); }
+    .step-line {
+      position: absolute;
+      top: 26px;
+      left: calc(50% + 26px);
+      right: calc(-50% + 26px);
+      height: 2px;
+      background: #d1fae5;
+    }
+    .step:last-child .step-line { display: none; }
+
+    /* ====== TESTIMONIALS ====== */
+    .testimonials {
+      padding: 80px 5%;
+      background: #fff;
+      text-align: center;
+    }
+    .testimonials h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; margin-bottom: 12px; }
+    .testimonials p.sub { color: var(--gray); max-width: 480px; margin: 0 auto 52px; }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .testi-card {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .stars { color: #f59e0b; font-size: 1.1rem; margin-bottom: 12px; }
+    .testi-text { font-size: 0.92rem; color: var(--dark); line-height: 1.65; margin-bottom: 16px; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .testi-author strong { display: block; font-size: 0.9rem; }
+    .testi-author span { font-size: 0.8rem; color: var(--gray); }
+
+    /* ====== FAQ ====== */
+    .faq {
+      padding: 80px 5%;
+      background: var(--light);
+    }
+    .faq-header { text-align: center; margin-bottom: 52px; }
+    .faq-header h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; margin-bottom: 10px; }
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .faq-item {
+      background: #fff;
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 0.97rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-q::after { content: "+"; font-size: 1.3rem; color: var(--green); flex-shrink: 0; }
+    .faq-a {
+      padding: 0 24px 20px;
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ====== CTA BAND ====== */
+    .cta-band {
+      background: linear-gradient(135deg, #2e8b57, #1b5e35);
+      padding: 72px 5%;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-band h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 14px; }
+    .cta-band p { font-size: 1.1rem; opacity: .85; max-width: 500px; margin: 0 auto 36px; }
+    .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: var(--green);
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      transition: transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 18px rgba(0,0,0,.2);
+    }
+    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.25); }
+    .guarantee {
+      margin-top: 20px;
+      font-size: 0.88rem;
+      opacity: .75;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: var(--dark);
+      color: #9ca3af;
+      padding: 36px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+    }
+    footer .logo { color: #fff; }
+    footer a { color: #9ca3af; }
+    footer a:hover { color: #fff; }
+
+    /* ====== STICKY CTA (mobile) ====== */
+    .sticky-bottom {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--green);
+      padding: 14px 20px;
+      z-index: 200;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+    .sticky-bottom p { color: #fff; font-weight: 600; font-size: 0.95rem; }
+    .sticky-bottom a {
+      background: #fff;
+      color: var(--green);
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.9rem; }
+      .steps { gap: 24px; }
+      .step-line { display: none; }
+      .sticky-bottom { display: flex; }
+      body { padding-bottom: 64px; }
+      nav .nav-cta { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">SitePro<span>Métier</span></div>
+  <a href="#contact" class="nav-cta">Obtenir mon site →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🌿 Spécial sophrologues</div>
+  <h1>Votre site internet de <em>sophrologue professionnel</em> — livré en 48h</h1>
+  <p>Template soigné, SEO local, prise de rendez-vous intégrée. Attirez de nouveaux patients dès la semaine prochaine.</p>
+  <div class="hero-btns">
+    <a href="#pricing" class="btn-primary">Commander pour 299€</a>
+    <a href="#preview" class="btn-secondary">Voir la démo</a>
+  </div>
+  <div class="hero-proof">
+    <div class="proof-item"><div class="check">✓</div> Livraison en 48h</div>
+    <div class="proof-item"><div class="check">✓</div> SEO local inclus</div>
+    <div class="proof-item"><div class="check">✓</div> Prise de RDV en ligne</div>
+    <div class="proof-item"><div class="check">✓</div> Paiement unique, pas d'abonnement caché</div>
+  </div>
+</section>
+
+<!-- SITE PREVIEW -->
+<section class="preview-section" id="preview">
+  <p class="section-label">Aperçu du template</p>
+  <h2>Un site clé en main, <br>pensé pour les sophrologues</h2>
+  <p class="sub">Voici à quoi ressemble votre futur site. Design épuré, textes pré-remplis, personnalisé à votre image.</p>
+
+  <div class="mockup-wrapper">
+    <div class="mockup-bar">
+      <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+      <div class="url-bar">🔒 www.sophie-martin-sophrologue.fr</div>
+    </div>
+    <div class="site-mockup">
+      <div class="mockup-hero-strip">
+        <h3>Sophie Martin – Sophrologue à Lyon</h3>
+        <p>Gestion du stress · Sommeil · Confiance en soi · Enfants &amp; adultes</p>
+        <span class="mockup-btn">Prendre rendez-vous →</span>
+      </div>
+      <div class="mockup-cards">
+        <div class="mockup-card"><div class="icon">🧘</div><strong>Gestion du stress</strong><span>Séances individuelles</span></div>
+        <div class="mockup-card"><div class="icon">💤</div><strong>Troubles du sommeil</strong><span>Protocoles ciblés</span></div>
+        <div class="mockup-card"><div class="icon">👶</div><strong>Sophrologie enfant</strong><span>Dès 6 ans</span></div>
+        <div class="mockup-card"><div class="icon">📍</div><strong>Cabinet &amp; domicile</strong><span>Lyon 6e + visio</span></div>
+      </div>
+      <div class="mockup-rdv">
+        <div><strong>Première séance découverte</strong><span>30 min offertes · Sans engagement</span></div>
+        <span class="mockup-rdv-btn">Réserver en ligne</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="features-header">
+    <p class="section-label">Ce qui est inclus</p>
+    <h2>Tout ce qu'il faut pour développer votre cabinet</h2>
+    <p>Pas besoin de compétences techniques. On s'occupe de tout.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <h3>Design professionnel</h3>
+      <p>Template créé pour les sophrologues : couleurs apaisantes, typographies soignées, mise en page claire.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📍</div>
+      <h3>SEO local optimisé</h3>
+      <p>Votre site apparaît sur Google quand un patient cherche "sophrologue + votre ville". Google My Business configuré.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📅</div>
+      <h3>Prise de RDV en ligne</h3>
+      <p>Intégration Calendly ou Doctolib. Vos patients réservent 24h/24 sans vous déranger.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>100% responsive</h3>
+      <p>Votre site s'adapte parfaitement à tous les écrans : mobile, tablette, ordinateur.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h3>Chargement rapide</h3>
+      <p>Score Google PageSpeed optimisé. Un site rapide rassure et améliore votre référencement.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>HTTPS &amp; RGPD</h3>
+      <p>Certificat SSL, mentions légales, politique de confidentialité. Vous êtes en conformité dès le départ.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <p class="section-label">Tarifs</p>
+  <h2>Une offre simple, sans surprise</h2>
+  <p class="sub">Payez une fois, le site est à vous. Hébergement disponible en option.</p>
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <div class="plan-name">Essentiel</div>
+      <div class="plan-price"><sup>€</sup>299</div>
+      <div class="plan-freq">paiement unique</div>
+      <ul class="plan-features">
+        <li>Site 5 pages sur mesure</li>
+        <li>Template sophrologue dédié</li>
+        <li>SEO local (titres, meta, balises)</li>
+        <li>Formulaire de contact</li>
+        <li>Livraison en 48h</li>
+        <li>1 mois de support inclus</li>
+      </ul>
+      <a href="#contact" class="btn-plan">Commencer →</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="badge-pop">⭐ Recommandé</div>
+      <div class="plan-name">Premium</div>
+      <div class="plan-price"><sup>€</sup>299</div>
+      <div class="plan-freq">+ 29€/mois hébergement &amp; maintenance</div>
+      <ul class="plan-features">
+        <li>Tout l'Essentiel +</li>
+        <li>Prise de RDV en ligne intégrée</li>
+        <li>Hébergement &amp; nom de domaine</li>
+        <li>Mises à jour &amp; sauvegardes</li>
+        <li>Suivi SEO mensuel</li>
+        <li>Support illimité par e-mail</li>
+      </ul>
+      <a href="#contact" class="btn-plan">Je choisis Premium →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <p class="section-label">Comment ça marche</p>
+  <h2>Votre site en 3 étapes simples</h2>
+  <p class="sub">Pas de réunions interminables. Juste un process clair et rapide.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Vous commandez</h3>
+      <p>Remplissez le formulaire : nom, ville, spécialités, photo. 5 minutes.</p>
+      <div class="step-line"></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>On crée votre site</h3>
+      <p>Notre équipe personnalise le template avec vos informations sous 48h.</p>
+      <div class="step-line"></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Vous validez &amp; go live</h3>
+      <p>Vous approuvez, on met en ligne. Votre site est visible sur Google.</p>
+      <div class="step-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <p class="section-label">Ils nous font confiance</p>
+  <h2>Ce que disent nos sophrologues</h2>
+  <p class="sub">Des professionnels de santé comme vous qui ont franchi le pas.</p>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"J'avais peur que ça soit compliqué. En fait non ! 48h après mon commande, mon site était en ligne avec ma photo, mes tarifs, ma prise de RDV. Je recommande à 100%."</p>
+      <div class="testi-author">
+        <div class="avatar">MC</div>
+        <div><strong>Marie-Claire D.</strong><span>Sophrologue à Nantes</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Depuis que mon site est en ligne, j'ai 3 à 4 nouveaux patients par mois qui viennent directement de Google. L'investissement de 299€ a été rentabilisé en une semaine."</p>
+      <div class="testi-author">
+        <div class="avatar">PL</div>
+        <div><strong>Philippe L.</strong><span>Sophrologue à Bordeaux</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Le design est vraiment soigné, ça me ressemble. Mes patients me disent souvent que mon site leur a inspiré confiance avant même de me rencontrer. Merci !"</p>
+      <div class="testi-author">
+        <div class="avatar">AS</div>
+        <div><strong>Amélie S.</strong><span>Sophrologue à Toulouse</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-header">
+    <p class="section-label">Questions fréquentes</p>
+    <h2>Tout ce que vous voulez savoir</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">J'ai besoin de compétences techniques pour commander ?</div>
+      <div class="faq-a">Non, aucune. Vous remplissez un formulaire simple (nom, ville, texte, photo) et nous créons le site pour vous. Zéro technique de votre côté.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Combien de temps pour que mon site soit en ligne ?</div>
+      <div class="faq-a">48h ouvrées après réception de vos informations. Vous validez le résultat avant la mise en ligne. Si des retouches sont nécessaires, on les fait gratuitement.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Le SEO local, c'est vraiment inclus ?</div>
+      <div class="faq-a">Oui. On optimise les balises title, meta description, la page Google My Business et les données structurées (schema.org) pour que Google comprenne bien votre activité et votre zone géographique.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Y a-t-il des frais cachés après les 299€ ?</div>
+      <div class="faq-a">Non pour l'offre Essentiel. Si vous choisissez l'hébergement, c'est 29€/mois clairement annoncés, sans engagement. Vous pouvez partir quand vous voulez.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Puis-je modifier mon site ensuite ?</div>
+      <div class="faq-a">Oui, le site vous appartient entièrement. On vous forme à modifier vos textes et images en autonomie. Des mises à jour plus complexes sont disponibles sur devis.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band" id="contact">
+  <h2>Prêt(e) à attirer plus de patients ?</h2>
+  <p>Rejoignez les sophrologues qui ont déjà leur site professionnel et développent leur cabinet grâce à Google.</p>
+  <a href="mailto:contact@votresitemetier.fr?subject=Commande site sophrologue" class="btn-white">Obtenir mon site pour 299€ →</a>
+  <p class="guarantee">🔒 Paiement sécurisé &nbsp;·&nbsp; 30 jours satisfait ou remboursé &nbsp;·&nbsp; Livraison 48h garantie</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="logo">SitePro<span>Métier</span></div>
+  <div>
+    © 2026 SiteProMétier · <a href="/mentions-legales">Mentions légales</a> · <a href="/confidentialite">Confidentialité</a>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-bottom">
+  <p>Site sophrologue à 299€</p>
+  <a href="#contact">Je commande →</a>
+</div>
+
+</body>
+</html>

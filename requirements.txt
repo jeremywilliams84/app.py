@@ -3,3 +3,4 @@ whois
 requests
 pandas
 openpyxl
+playwright

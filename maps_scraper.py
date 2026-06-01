@@ -3,7 +3,9 @@ import streamlit as st
 import pandas as pd
 import requests
 import io
-from config import SERPAPI_KEY
+
+# Lire la clé depuis st.secrets (Streamlit Cloud) ou os.environ (local)
+SERPAPI_KEY = st.secrets.get("SERPAPI_KEY", os.environ.get("SERPAPI_KEY", ""))
 
 SERPAPI_URL = "https://serpapi.com/search"
 

@@ -4,8 +4,25 @@ import pandas as pd
 import requests
 import io
 
-# Lire la clé depuis st.secrets (Streamlit Cloud) ou os.environ (local)
-SERPAPI_KEY = st.secrets.get("SERPAPI_KEY", os.environ.get("SERPAPI_KEY", ""))
+def _get_serpapi_key() -> str:
+    # 1. Secrets Streamlit Cloud (format : SERPAPI_KEY = "...")
+    try:
+        key = st.secrets["SERPAPI_KEY"]
+        if key:
+            return key
+    except Exception:
+        pass
+    # 2. Secrets imbriqués : [secrets] SERPAPI_KEY = "..."
+    try:
+        key = st.secrets["secrets"]["SERPAPI_KEY"]
+        if key:
+            return key
+    except Exception:
+        pass
+    # 3. Variable d'environnement (local)
+    return os.environ.get("SERPAPI_KEY", "")
+
+SERPAPI_KEY = _get_serpapi_key()
 
 SERPAPI_URL = "https://serpapi.com/search"
 
@@ -75,11 +92,14 @@ st.title("📍 Google Maps Scraper — Prospection locale")
 st.caption("Extraction via SerpAPI — aucune installation de navigateur requise.")
 
 if not SERPAPI_KEY:
-    st.error(
-        "Clé SerpAPI manquante. Ajoutez `SERPAPI_KEY` dans `config.py` "
-        "ou dans les secrets Streamlit (`[secrets] SERPAPI_KEY = '...'`)."
-    )
-    st.stop()
+    st.warning("Clé SerpAPI non configurée. Entrez-la ci-dessous pour continuer.")
+    manual_key = st.text_input("Clé SerpAPI", type="password",
+                               placeholder="Collez votre clé SerpAPI ici")
+    if manual_key:
+        SERPAPI_KEY = manual_key
+    else:
+        st.info("Créez un compte gratuit sur [serpapi.com](https://serpapi.com/) — 100 recherches/mois offertes.")
+        st.stop()
 
 with st.sidebar:
     st.header("⚙️ Paramètres")

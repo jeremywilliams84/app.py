@@ -1,3 +1,6 @@
+import os
+os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", "/opt/pw-browsers")
+
 import streamlit as st
 import pandas as pd
 import time

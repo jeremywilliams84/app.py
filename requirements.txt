@@ -2,3 +2,4 @@ streamlit
 whois
 requests
 pandas
+openpyxl

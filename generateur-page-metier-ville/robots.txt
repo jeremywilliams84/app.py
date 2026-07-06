@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /leads/
+Sitemap: https://generateur-page-metier-ville.fr/sitemap.xml

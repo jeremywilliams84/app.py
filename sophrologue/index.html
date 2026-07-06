@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Création Site Internet Sophrologue – Offre clé en main à 299€</title>
+  <meta name="description" content="Créez votre site internet de sophrologue en 48h pour seulement 299€. Template professionnel, SEO local inclus, prise de rendez-vous en ligne. Développez votre cabinet dès aujourd'hui." />
+  <meta name="keywords" content="création site internet sophrologue, site web sophrologue, sophrologue site professionnel, créer site sophrologue pas cher" />
+  <link rel="canonical" href="https://votredomaine.fr/sophrologue/" />
+  <meta property="og:title" content="Création Site Internet Sophrologue – 299€ clé en main" />
+  <meta property="og:description" content="Site professionnel pour sophrologue livré en 48h. SEO local, prise de RDV, design soigné." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Création de site internet pour sophrologue",
+    "description": "Site internet professionnel clé en main pour sophrologue à 299€. Livraison en 48h, SEO local inclus.",
+    "provider": { "@type": "Organization", "name": "SiteProMétier" },
+    "offers": { "@type": "Offer", "price": "299", "priceCurrency": "EUR" }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #F8F9FA;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --green: #16A34A;
+      --green-light: #22c55e;
+      --green-pale: #DCFCE7;
+      --green-tint: #F0FDF4;
+      --peach-tint: #FFF7ED;
+      --peach-pale: #FED7AA;
+      --beige-tint: #FEFCE8;
+      --mint-tint: #F0FDFA;
+      --bg: #F8F9FA;
+      --white: #ffffff;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --gray-light: #e2e8f0;
+      --radius-card: 20px;
+      --radius-pill: 50px;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-light);
+      padding: 0 6%;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--green);
+      letter-spacing: -0.5px;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+    .nav-right svg { width: 18px; height: 18px; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--white);
+      padding: 90px 6% 80px;
+      text-align: center;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green-pale);
+      color: var(--green);
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: .3px;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      max-width: 820px;
+      margin: 0 auto 20px;
+    }
+    .hero h1 .accent { color: var(--green); }
+    .hero p.lead {
+      font-size: 1.15rem;
+      color: var(--gray);
+      max-width: 560px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+    .btn-green {
+      background: var(--green);
+      color: #fff;
+      padding: 15px 32px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background .2s, transform .15s;
+    }
+    .btn-green:hover { background: #15803d; transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--dark);
+      border: 1.5px solid var(--gray-light);
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 1rem;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-outline:hover { border-color: var(--green); background: var(--green-tint); }
+
+    /* Stats row */
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+      border: 1.5px solid var(--gray-light);
+      border-radius: var(--radius-card);
+      max-width: 560px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .stat-item {
+      flex: 1;
+      min-width: 130px;
+      padding: 20px 24px;
+      border-right: 1.5px solid var(--gray-light);
+      text-align: center;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      display: block;
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: var(--dark);
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gray);
+    }
+
+    /* ===== SECTION COMMON ===== */
+    section { padding: 88px 6%; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+    .section-head { text-align: center; margin-bottom: 56px; }
+    .section-head h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+    .section-head h2 .accent { color: var(--green); }
+    .section-head p {
+      color: var(--gray);
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===== EXPERTISES CARDS ===== */
+    .expertises { background: var(--bg); }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .exp-card {
+      background: var(--white);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      transition: transform .2s;
+      border: 1.5px solid transparent;
+    }
+    .exp-card:hover { transform: translateY(-4px); border-color: var(--gray-light); }
+    .exp-card-img {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .exp-card-img.mint   { background: #DCFCE7; }
+    .exp-card-img.peach  { background: #FFE4C4; }
+    .exp-card-img.beige  { background: #FEF9C3; }
+    .exp-card-img.lavender { background: #EDE9FE; }
+    .card-label {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(4px);
+      color: var(--dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+    }
+    .card-icon-circle {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,.8);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+    }
+    .card-emoji {
+      font-size: 5rem;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,.12));
+      line-height: 1;
+    }
+    .exp-card-body { padding: 22px 24px 28px; }
+    .exp-card-body h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -.3px;
+    }
+    .exp-card-body p {
+      font-size: 0.88rem;
+      color: var(--gray);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .link-arrow {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: gap .15s;
+    }
+    .link-arrow:hover { gap: 8px; }
+
+    /* ===== RÉALISATIONS ===== */
+    .realisations { background: var(--white); }
+    .reali-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 52px;
+      flex-wrap: wrap;
+    }
+    .reali-header-left { flex: 1; min-width: 280px; }
+    .reali-header-left h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .reali-header-left h2 .accent { color: var(--green); }
+    .reali-header-left p { color: var(--gray); font-size: 0.95rem; line-height: 1.7; max-width: 480px; }
+    .reali-stats {
+      display: flex;
+      gap: 0;
+      border: 1.5px solid var(--gray-light);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      height: fit-content;
+      flex-shrink: 0;
+    }
+    .reali-stat {
+      padding: 20px 28px;
+      text-align: center;
+      border-right: 1.5px solid var(--gray-light);
+    }
+    .reali-stat:last-child { border-right: none; }
+    .reali-stat .big { display: block; font-size: 2.2rem; font-weight: 900; letter-spacing: -1.5px; line-height: 1; margin-bottom: 4px; }
+    .reali-stat .lbl { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--gray); }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .portfolio-card {}
+    .portfolio-thumb {
+      position: relative;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      margin-bottom: 16px;
+      height: 310px;
+      background: #0f2318;
+      border: none;
+    }
+    /* Scaled-down full website mockup */
+    .site-preview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1500px;
+      transform: scale(0.25);
+      transform-origin: top left;
+      pointer-events: none;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .delivered-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--green);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+    }
+    .arrow-circle {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 32px; height: 32px;
+      background: var(--white);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem;
+      color: var(--dark);
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    }
+    .portfolio-info h3 { font-size: 1rem; font-weight: 800; margin-bottom: 3px; }
+    .portfolio-info .meta { font-size: 0.82rem; color: var(--gray); margin-bottom: 10px; }
+    .portfolio-result {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .portfolio-result::before {
+      content: "";
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+    }
+
+    /* ===== PROCESS ===== */
+    .process { background: var(--bg); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .step-card {
+      background: var(--white);
+      border-radius: var(--radius-card);
+      padding: 28px 24px;
+      border: 1.5px solid var(--gray-light);
+    }
+    .step-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px; height: 38px;
+      background: var(--green-pale);
+      color: var(--green);
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .step-card h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+    .step-card p { font-size: 0.87rem; color: var(--gray); line-height: 1.65; }
+
+    /* ===== PRICING ===== */
+    .pricing { background: var(--white); }
+    .pricing-wrapper {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .price-card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 380px;
+      border: 1.5px solid var(--gray-light);
+      border-radius: var(--radius-card);
+      padding: 36px 32px;
+      position: relative;
+      background: var(--white);
+    }
+    .price-card.highlighted {
+      border-color: var(--green);
+      background: var(--green-tint);
+    }
+    .popular-tag {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--green);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 16px;
+      border-radius: var(--radius-pill);
+      white-space: nowrap;
+    }
+    .plan-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--green); margin-bottom: 8px; }
+    .plan-amount { font-size: 3.2rem; font-weight: 900; letter-spacing: -2px; line-height: 1; margin-bottom: 4px; }
+    .plan-amount sup { font-size: 1.3rem; vertical-align: top; margin-top: 10px; font-weight: 700; }
+    .plan-period { font-size: 0.83rem; color: var(--gray); margin-bottom: 28px; }
+    .plan-list { list-style: none; margin-bottom: 28px; }
+    .plan-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 0.9rem;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .plan-list li::before { content: "✓"; color: var(--green); font-weight: 800; flex-shrink: 0; margin-top: 1px; }
+    .btn-price {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      background: var(--green);
+      color: #fff;
+      transition: background .2s, transform .15s;
+    }
+    .btn-price:hover { background: #15803d; transform: translateY(-2px); }
+    .price-card:not(.highlighted) .btn-price {
+      background: transparent;
+      color: var(--green);
+      border: 1.5px solid var(--green);
+    }
+    .price-card:not(.highlighted) .btn-price:hover { background: var(--green-pale); }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials { background: var(--bg); }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .testi-card {
+      background: var(--white);
+      border-radius: var(--radius-card);
+      padding: 28px 26px;
+      border: 1.5px solid var(--gray-light);
+    }
+    .stars { color: #f59e0b; font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testi-text { font-size: 0.91rem; color: var(--dark); line-height: 1.7; margin-bottom: 20px; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .tavi {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .testi-author strong { display: block; font-size: 0.9rem; font-weight: 700; }
+    .testi-author span { font-size: 0.8rem; color: var(--gray); }
+
+    /* ===== FAQ ===== */
+    .faq { background: var(--white); }
+    .faq-list { max-width: 740px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid var(--gray-light);
+      border-radius: 14px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      background: var(--white);
+    }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 0.96rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      cursor: default;
+    }
+    .faq-q .plus {
+      width: 28px; height: 28px;
+      background: var(--green-pale);
+      color: var(--green);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .faq-a {
+      padding: 0 24px 20px;
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.75;
+      border-top: 1px solid var(--gray-light);
+      padding-top: 16px;
+    }
+
+    /* ===== CONTACT FORM ===== */
+    .contact-section {
+      background: var(--dark);
+      padding: 88px 6%;
+    }
+    .contact-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .contact-left { color: #fff; }
+    .contact-left .pill-badge { background: rgba(22,163,74,.2); color: #4ade80; margin-bottom: 24px; }
+    .contact-left h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .contact-left h2 .accent { color: #4ade80; }
+    .contact-left p { color: #94a3b8; font-size: 0.95rem; line-height: 1.75; margin-bottom: 32px; }
+    .contact-bullets { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .contact-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+    .contact-bullets li::before {
+      content: "✓";
+      width: 22px; height: 22px;
+      background: rgba(22,163,74,.2);
+      color: #4ade80;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .contact-form {
+      background: var(--white);
+      border-radius: var(--radius-card);
+      padding: 36px 32px;
+    }
+    .contact-form h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 6px; }
+    .contact-form p.form-sub { font-size: 0.85rem; color: var(--gray); margin-bottom: 24px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--dark); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 11px 14px;
+      border: 1.5px solid var(--gray-light);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .2s;
+      background: var(--bg);
+      color: var(--dark);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--green); background: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      background: var(--green);
+      color: #fff;
+      padding: 15px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+      margin-top: 6px;
+    }
+    .btn-submit:hover { background: #15803d; transform: translateY(-1px); }
+    .form-guarantee {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0a0f1a;
+      color: #64748b;
+      padding: 32px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.83rem;
+    }
+    footer .logo { color: var(--green); font-size: 1.2rem; }
+    footer a { color: #64748b; }
+    footer a:hover { color: #94a3b8; }
+
+    /* ===== STICKY MOBILE ===== */
+    .sticky-mobile {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--white);
+      border-top: 1px solid var(--gray-light);
+      padding: 12px 20px;
+      z-index: 200;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .sticky-mobile p { font-size: 0.88rem; font-weight: 700; }
+    .sticky-mobile a {
+      background: var(--green);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .contact-inner { grid-template-columns: 1fr; gap: 36px; }
+      .form-row { grid-template-columns: 1fr; }
+      .reali-header { flex-direction: column; }
+    }
+    @media (max-width: 560px) {
+      section { padding: 60px 5%; }
+      .hero { padding: 60px 5% 60px; }
+      .sticky-mobile { display: flex; }
+      body { padding-bottom: 68px; }
+      nav .nav-right span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">SiteProMétier</div>
+  <a href="#contact" class="nav-right">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Réserver un appel</span>
+  </a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="pill-badge">🌿 Spécial sophrologues</div>
+  <h1>Votre site internet de sophrologue,<br><span class="accent">livré en 48h.</span></h1>
+  <p class="lead">Template professionnel, SEO local inclus, prise de rendez-vous intégrée. Attirez de nouveaux patients dès la semaine prochaine — pour seulement 299€.</p>
+  <div class="hero-btns">
+    <a href="#contact" class="btn-green">Obtenir mon site pour 299€ →</a>
+    <a href="#realisations" class="btn-outline">Voir des exemples</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num">120+</span>
+      <span class="stat-label">Sites livrés</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">48h</span>
+      <span class="stat-label">Délai de livraison</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">5/5</span>
+      <span class="stat-label">Satisfaction</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERTISES ===== -->
+<section class="expertises">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="pill-badge">Nos expertises</div>
+      <h2>Un site adapté à votre spécialité</h2>
+      <p>Que vous soyez sophrologue généraliste, spécialisé en entreprise ou auprès des enfants, chaque site est conçu pour les besoins de votre pratique.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="exp-card">
+        <div class="exp-card-img mint">
+          <span class="card-label">Gestion du stress</span>
+          <span class="card-icon-circle">🧘</span>
+          <span class="card-emoji">🌿</span>
+        </div>
+        <div class="exp-card-body">
+          <h3>Sophrologue adultes &amp; entreprises</h3>
+          <p>Site rassurant et professionnel, prise de rendez-vous intégrée, présentation de vos séances individuelles et ateliers collectifs.</p>
+          <a href="#contact" class="link-arrow">Demander un devis →</a>
+        </div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-img peach">
+          <span class="card-label">Sommeil &amp; bien-être</span>
+          <span class="card-icon-circle">💤</span>
+          <span class="card-emoji">🌙</span>
+        </div>
+        <div class="exp-card-body">
+          <h3>Sophrologue spécialisé bien-être</h3>
+          <p>Mettez en avant vos protocoles, vos résultats clients et rassurez vos patients dès leur première visite sur votre site.</p>
+          <a href="#contact" class="link-arrow">Demander un devis →</a>
+        </div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-img lavender">
+          <span class="card-label">Sophrologie enfant</span>
+          <span class="card-icon-circle">👶</span>
+          <span class="card-emoji">🦋</span>
+        </div>
+        <div class="exp-card-body">
+          <h3>Sophrologue enfants &amp; adolescents</h3>
+          <p>Réservation en ligne, présentation de vos techniques, témoignages de parents et SEO local pour être trouvé dans votre ville.</p>
+          <a href="#contact" class="link-arrow">Demander un devis →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RÉALISATIONS ===== -->
+<section class="realisations" id="realisations">
+  <div class="section-inner">
+    <div class="reali-header">
+      <div class="reali-header-left">
+        <div class="pill-badge" style="margin-bottom:20px;">📂 Réalisations</div>
+        <h2>Ils nous ont fait <span class="accent">confiance.</span></h2>
+        <p>Plus de 120 professionnels de santé ont déjà choisi SiteProMétier pour donner vie à leur présence en ligne.</p>
+      </div>
+      <div class="reali-stats">
+        <div class="reali-stat">
+          <span class="big">120+</span>
+          <span class="lbl">Sites livrés</span>
+        </div>
+        <div class="reali-stat">
+          <span class="big">5/5</span>
+          <span class="lbl">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- ===== CARD 1 — Sophie Martin · Lyon · Dark forest green ===== -->
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">
+          <div class="site-preview" style="background:linear-gradient(160deg,#0c2016 0%,#142b1e 50%,#0f2318 100%);">
+            <!-- NAV -->
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:72px;border-bottom:1px solid rgba(255,255,255,.09);">
+              <div>
+                <div style="font-size:16px;font-weight:700;color:#fff;letter-spacing:-.2px;">Sophie Martin</div>
+                <div style="font-size:9px;font-weight:600;letter-spacing:2.2px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-top:1px;">SÉRÉNITÉ STUDIO · SOPHROLOGIE · LYON</div>
+              </div>
+              <div style="display:flex;gap:32px;font-size:14px;color:rgba(255,255,255,.75);font-weight:400;"><span>Accueil</span><span>Mon approche</span><span>Séances</span><span>Témoignages</span><span>Contact</span></div>
+              <div style="background:#2d6840;color:#fff;padding:12px 28px;border-radius:50px;font-size:13px;font-weight:600;">Prendre rendez-vous</div>
+            </div>
+            <!-- HERO -->
+            <div style="display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;padding:72px 56px;align-items:center;min-height:960px;">
+              <!-- Left -->
+              <div>
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:30px;">
+                  <div style="width:28px;height:1px;background:rgba(255,255,255,.35);flex-shrink:0;"></div>
+                  <div style="font-size:10px;font-weight:600;letter-spacing:2px;color:rgba(255,255,255,.45);text-transform:uppercase;">SÉRÉNITÉ STUDIO · 5,0★ · 48 AVIS · SOPHROLOGIE · LYON 3E · FERME À 19H</div>
+                </div>
+                <div style="font-family:Georgia,serif;font-size:76px;font-weight:700;color:#fff;line-height:1.04;letter-spacing:-1px;margin-bottom:26px;">Respire.<br>Ressens.<br>Vis pleinement.</div>
+                <div style="color:rgba(255,255,255,.6);font-size:15.5px;line-height:1.8;margin-bottom:38px;max-width:400px;">Sophie Martin — Sérénité Studio, cabinet de sophrologie certifié à Lyon. 48 avis 5 étoiles. Séances individuelles, ateliers bien-être et formations pour retrouver équilibre et vitalité.</div>
+                <div style="display:flex;flex-direction:column;gap:13px;max-width:295px;">
+                  <div style="background:#2d6840;color:#fff;padding:16px;border-radius:50px;font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">Prendre rendez-vous</div>
+                  <div style="border:1px solid rgba(255,255,255,.3);color:#fff;padding:16px;border-radius:50px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">Découvrir Sérénité Studio</div>
+                </div>
+              </div>
+              <!-- Right glassmorphism card -->
+              <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:22px;padding:34px 28px;">
+                <div style="font-size:10px;font-weight:700;letter-spacing:2.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:28px;">Informations pratiques</div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(236,72,153,.22);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📞</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Téléphone</div><div style="font-size:15px;font-weight:600;color:#fff;">06 12 34 56 78</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(236,72,153,.22);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📍</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Lieu</div><div style="font-size:15px;font-weight:600;color:#fff;">Lyon · Auvergne-Rhône-Alpes</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(236,72,153,.22);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🕐</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Horaires</div><div style="font-size:15px;font-weight:600;color:#fff;">Lun–Ven · 9h–19h</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;">
+                  <div style="width:48px;height:48px;background:rgba(251,191,36,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">⭐</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Google</div><div style="font-size:15px;font-weight:600;color:#fff;">5,0 · 48 avis</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivered-badge">Livré en 2 jours</div>
+          <div class="arrow-circle">↗</div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Sérénité Studio – Sophie M.</h3>
+          <p class="meta">Sophrologue certifiée · Lyon 3e</p>
+          <p class="portfolio-result">Agenda complet en 5 semaines</p>
+        </div>
+      </div>
+
+      <!-- ===== CARD 2 — Marie Bernard · Paris · Dark indigo ===== -->
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">
+          <div class="site-preview" style="background:linear-gradient(160deg,#0d1324 0%,#18234a 50%,#0f1a38 100%);">
+            <!-- NAV -->
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:72px;border-bottom:1px solid rgba(255,255,255,.09);">
+              <div>
+                <div style="font-size:16px;font-weight:700;color:#fff;letter-spacing:-.2px;">Marie Bernard</div>
+                <div style="font-size:9px;font-weight:600;letter-spacing:2.2px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-top:1px;">L'ÉVEIL INTÉRIEUR · SOPHRO FAMILLE · PARIS</div>
+              </div>
+              <div style="display:flex;gap:32px;font-size:14px;color:rgba(255,255,255,.75);font-weight:400;"><span>Accueil</span><span>Mon approche</span><span>Enfants</span><span>Tarifs</span><span>Contact</span></div>
+              <div style="background:#3b3d9c;color:#fff;padding:12px 28px;border-radius:50px;font-size:13px;font-weight:600;">Prendre rendez-vous</div>
+            </div>
+            <!-- HERO -->
+            <div style="display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;padding:72px 56px;align-items:center;min-height:960px;">
+              <!-- Left -->
+              <div>
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:30px;">
+                  <div style="width:28px;height:1px;background:rgba(255,255,255,.35);flex-shrink:0;"></div>
+                  <div style="font-size:10px;font-weight:600;letter-spacing:2px;color:rgba(255,255,255,.45);text-transform:uppercase;">L'ÉVEIL INTÉRIEUR · 4,9★ · 36 AVIS · SOPHROLOGUE · PARIS 11E · FERME À 18H30</div>
+                </div>
+                <div style="font-family:Georgia,serif;font-size:76px;font-weight:700;color:#fff;line-height:1.04;letter-spacing:-1px;margin-bottom:26px;">Éveille.<br>Équilibre.<br>Épanouis-toi.</div>
+                <div style="color:rgba(255,255,255,.6);font-size:15.5px;line-height:1.8;margin-bottom:38px;max-width:400px;">Marie Bernard — L'Éveil Intérieur, sophrologie pour enfants, adolescents et adultes à Paris. 36 avis 5 étoiles. Séances en cabinet ou en visio, dans une approche bienveillante et adaptée à chacun.</div>
+                <div style="display:flex;flex-direction:column;gap:13px;max-width:295px;">
+                  <div style="background:#3b3d9c;color:#fff;padding:16px;border-radius:50px;font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">Prendre rendez-vous</div>
+                  <div style="border:1px solid rgba(255,255,255,.3);color:#fff;padding:16px;border-radius:50px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">Découvrir L'Éveil Intérieur</div>
+                </div>
+              </div>
+              <!-- Right glassmorphism card -->
+              <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:22px;padding:34px 28px;">
+                <div style="font-size:10px;font-weight:700;letter-spacing:2.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:28px;">Informations pratiques</div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(167,139,250,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📞</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Téléphone</div><div style="font-size:15px;font-weight:600;color:#fff;">07 56 78 12 34</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(167,139,250,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📍</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Lieu</div><div style="font-size:15px;font-weight:600;color:#fff;">Paris 11e · Île-de-France</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(167,139,250,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🕐</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Horaires</div><div style="font-size:15px;font-weight:600;color:#fff;">Mar–Sam · 9h–18h30</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;">
+                  <div style="width:48px;height:48px;background:rgba(251,191,36,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">⭐</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Google</div><div style="font-size:15px;font-weight:600;color:#fff;">4,9 · 36 avis</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivered-badge">Livré en 2 jours</div>
+          <div class="arrow-circle">↗</div>
+        </div>
+        <div class="portfolio-info">
+          <h3>L'Éveil Intérieur – Marie B.</h3>
+          <p class="meta">Sophrologue enfants &amp; famille · Paris 11e</p>
+          <p class="portfolio-result">+45% de nouveaux patients</p>
+        </div>
+      </div>
+
+      <!-- ===== CARD 3 — Nathalie Carré · Bordeaux · Dark slate-teal ===== -->
+      <div class="portfolio-card">
+        <div class="portfolio-thumb">
+          <div class="site-preview" style="background:linear-gradient(160deg,#0c1c20 0%,#14303a 50%,#0f2228 100%);">
+            <!-- NAV -->
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:72px;border-bottom:1px solid rgba(255,255,255,.09);">
+              <div>
+                <div style="font-size:16px;font-weight:700;color:#fff;letter-spacing:-.2px;">Nathalie Carré</div>
+                <div style="font-size:9px;font-weight:600;letter-spacing:2.2px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-top:1px;">ANCRAGE &amp; PERFORMANCE · ENTREPRISES · BORDEAUX</div>
+              </div>
+              <div style="display:flex;gap:32px;font-size:14px;color:rgba(255,255,255,.75);font-weight:400;"><span>Accueil</span><span>Mon approche</span><span>Services</span><span>Entreprises</span><span>Contact</span></div>
+              <div style="background:#0e6674;color:#fff;padding:12px 28px;border-radius:50px;font-size:13px;font-weight:600;">Prendre rendez-vous</div>
+            </div>
+            <!-- HERO -->
+            <div style="display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;padding:72px 56px;align-items:center;min-height:960px;">
+              <!-- Left -->
+              <div>
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:30px;">
+                  <div style="width:28px;height:1px;background:rgba(255,255,255,.35);flex-shrink:0;"></div>
+                  <div style="font-size:10px;font-weight:600;letter-spacing:2px;color:rgba(255,255,255,.45);text-transform:uppercase;">ANCRAGE &amp; PERFORMANCE · 5,0★ · 52 AVIS · BORDEAUX · ENTREPRISES · FERME À 19H</div>
+                </div>
+                <div style="font-family:Georgia,serif;font-size:76px;font-weight:700;color:#fff;line-height:1.04;letter-spacing:-1px;margin-bottom:26px;">Ancre.<br>Performe.<br>Rayonne.</div>
+                <div style="color:rgba(255,255,255,.6);font-size:15.5px;line-height:1.8;margin-bottom:38px;max-width:400px;">Nathalie Carré — Ancrage &amp; Performance, sophrologie en entreprise à Bordeaux. 52 avis 5 étoiles. Ateliers, séances individuelles et programmes de prévention du burn-out sur mesure.</div>
+                <div style="display:flex;flex-direction:column;gap:13px;max-width:295px;">
+                  <div style="background:#0e6674;color:#fff;padding:16px;border-radius:50px;font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">Prendre rendez-vous</div>
+                  <div style="border:1px solid rgba(255,255,255,.3);color:#fff;padding:16px;border-radius:50px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">Découvrir Ancrage &amp; Performance</div>
+                </div>
+              </div>
+              <!-- Right glassmorphism card -->
+              <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:22px;padding:34px 28px;">
+                <div style="font-size:10px;font-weight:700;letter-spacing:2.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:28px;">Informations pratiques</div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(34,211,238,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📞</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Téléphone</div><div style="font-size:15px;font-weight:600;color:#fff;">06 78 90 12 34</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(34,211,238,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📍</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Lieu</div><div style="font-size:15px;font-weight:600;color:#fff;">Bordeaux · Gironde (33)</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;margin-bottom:24px;">
+                  <div style="width:48px;height:48px;background:rgba(34,211,238,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🕐</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Horaires</div><div style="font-size:15px;font-weight:600;color:#fff;">Lun–Ven · Sur rendez-vous</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:18px;">
+                  <div style="width:48px;height:48px;background:rgba(251,191,36,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">⭐</div>
+                  <div><div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px;">Google</div><div style="font-size:15px;font-weight:600;color:#fff;">5,0 · 52 avis</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="delivered-badge">Livré en 3 jours</div>
+          <div class="arrow-circle">↗</div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Ancrage &amp; Performance – Nathalie C.</h3>
+          <p class="meta">Sophrologue entreprises · Bordeaux</p>
+          <p class="portfolio-result">+38% de prises de rendez-vous</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="pill-badge">Comment ça marche</div>
+      <h2>Votre site en <span class="accent">3 étapes.</span></h2>
+      <p>Pas de réunions interminables, pas de compétences techniques requises. Un process rapide et clair.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num-badge">1</div>
+        <h3>Vous remplissez le formulaire</h3>
+        <p>Nom, ville, spécialités, photo, texte de présentation. 5 minutes chrono — on s'occupe du reste.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num-badge">2</div>
+        <h3>On crée votre site en 48h</h3>
+        <p>Notre équipe personnalise le template, optimise votre SEO local et intègre votre prise de RDV.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num-badge">3</div>
+        <h3>Vous validez, on met en ligne</h3>
+        <p>Vous approuvez le résultat. On publie sur votre domaine. Votre site est visible sur Google dès le lendemain.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num-badge">4</div>
+        <h3>Vos patients vous trouvent</h3>
+        <p>Grâce au SEO local, vos patients recherchant un sophrologue dans votre ville tombent directement sur votre site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="pill-badge">Tarifs</div>
+      <h2>Une offre <span class="accent">simple et transparente.</span></h2>
+      <p>Payez une fois, le site est à vous. Hébergement disponible en option mensuelle sans engagement.</p>
+    </div>
+    <div class="pricing-wrapper">
+      <div class="price-card">
+        <div class="plan-label">Essentiel</div>
+        <div class="plan-amount"><sup>€</sup>299</div>
+        <p class="plan-period">paiement unique · site à vous</p>
+        <ul class="plan-list">
+          <li>Site 5 pages sur mesure</li>
+          <li>Template sophrologue dédié</li>
+          <li>SEO local (titres, meta, schema.org)</li>
+          <li>Formulaire de contact</li>
+          <li>Responsive mobile / tablette</li>
+          <li>Livraison en 48h ouvrées</li>
+          <li>1 mois de support inclus</li>
+        </ul>
+        <a href="#contact" class="btn-price">Commencer →</a>
+      </div>
+      <div class="price-card highlighted">
+        <div class="popular-tag">⭐ Recommandé</div>
+        <div class="plan-label">Premium</div>
+        <div class="plan-amount"><sup>€</sup>299</div>
+        <p class="plan-period">+ 29€/mois hébergement &amp; maintenance</p>
+        <ul class="plan-list">
+          <li>Tout l'Essentiel inclus</li>
+          <li>Prise de RDV en ligne (Calendly)</li>
+          <li>Hébergement + nom de domaine</li>
+          <li>Sauvegardes automatiques</li>
+          <li>Suivi SEO mensuel</li>
+          <li>Mises à jour illimitées</li>
+          <li>Support e-mail prioritaire</li>
+        </ul>
+        <a href="#contact" class="btn-price">Je choisis Premium →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="pill-badge">Témoignages</div>
+      <h2>Ce que disent nos <span class="accent">sophrologues.</span></h2>
+      <p>Des professionnels comme vous qui ont développé leur cabinet grâce à leur site internet.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"J'avais peur que ce soit compliqué. En fait non ! 48h après ma commande, mon site était en ligne avec ma photo, mes tarifs et la prise de RDV. Je recommande à 100%."</p>
+        <div class="testi-author">
+          <div class="tavi">MC</div>
+          <div><strong>Marie-Claire D.</strong><span>Sophrologue · Nantes</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Depuis que mon site est en ligne, j'ai 3 à 4 nouveaux patients par mois qui viennent directement de Google. Les 299€ ont été rentabilisés en une semaine."</p>
+        <div class="testi-author">
+          <div class="tavi">PL</div>
+          <div><strong>Philippe L.</strong><span>Sophrologue · Bordeaux</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Le design est vraiment soigné, ça me ressemble. Mes patients me disent souvent que mon site leur a inspiré confiance avant même de me rencontrer."</p>
+        <div class="testi-author">
+          <div class="tavi">AS</div>
+          <div><strong>Amélie S.</strong><span>Sophrologue · Toulouse</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="pill-badge">FAQ</div>
+      <h2>Les questions <span class="accent">fréquentes.</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">J'ai besoin de compétences techniques pour commander ? <span class="plus">+</span></div>
+        <div class="faq-a">Non, aucune. Vous remplissez un formulaire simple (nom, ville, texte, photo) et nous créons le site pour vous. Zéro technique de votre côté.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Combien de temps pour que mon site soit en ligne ? <span class="plus">+</span></div>
+        <div class="faq-a">48h ouvrées après réception de vos informations. Vous validez le résultat avant la mise en ligne. Des retouches sont incluses gratuitement.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Le SEO local, c'est vraiment inclus ? <span class="plus">+</span></div>
+        <div class="faq-a">Oui. On optimise les balises title, meta description, la fiche Google My Business et les données structurées (schema.org) pour que Google comprenne votre activité et votre zone géographique.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Y a-t-il des frais cachés après les 299€ ? <span class="plus">+</span></div>
+        <div class="faq-a">Non pour l'offre Essentiel. Si vous choisissez l'hébergement, c'est 29€/mois clairement annoncés, sans engagement. Vous pouvez partir quand vous voulez avec votre site.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Puis-je modifier mon site ensuite ? <span class="plus">+</span></div>
+        <div class="faq-a">Oui, le site vous appartient entièrement. On vous forme à modifier textes et images en autonomie. Les mises à jour plus complexes sont disponibles sur devis.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / FORM ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="pill-badge">Démarrer maintenant</div>
+      <h2>Prêt(e) à attirer plus de <span class="accent">patients ?</span></h2>
+      <p>Remplissez le formulaire, on vous rappelle sous 24h pour lancer votre site. Livraison garantie en 48h ouvrées.</p>
+      <ul class="contact-bullets">
+        <li>Site livré en 48h ouvrées, garanti</li>
+        <li>SEO local optimisé dès le départ</li>
+        <li>Prise de RDV en ligne intégrée</li>
+        <li>30 jours satisfait ou remboursé</li>
+        <li>Accompagnement personnalisé</li>
+      </ul>
+    </div>
+    <div class="contact-form">
+      <h3>Obtenez votre site à 299€</h3>
+      <p class="form-sub">Réponse sous 24h · Sans engagement</p>
+      <form action="mailto:contact@votresitemetier.fr" method="get">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Sophie" required />
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Martin" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail professionnel</label>
+          <input type="email" id="email" name="email" placeholder="sophie@exemple.fr" required />
+        </div>
+        <div class="form-group">
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78" />
+        </div>
+        <div class="form-group">
+          <label for="ville">Ville d'exercice</label>
+          <input type="text" id="ville" name="ville" placeholder="Lyon, Paris, Bordeaux…" required />
+        </div>
+        <div class="form-group">
+          <label for="offre">Offre souhaitée</label>
+          <select id="offre" name="offre">
+            <option>Essentiel – 299€ one-shot</option>
+            <option>Premium – 299€ + 29€/mois</option>
+            <option>Je veux être rappelé(e)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Votre spécialité / message (optionnel)</label>
+          <textarea id="message" name="message" placeholder="Sophrologue spécialisée stress & burnout, cabinet à Lyon 6e…"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Envoyer ma demande →</button>
+      </form>
+      <p class="form-guarantee">🔒 Paiement sécurisé · Satisfait ou remboursé 30j</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="logo">SiteProMétier</div>
+  <div>© 2026 SiteProMétier · <a href="/mentions-legales">Mentions légales</a> · <a href="/confidentialite">Confidentialité</a></div>
+</footer>
+
+<!-- ===== STICKY MOBILE ===== -->
+<div class="sticky-mobile">
+  <p>Site sophrologue — 299€</p>
+  <a href="#contact">Je commande →</a>
+</div>
+
+</body>
+</html>

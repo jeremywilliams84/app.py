@@ -567,7 +567,7 @@ def page(*, path, title, description, body, jsonld, active=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css">
+<style>{CSS}</style>
 <script>document.documentElement.classList.add('js')</script>
 {ld}
 </head>
@@ -585,7 +585,7 @@ def page(*, path, title, description, body, jsonld, active=""):
 {body}
 </main>
 {footer()}
-<script src="/assets/app.js" defer></script>
+<script>{JS}</script>
 </body>
 </html>"""
 
@@ -1120,9 +1120,16 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
 
-    write("assets/style.css", CSS)
-    write("assets/app.js", JS)
     write("favicon.svg", FAVICON)
+    # Force l'UTF-8 et les bons types MIME côté serveur (Apache / LiteSpeed)
+    write(
+        ".htaccess",
+        "AddDefaultCharset UTF-8\n"
+        "AddCharset UTF-8 .html .css .js .svg .xml .txt\n"
+        "AddType image/svg+xml .svg\n"
+        "DirectoryIndex index.html\n"
+        "Options -Indexes\n",
+    )
     shutil.copy(ROOT / "localto-dashboard.png", OUT / "localto-dashboard.png")
 
     pages = {"/": render_home()}

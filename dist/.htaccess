@@ -1,0 +1,5 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .svg .xml .txt
+AddType image/svg+xml .svg
+DirectoryIndex index.html
+Options -Indexes

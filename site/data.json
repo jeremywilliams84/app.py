@@ -1,0 +1,1563 @@
+{
+  "creation": {
+    "architecte": {
+      "title": "Création site internet architecte : structure et SEO local",
+      "description": "Guide pour créer un site internet de architecte : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour architecte : la structure qui aide à trouver des clients",
+      "badge": "profession libérale",
+      "hero_intro": "Un site d'architecte doit rendre la méthode aussi visible que le style. Les projets doivent raconter le besoin, les contraintes, la mission confiée et la solution retenue.",
+      "_sections": {
+        "Le problème concret d'un architecte sur Google": null,
+        "Structure de site recommandée pour architecte": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page architecte": null,
+        "Questions fréquentes": null,
+        "Un architecte doit-il détailler ses réalisations ?": null,
+        "Quelles pages SEO sont prioritaires pour un architecte ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le maître d'ouvrage cherche un architecte dont le style, la méthode et l'expérience locale correspondent à son projet et à ses contraintes administratives.",
+      "intention": "rénovation, extension, permis de construire, conception et accompagnement de chantier",
+      "exemples": [
+        "extension d'une maison en zone urbaine",
+        "rénovation énergétique d'un appartement ancien",
+        "permis de construire pour une maison individuelle"
+      ],
+      "structure": [
+        "Accueil avec typologies de projets, zone et philosophie de conception",
+        "Pages services : rénovation, extension, permis, mission complète",
+        "Projets détaillés avec contexte, contraintes et photos",
+        "Pages locales liées aux règles d'urbanisme fréquentes",
+        "FAQ sur honoraires, délais, permis et déroulé de mission"
+      ],
+      "pages_indispensables": [
+        "Rénovation",
+        "Extension de maison",
+        "Permis de construire",
+        "Mission complète",
+        "Réalisations",
+        "Honoraires et contact"
+      ],
+      "keywords": [
+        "site internet architecte",
+        "création site cabinet architecte",
+        "site portfolio architecte",
+        "site agence architecture"
+      ],
+      "articles": [
+        "Extension de maison : les premières questions à se poser",
+        "Permis de construire : quand faire appel à un architecte ?",
+        "Rénovation d'appartement ancien : contraintes et priorités",
+        "Comment lire un devis d'architecte et comparer les missions"
+      ],
+      "erreurs": [
+        "Montrer des projets sans expliquer le contexte et la mission",
+        "Ne pas distinguer permis, conception et suivi de chantier",
+        "Oublier les recherches locales liées aux règles d'urbanisme",
+        "Masquer les fourchettes d'honoraires et étapes de collaboration"
+      ],
+      "preuves": [
+        "réalisations situées et expliquées",
+        "références aux contraintes d'urbanisme locales",
+        "inscription à l'Ordre",
+        "avis ou témoignages de maîtres d'ouvrage"
+      ],
+      "plan": [
+        "Classer les projets par typologie et valeur stratégique",
+        "Créer une page pour rénovation, extension et permis",
+        "Documenter trois réalisations avec contraintes et résultats",
+        "Ajouter une page méthode décrivant les étapes de mission",
+        "Rédiger une FAQ sur honoraires et délais",
+        "Optimiser les images de projets pour la vitesse",
+        "Publier un article sur une question d'urbanisme locale"
+      ],
+      "faq": [
+        {
+          "q": "Un architecte doit-il détailler ses réalisations ?",
+          "a": "Oui. Un projet détaillé avec contexte, contraintes, mission et photos aide à la fois le SEO et la confiance du futur client."
+        },
+        {
+          "q": "Quelles pages SEO sont prioritaires pour un architecte ?",
+          "a": "Les pages rénovation, extension, permis de construire et réalisations locales sont généralement les plus utiles."
+        }
+      ]
+    },
+    "avocat": {
+      "title": "Création site internet avocat : structure et SEO local",
+      "description": "Guide pour créer un site internet de avocat : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour avocat : la structure qui aide à trouver des clients",
+      "badge": "profession libérale",
+      "hero_intro": "Le site d'un avocat doit conjuguer crédibilité, clarté et mesure. Il doit aider le visiteur à se reconnaître dans une situation juridique sans transformer la page en consultation personnalisée.",
+      "_sections": {
+        "Le problème concret d'un avocat sur Google": null,
+        "Structure de site recommandée pour avocat": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page avocat": null,
+        "Questions fréquentes": null,
+        "Un avocat peut-il publier des articles SEO ?": null,
+        "Faut-il afficher les honoraires sur un site d'avocat ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le futur client hésite à contacter un cabinet parce qu'il ne sait pas si son problème est le bon domaine de droit ni comment se déroule le premier échange.",
+      "intention": "rendez-vous confidentiel, compréhension d'une situation juridique et choix d'un spécialiste",
+      "exemples": [
+        "divorce conflictuel avec garde d'enfants",
+        "licenciement contesté",
+        "création de société avec pacte d'associés"
+      ],
+      "structure": [
+        "Accueil sobre présentant domaines, barreau, valeurs et prise de rendez-vous",
+        "Pages par domaine de droit avec situations concrètes",
+        "Pages locales si le cabinet intervient devant des juridictions précises",
+        "Articles pédagogiques sans promesse de résultat",
+        "Page honoraires expliquant forfait, taux horaire et aide juridictionnelle si applicable"
+      ],
+      "pages_indispensables": [
+        "Droit de la famille",
+        "Droit du travail",
+        "Droit des affaires",
+        "Honoraires",
+        "Cabinet",
+        "Prendre rendez-vous"
+      ],
+      "keywords": [
+        "site internet avocat",
+        "création site cabinet avocat",
+        "site avocat barreau",
+        "site professionnel avocat"
+      ],
+      "articles": [
+        "Comment préparer un premier rendez-vous avec un avocat ?",
+        "Divorce : quels documents réunir avant la consultation ?",
+        "Licenciement : les délais à connaître pour contester",
+        "Créer une société : pourquoi anticiper les conflits entre associés"
+      ],
+      "erreurs": [
+        "Présenter uniquement le cabinet sans traiter les situations client",
+        "Utiliser un ton trop institutionnel qui n'aide pas à passer à l'action",
+        "Oublier les règles déontologiques dans les promesses et témoignages",
+        "Ne pas expliquer les honoraires et le déroulé du premier contact"
+      ],
+      "preuves": [
+        "barreau d'inscription",
+        "adresse du cabinet et accès",
+        "domaines traités devant les juridictions locales",
+        "modalités de rendez-vous au cabinet ou à distance"
+      ],
+      "plan": [
+        "Clarifier les trois domaines les plus stratégiques du cabinet",
+        "Écrire une page par domaine avec cas typiques et étapes",
+        "Créer une page honoraires transparente",
+        "Ajouter barreau, juridictions et modalités de rendez-vous",
+        "Préparer deux articles répondant aux questions fréquentes",
+        "Vérifier la cohérence avec les règles professionnelles",
+        "Optimiser la fiche Google Business Profile du cabinet"
+      ],
+      "faq": [
+        {
+          "q": "Un avocat peut-il publier des articles SEO ?",
+          "a": "Oui, à condition de rester pédagogique, exact et conforme aux règles de la profession, sans promettre de résultat."
+        },
+        {
+          "q": "Faut-il afficher les honoraires sur un site d'avocat ?",
+          "a": "Une page honoraires est utile car elle réduit les hésitations et explique les modes de facturation possibles avant le premier contact."
+        }
+      ]
+    },
+    "coach-sportif": {
+      "title": "Création site internet coach sportif : structure et SEO local",
+      "description": "Guide pour créer un site internet de coach sportif : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour coach sportif : la structure qui aide à trouver des clients",
+      "badge": "indépendant",
+      "hero_intro": "Un site de coach sportif doit vendre une méthode plus qu'une silhouette. Il doit montrer le cadre, l'écoute, la progression et les formats disponibles localement.",
+      "_sections": {
+        "Le problème concret d'un coach sportif sur Google": null,
+        "Structure de site recommandée pour coach sportif": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page coach sportif": null,
+        "Questions fréquentes": null,
+        "Un coach sportif doit-il cibler la perte de poids en SEO ?": null,
+        "Quel CTA utiliser sur un site de coach sportif ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le prospect veut un coach proche, crédible et capable d'adapter le programme à son niveau sans jugement ni promesse irréaliste.",
+      "intention": "accompagnement personnalisé, remise en forme, perte de poids, reprise sportive ou coaching à domicile",
+      "exemples": [
+        "reprise du sport après plusieurs années",
+        "coaching à domicile avant un objectif de perte de poids",
+        "préparation physique pour un semi-marathon local"
+      ],
+      "structure": [
+        "Accueil orienté objectifs clients, zone et formats de coaching",
+        "Pages par objectif : remise en forme, perte de poids, performance, senior",
+        "Page méthode avec bilan, suivi et fréquence",
+        "Avis et transformations présentés avec prudence",
+        "Articles locaux autour des lieux d'entraînement et routines"
+      ],
+      "pages_indispensables": [
+        "Coaching à domicile",
+        "Remise en forme",
+        "Perte de poids",
+        "Préparation physique",
+        "Méthode et tarifs",
+        "Réserver un bilan"
+      ],
+      "keywords": [
+        "site internet coach sportif",
+        "création site coach sportif",
+        "site coaching à domicile",
+        "site coach remise en forme"
+      ],
+      "articles": [
+        "Comment reprendre le sport sans se blesser ?",
+        "Coaching à domicile : pour qui et à quel rythme ?",
+        "Préparer une course locale avec un plan progressif",
+        "Les erreurs fréquentes quand on veut perdre du poids trop vite"
+      ],
+      "erreurs": [
+        "Promettre des résultats chiffrés trop rapides",
+        "Ne pas préciser les lieux ou formats de coaching",
+        "Publier un site centré sur le coach plutôt que sur les objectifs clients",
+        "Oublier le bilan initial comme première conversion"
+      ],
+      "preuves": [
+        "photos de séances dans des lieux reconnaissables",
+        "avis sur le suivi et la motivation",
+        "liste des quartiers ou communes couverts",
+        "diplômes et certifications"
+      ],
+      "plan": [
+        "Définir les profils clients prioritaires",
+        "Créer une page par objectif d'accompagnement",
+        "Ajouter zones, formats et matériel nécessaire",
+        "Rédiger une page méthode avec bilan initial",
+        "Demander des avis décrivant l'accompagnement",
+        "Optimiser Google Business Profile avec services et photos",
+        "Publier un article sur la reprise sportive progressive"
+      ],
+      "faq": [
+        {
+          "q": "Un coach sportif doit-il cibler la perte de poids en SEO ?",
+          "a": "Oui, mais avec un contenu responsable qui parle d'habitudes, de progression et d'accompagnement plutôt que de promesses rapides."
+        },
+        {
+          "q": "Quel CTA utiliser sur un site de coach sportif ?",
+          "a": "Le bilan initial ou l'appel découverte fonctionne bien, car il réduit l'engagement demandé au premier contact."
+        }
+      ]
+    },
+    "coiffeur": {
+      "title": "Création site internet coiffeur : structure et SEO local",
+      "description": "Guide pour créer un site internet de coiffeur : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour coiffeur : la structure qui aide à trouver des clients",
+      "badge": "artisan",
+      "hero_intro": "Le site d'un coiffeur doit faciliter la réservation et montrer le style du salon. Les prestations phares méritent des pages dédiées plutôt qu'une simple liste tarifaire.",
+      "_sections": {
+        "Le problème concret d'un coiffeur sur Google": null,
+        "Structure de site recommandée pour coiffeur": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page coiffeur": null,
+        "Questions fréquentes": null,
+        "Un salon de coiffure a-t-il besoin d'un site si la réservation se fait ailleurs ?": null,
+        "Quelles pages attirent le plus de recherches locales ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le client veut voir le style du salon, les prestations, les tarifs et les créneaux disponibles avant de réserver.",
+      "intention": "prise de rendez-vous, coupe, coloration, coiffure événementielle ou salon proche",
+      "exemples": [
+        "balayage naturel avec photos de résultats",
+        "coupe homme sans attente",
+        "coiffure de mariage avec essai"
+      ],
+      "structure": [
+        "Accueil avec réservation, horaires, adresse et ambiance du salon",
+        "Pages prestations : coupe, couleur, balayage, mariage, homme",
+        "Galerie de réalisations optimisée et régulièrement mise à jour",
+        "Page tarifs claire par longueur ou prestation",
+        "Articles conseils sur entretien, couleur et tendances locales"
+      ],
+      "pages_indispensables": [
+        "Coupe femme",
+        "Coupe homme",
+        "Coloration et balayage",
+        "Coiffure mariage",
+        "Tarifs",
+        "Réserver"
+      ],
+      "keywords": [
+        "site internet coiffeur",
+        "création site salon de coiffure",
+        "site coiffeur réservation",
+        "site salon coiffure local"
+      ],
+      "articles": [
+        "Comment entretenir un balayage entre deux rendez-vous ?",
+        "Quelle coupe choisir selon la forme du visage ?",
+        "Préparer son essai coiffure de mariage",
+        "Coloration : les questions à poser avant de changer de teinte"
+      ],
+      "erreurs": [
+        "Ne pas connecter la réservation en ligne",
+        "Laisser des photos lourdes ralentir le site",
+        "Masquer les tarifs ou les horaires",
+        "Ne pas cibler les prestations recherchées comme balayage ou mariage"
+      ],
+      "preuves": [
+        "photos de réalisations récentes",
+        "avis clients mentionnant une prestation",
+        "horaires et réservation à jour",
+        "adresse, stationnement et transports"
+      ],
+      "plan": [
+        "Lister les prestations qui remplissent le planning",
+        "Créer une page dédiée au balayage ou à la prestation phare",
+        "Ajouter tarifs, horaires et lien de réservation",
+        "Publier une galerie légère avec textes alternatifs",
+        "Mettre à jour les photos Google Business Profile",
+        "Demander des avis après les rendez-vous clés",
+        "Publier un conseil d'entretien lié à une prestation rentable"
+      ],
+      "faq": [
+        {
+          "q": "Un salon de coiffure a-t-il besoin d'un site si la réservation se fait ailleurs ?",
+          "a": "Oui, le site permet de présenter les prestations, travailler le SEO local et envoyer ensuite vers l'outil de réservation."
+        },
+        {
+          "q": "Quelles pages attirent le plus de recherches locales ?",
+          "a": "Les pages dédiées au balayage, à la coloration, à la coiffure de mariage et aux coupes homme ou femme sont souvent prioritaires."
+        }
+      ]
+    },
+    "electricien": {
+      "title": "Création site internet électricien : structure et SEO local",
+      "description": "Guide pour créer un site internet de électricien : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour électricien : la structure qui aide à trouver des clients",
+      "badge": "artisan",
+      "hero_intro": "Un site d'électricien doit rendre la sécurité compréhensible. Les pages doivent expliquer ce qui est vérifié, ce qui est remplacé et ce que le client reçoit à la fin : installation fonctionnelle, conforme et documentée.",
+      "_sections": {
+        "Le problème concret d'un électricien sur Google": null,
+        "Structure de site recommandée pour électricien": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page électricien": null,
+        "Questions fréquentes": null,
+        "Un électricien peut-il attirer des clients avec des articles de conseil ?": null,
+        "Quelle page créer en priorité pour un électricien ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Les clients craignent les pannes dangereuses et les devis flous. Ils cherchent un électricien capable d'expliquer, sécuriser et intervenir dans leur secteur.",
+      "intention": "mise aux normes, dépannage, tableau électrique, rénovation ou borne de recharge",
+      "exemples": [
+        "tableau électrique ancien à remplacer",
+        "disjoncteur qui saute régulièrement",
+        "installation d'une borne de recharge à domicile"
+      ],
+      "structure": [
+        "Accueil centré sur sécurité, conformité et intervention locale",
+        "Pages dédiées aux dépannages, rénovations, tableaux et bornes électriques",
+        "Explications pédagogiques sur normes, diagnostic et devis",
+        "Pages locales par zone desservie avec cas concrets",
+        "Preuves : habilitations, assurances, photos de tableaux propres"
+      ],
+      "pages_indispensables": [
+        "Dépannage électrique",
+        "Mise aux normes électriques",
+        "Remplacement tableau électrique",
+        "Installation borne de recharge",
+        "Rénovation électrique",
+        "Contact et devis"
+      ],
+      "keywords": [
+        "site internet électricien",
+        "création site électricien",
+        "site artisan électricité",
+        "site dépannage électrique"
+      ],
+      "articles": [
+        "Quand faut-il remplacer un tableau électrique ?",
+        "Pourquoi un disjoncteur saute et que vérifier avant d'appeler ?",
+        "Borne de recharge maison : étapes et points de vigilance",
+        "Mise aux normes électrique avant vente immobilière"
+      ],
+      "erreurs": [
+        "Ne pas distinguer dépannage et rénovation complète",
+        "Utiliser un vocabulaire trop technique sans bénéfice client",
+        "Oublier les preuves de conformité et d'assurance",
+        "Ne pas cibler les recherches liées aux bornes de recharge"
+      ],
+      "preuves": [
+        "photos de tableaux avant/après",
+        "avis mentionnant dépannage ou rénovation",
+        "liste des communes desservies",
+        "certificats, habilitations et assurances"
+      ],
+      "plan": [
+        "Identifier les services les plus demandés sur les 12 derniers mois",
+        "Créer une page pour chaque intention forte",
+        "Ajouter des photos de tableaux terminés et légendés",
+        "Rédiger une FAQ sur norme NF C 15-100, diagnostic et devis",
+        "Mettre à jour les catégories Google Business Profile",
+        "Demander trois avis décrivant le type d'intervention",
+        "Publier un article sur un problème électrique fréquent"
+      ],
+      "faq": [
+        {
+          "q": "Un électricien peut-il attirer des clients avec des articles de conseil ?",
+          "a": "Oui, car les clients recherchent souvent la cause d'une panne ou le coût d'une mise aux normes avant de demander un devis."
+        },
+        {
+          "q": "Quelle page créer en priorité pour un électricien ?",
+          "a": "La page de dépannage électrique est prioritaire si l'activité repose sur l'urgence. Pour les chantiers plus rentables, la page mise aux normes ou tableau électrique est souvent plus stratégique."
+        }
+      ]
+    },
+    "expert-comptable": {
+      "title": "Création site internet expert-comptable : structure et SEO local",
+      "description": "Guide pour créer un site internet de expert-comptable : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour expert-comptable : la structure qui aide à trouver des clients",
+      "badge": "profession libérale",
+      "hero_intro": "Le site d'un expert-comptable doit clarifier pour qui le cabinet est fait. Les visiteurs veulent comprendre l'offre, le niveau d'accompagnement et le déroulé dès les premières semaines.",
+      "_sections": {
+        "Le problème concret d'un expert-comptable sur Google": null,
+        "Structure de site recommandée pour expert-comptable": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page expert-comptable": null,
+        "Questions fréquentes": null,
+        "Un expert-comptable doit-il cibler les créateurs d'entreprise ?": null,
+        "Comment éviter un site de cabinet comptable trop générique ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "L'entrepreneur cherche un cabinet disponible, clair sur ses offres et capable de comprendre son secteur sans jargon comptable.",
+      "intention": "création d'entreprise, comptabilité, paie, fiscalité et accompagnement régulier",
+      "exemples": [
+        "création d'une SASU pour consultant",
+        "gestion de paie d'un commerce local",
+        "changement d'expert-comptable après croissance rapide"
+      ],
+      "structure": [
+        "Accueil par profils clients : créateur, indépendant, TPE, association",
+        "Pages missions : comptabilité, paie, fiscalité, création d'entreprise",
+        "Pages sectorielles pour métiers accompagnés",
+        "Page outils et fonctionnement collaboratif",
+        "Articles sur échéances, statuts et obligations"
+      ],
+      "pages_indispensables": [
+        "Création d'entreprise",
+        "Comptabilité TPE",
+        "Paie et social",
+        "Fiscalité",
+        "Accompagnement indépendants",
+        "Demander un rendez-vous"
+      ],
+      "keywords": [
+        "site internet expert-comptable",
+        "création site cabinet comptable",
+        "site expert-comptable local",
+        "site cabinet expertise comptable"
+      ],
+      "articles": [
+        "SASU ou EURL : comment préparer son choix avec un expert-comptable ?",
+        "Les échéances comptables à ne pas rater pour une TPE",
+        "Quand changer d'expert-comptable ?",
+        "Créer son entreprise : documents à préparer avant le rendez-vous"
+      ],
+      "erreurs": [
+        "Présenter une liste de missions sans parler des profils clients",
+        "Ne pas expliquer le fonctionnement, les outils et la réactivité",
+        "Oublier les pages dédiées aux créateurs d'entreprise",
+        "Publier des articles trop génériques sur la fiscalité"
+      ],
+      "preuves": [
+        "adresse du cabinet et rendez-vous à distance",
+        "profils de clients accompagnés localement",
+        "avis mentionnant pédagogie et disponibilité",
+        "inscription à l'Ordre"
+      ],
+      "plan": [
+        "Identifier les profils clients les plus rentables",
+        "Créer une page par mission prioritaire",
+        "Ajouter une page création d'entreprise très complète",
+        "Décrire les outils, délais et modes d'échange",
+        "Créer une FAQ sur tarifs, lettres de mission et documents",
+        "Mettre à jour la fiche Google du cabinet",
+        "Publier un article sur un choix de statut fréquent"
+      ],
+      "faq": [
+        {
+          "q": "Un expert-comptable doit-il cibler les créateurs d'entreprise ?",
+          "a": "Oui, c'est une intention forte. Une page dédiée permet d'expliquer les statuts, les documents utiles et l'accompagnement proposé."
+        },
+        {
+          "q": "Comment éviter un site de cabinet comptable trop générique ?",
+          "a": "Il faut écrire par profil client, secteur et mission, avec des exemples de situations concrètes et un déroulé de collaboration."
+        }
+      ]
+    },
+    "osteopathe": {
+      "title": "Création site internet ostéopathe : structure et SEO local",
+      "description": "Guide pour créer un site internet de ostéopathe : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour ostéopathe : la structure qui aide à trouver des clients",
+      "badge": "profession libérale",
+      "hero_intro": "Un site d'ostéopathe doit lever les freins pratiques et émotionnels : prise de rendez-vous, déroulé de séance, publics reçus, accès au cabinet et cadre de la pratique.",
+      "_sections": {
+        "Le problème concret d'un ostéopathe sur Google": null,
+        "Structure de site recommandée pour ostéopathe": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page ostéopathe": null,
+        "Questions fréquentes": null,
+        "Un ostéopathe doit-il créer des pages par motif de consultation ?": null,
+        "Quel appel à l'action fonctionne le mieux ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le patient veut savoir si l'ostéopathe reçoit son profil, comment se déroule la séance et si le cabinet est facile d'accès.",
+      "intention": "prise de rendez-vous rapide, soulagement d'une douleur et choix d'un praticien rassurant",
+      "exemples": [
+        "douleur lombaire après télétravail",
+        "suivi de grossesse",
+        "consultation pour sportif après reprise intensive"
+      ],
+      "structure": [
+        "Accueil avec prise de rendez-vous visible, adresse et publics accompagnés",
+        "Pages par motif de consultation sans promesse médicale excessive",
+        "Page cabinet avec accès, stationnement et photos sobres",
+        "FAQ sur déroulé, tenue, durée et remboursement mutuelle",
+        "Articles de prévention adaptés aux habitudes locales"
+      ],
+      "pages_indispensables": [
+        "Consultation adulte",
+        "Ostéopathie grossesse",
+        "Ostéopathie sportif",
+        "Douleurs dos et cervicales",
+        "Cabinet et accès",
+        "Tarifs et rendez-vous"
+      ],
+      "keywords": [
+        "site internet ostéopathe",
+        "création site ostéopathe",
+        "site praticien ostéopathie",
+        "site cabinet ostéopathe"
+      ],
+      "articles": [
+        "Comment se déroule une première séance d'ostéopathie ?",
+        "Mal de dos au bureau : gestes simples avant de consulter",
+        "Ostéopathie et grossesse : quand prendre rendez-vous ?",
+        "Sportifs : préparer la reprise après une pause"
+      ],
+      "erreurs": [
+        "Faire des promesses de guérison trop fortes",
+        "Ne pas afficher clairement l'adresse et le lien de réservation",
+        "Créer une page trop générale sans publics ni motifs précis",
+        "Oublier les questions pratiques qui freinent la prise de rendez-vous"
+      ],
+      "preuves": [
+        "adresse précise et indications d'accès",
+        "lien vers la plateforme de réservation",
+        "photos du cabinet",
+        "avis évoquant l'accueil et la pédagogie"
+      ],
+      "plan": [
+        "Lister les motifs de consultation les plus fréquents",
+        "Créer trois pages par public ou motif prioritaire",
+        "Ajouter photos, accès, transports et stationnement",
+        "Connecter le bouton de réservation en ligne",
+        "Rédiger une FAQ patient courte et rassurante",
+        "Mettre à jour les services sur Google Business Profile",
+        "Publier un article de prévention lié au motif principal"
+      ],
+      "faq": [
+        {
+          "q": "Un ostéopathe doit-il créer des pages par motif de consultation ?",
+          "a": "Oui, si le contenu explique le déroulé, les limites de la pratique et les cas où consulter un professionnel de santé."
+        },
+        {
+          "q": "Quel appel à l'action fonctionne le mieux ?",
+          "a": "Un bouton de prise de rendez-vous visible, accompagné de l'adresse, des horaires et des informations de remboursement éventuel."
+        }
+      ]
+    },
+    "photographe": {
+      "title": "Création site internet photographe : structure et SEO local",
+      "description": "Guide pour créer un site internet de photographe : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour photographe : la structure qui aide à trouver des clients",
+      "badge": "indépendant",
+      "hero_intro": "Le site d'un photographe doit montrer le style sans sacrifier la vitesse. Chaque prestation mérite sa propre page, avec portfolio ciblé, déroulé, livrables et zone de déplacement.",
+      "_sections": {
+        "Le problème concret d'un photographe sur Google": null,
+        "Structure de site recommandée pour photographe": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page photographe": null,
+        "Questions fréquentes": null,
+        "Un portfolio suffit-il pour le SEO d'un photographe ?": null,
+        "Faut-il afficher ses tarifs ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le client choisit un photographe sur la confiance visuelle. S'il ne voit pas rapidement le style, les prestations et les lieux couverts, il passe à un autre portfolio.",
+      "intention": "portfolio, style visuel, tarif et disponibilité pour une séance ou un événement",
+      "exemples": [
+        "reportage mariage dans un domaine proche",
+        "portraits professionnels pour LinkedIn",
+        "photos immobilières pour une agence locale"
+      ],
+      "structure": [
+        "Accueil visuel avec spécialités, zone et accès aux portfolios",
+        "Pages par prestation : mariage, portrait, entreprise, immobilier",
+        "Galeries rapides avec textes courts et contextuels",
+        "Pages locales pour lieux de mariage ou villes importantes",
+        "Page tarifs ou formules pour qualifier les demandes"
+      ],
+      "pages_indispensables": [
+        "Photographe mariage",
+        "Portrait professionnel",
+        "Photographe entreprise",
+        "Photographie immobilière",
+        "Portfolio",
+        "Tarifs et contact"
+      ],
+      "keywords": [
+        "site internet photographe",
+        "création portfolio photographe",
+        "site photographe professionnel",
+        "site photo mariage"
+      ],
+      "articles": [
+        "Comment choisir son photographe de mariage ?",
+        "Préparer une séance portrait professionnel en 30 minutes",
+        "Photos immobilières : les détails qui changent une annonce",
+        "Les meilleurs lieux locaux pour une séance photo naturelle"
+      ],
+      "erreurs": [
+        "Publier de grandes images non optimisées qui ralentissent le site",
+        "Mélanger toutes les prestations dans une galerie unique",
+        "Ne pas indiquer la zone de déplacement",
+        "Oublier les textes SEO autour des portfolios"
+      ],
+      "preuves": [
+        "galeries par lieu ou type d'événement",
+        "avis clients associés à une prestation",
+        "photos géolocalisées dans Google Business Profile",
+        "liste claire des zones de déplacement"
+      ],
+      "plan": [
+        "Choisir les trois prestations les plus rentables",
+        "Sélectionner 12 images fortes par prestation",
+        "Compresser les visuels et renseigner les textes alternatifs",
+        "Créer une page par prestation avec déroulé et livrables",
+        "Ajouter les lieux et villes les plus recherchés",
+        "Mettre à jour la fiche Google avec photos récentes",
+        "Publier un guide pratique pour préparer une séance"
+      ],
+      "faq": [
+        {
+          "q": "Un portfolio suffit-il pour le SEO d'un photographe ?",
+          "a": "Non. Le portfolio doit être accompagné de pages de prestation, textes descriptifs, lieux couverts, avis et images optimisées."
+        },
+        {
+          "q": "Faut-il afficher ses tarifs ?",
+          "a": "Des formules ou prix de départ qualifient mieux les demandes et évitent les contacts très éloignés du budget."
+        }
+      ]
+    },
+    "plombier": {
+      "title": "Création site internet plombier : structure et SEO local",
+      "description": "Guide pour créer un site internet de plombier : structure, pages indispensables, mots-clés, erreurs et plan d’action.",
+      "h1": "Création de site internet pour plombier : la structure qui aide à trouver des clients",
+      "badge": "artisan",
+      "hero_intro": "Le site d'un plombier doit rassurer en quelques secondes : téléphone visible, nature des interventions, zones desservies, preuves d'assurance et avis. La structure doit séparer l'urgence des travaux planifiés, car l'intention de recherche n'est pas la même.",
+      "_sections": {
+        "Le problème concret d'un plombier sur Google": null,
+        "Structure de site recommandée pour plombier": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour créer la page": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page plombier": null,
+        "Questions fréquentes": null,
+        "Un plombier doit-il créer une page par ville ?": null,
+        "Quel contenu rassure le plus un client en urgence ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Un client cherche souvent un plombier dans l'urgence, compare très vite les avis et appelle le premier professionnel crédible proche de chez lui.",
+      "intention": "urgence, dépannage, devis pour travaux sanitaires ou chauffage",
+      "exemples": [
+        "fuite sous évier à réparer le jour même",
+        "remplacement de chauffe-eau avant une mise en location",
+        "rénovation de salle de bain avec devis détaillé"
+      ],
+      "structure": [
+        "Accueil orienté intervention rapide, zones desservies et preuves de confiance",
+        "Pages services séparées pour fuite, débouchage, chauffe-eau, salle de bain et chauffage",
+        "Pages locales pour les communes réellement couvertes",
+        "Galerie de chantiers avant/après avec contexte et délai d'intervention",
+        "FAQ claire sur tarifs, déplacement, urgence et assurance"
+      ],
+      "pages_indispensables": [
+        "Dépannage plomberie urgent",
+        "Recherche et réparation de fuite",
+        "Débouchage canalisation",
+        "Installation chauffe-eau",
+        "Rénovation salle de bain",
+        "Zone d'intervention"
+      ],
+      "keywords": [
+        "site internet plombier",
+        "création site plombier local",
+        "site artisan plombier",
+        "site dépannage plomberie"
+      ],
+      "articles": [
+        "Que faire avant d'appeler un plombier pour une fuite ?",
+        "Combien coûte le remplacement d'un chauffe-eau ?",
+        "Les signes d'une canalisation bouchée à traiter rapidement",
+        "Comment préparer une rénovation de salle de bain sans mauvaise surprise"
+      ],
+      "erreurs": [
+        "Mettre tous les services sur une seule page trop générale",
+        "Ne pas afficher les villes couvertes et les délais réels",
+        "Promettre des prix fixes sans expliquer les variables du chantier",
+        "Oublier les photos de réalisations et les avis clients"
+      ],
+      "preuves": [
+        "photos de réparations avant/après",
+        "avis mentionnant la commune et le type de panne",
+        "numéro de téléphone cliquable sur mobile",
+        "attestations d'assurance ou labels visibles"
+      ],
+      "plan": [
+        "Lister les services qui génèrent les meilleurs appels",
+        "Créer une page par service prioritaire",
+        "Ajouter les communes couvertes avec exemples d'interventions",
+        "Photographier trois chantiers récents avec explications",
+        "Optimiser la fiche Google Business Profile",
+        "Rédiger une FAQ sur urgence, déplacement et garanties",
+        "Publier un article pratique lié à une panne fréquente"
+      ],
+      "faq": [
+        {
+          "q": "Un plombier doit-il créer une page par ville ?",
+          "a": "Oui, si la page apporte des informations réelles sur la zone, les délais, les interventions courantes et les preuves locales. Une page ville vide ou copiée n'aide pas durablement."
+        },
+        {
+          "q": "Quel contenu rassure le plus un client en urgence ?",
+          "a": "Un numéro visible, des avis récents, les horaires, les communes desservies et une explication simple du déroulé de l'intervention."
+        }
+      ]
+    }
+  },
+  "visibilite": {
+    "architecte": {
+      "title": "Visibilité Google architecte : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un architecte : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour architecte : attirer plus de demandes locales qualifiées",
+      "badge": "profession libérale",
+      "hero_intro": "La visibilité Google d'un architecte repose sur les typologies de projets, les pages locales et les réalisations détaillées. Les requêtes autour du permis et de l'extension sont souvent très qualifiées.",
+      "_sections": {
+        "Le problème concret d'un architecte sur Google": null,
+        "Structure de site recommandée pour architecte": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page architecte": null,
+        "Questions fréquentes": null,
+        "Un architecte doit-il détailler ses réalisations ?": null,
+        "Quelles pages SEO sont prioritaires pour un architecte ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le maître d'ouvrage cherche un architecte dont le style, la méthode et l'expérience locale correspondent à son projet et à ses contraintes administratives.",
+      "intention": "rénovation, extension, permis de construire, conception et accompagnement de chantier",
+      "exemples": [
+        "extension d'une maison en zone urbaine",
+        "rénovation énergétique d'un appartement ancien",
+        "permis de construire pour une maison individuelle"
+      ],
+      "structure": [
+        "Accueil avec typologies de projets, zone et philosophie de conception",
+        "Pages services : rénovation, extension, permis, mission complète",
+        "Projets détaillés avec contexte, contraintes et photos",
+        "Pages locales liées aux règles d'urbanisme fréquentes",
+        "FAQ sur honoraires, délais, permis et déroulé de mission"
+      ],
+      "pages_indispensables": [
+        "Rénovation",
+        "Extension de maison",
+        "Permis de construire",
+        "Mission complète",
+        "Réalisations",
+        "Honoraires et contact"
+      ],
+      "keywords": [
+        "architecte ville",
+        "architecte rénovation ville",
+        "architecte extension maison ville",
+        "permis de construire architecte ville",
+        "architecte maison individuelle ville"
+      ],
+      "articles": [
+        "Extension de maison : les premières questions à se poser",
+        "Permis de construire : quand faire appel à un architecte ?",
+        "Rénovation d'appartement ancien : contraintes et priorités",
+        "Comment lire un devis d'architecte et comparer les missions"
+      ],
+      "erreurs": [
+        "Montrer des projets sans expliquer le contexte et la mission",
+        "Ne pas distinguer permis, conception et suivi de chantier",
+        "Oublier les recherches locales liées aux règles d'urbanisme",
+        "Masquer les fourchettes d'honoraires et étapes de collaboration"
+      ],
+      "preuves": [
+        "réalisations situées et expliquées",
+        "références aux contraintes d'urbanisme locales",
+        "inscription à l'Ordre",
+        "avis ou témoignages de maîtres d'ouvrage"
+      ],
+      "plan": [
+        "Classer les projets par typologie et valeur stratégique",
+        "Créer une page pour rénovation, extension et permis",
+        "Documenter trois réalisations avec contraintes et résultats",
+        "Ajouter une page méthode décrivant les étapes de mission",
+        "Rédiger une FAQ sur honoraires et délais",
+        "Optimiser les images de projets pour la vitesse",
+        "Publier un article sur une question d'urbanisme locale"
+      ],
+      "faq": [
+        {
+          "q": "Un architecte doit-il détailler ses réalisations ?",
+          "a": "Oui. Un projet détaillé avec contexte, contraintes, mission et photos aide à la fois le SEO et la confiance du futur client."
+        },
+        {
+          "q": "Quelles pages SEO sont prioritaires pour un architecte ?",
+          "a": "Les pages rénovation, extension, permis de construire et réalisations locales sont généralement les plus utiles."
+        }
+      ]
+    },
+    "avocat": {
+      "title": "Visibilité Google avocat : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un avocat : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour avocat : attirer plus de demandes locales qualifiées",
+      "badge": "profession libérale",
+      "hero_intro": "La visibilité Google d'un avocat repose sur des pages par domaine de droit, des contenus pédagogiques et une présence locale cohérente. Les requêtes ville + domaine juridique sont souvent plus qualifiées qu'une requête générique.",
+      "_sections": {
+        "Le problème concret d'un avocat sur Google": null,
+        "Structure de site recommandée pour avocat": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page avocat": null,
+        "Questions fréquentes": null,
+        "Un avocat peut-il publier des articles SEO ?": null,
+        "Faut-il afficher les honoraires sur un site d'avocat ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le futur client hésite à contacter un cabinet parce qu'il ne sait pas si son problème est le bon domaine de droit ni comment se déroule le premier échange.",
+      "intention": "rendez-vous confidentiel, compréhension d'une situation juridique et choix d'un spécialiste",
+      "exemples": [
+        "divorce conflictuel avec garde d'enfants",
+        "licenciement contesté",
+        "création de société avec pacte d'associés"
+      ],
+      "structure": [
+        "Accueil sobre présentant domaines, barreau, valeurs et prise de rendez-vous",
+        "Pages par domaine de droit avec situations concrètes",
+        "Pages locales si le cabinet intervient devant des juridictions précises",
+        "Articles pédagogiques sans promesse de résultat",
+        "Page honoraires expliquant forfait, taux horaire et aide juridictionnelle si applicable"
+      ],
+      "pages_indispensables": [
+        "Droit de la famille",
+        "Droit du travail",
+        "Droit des affaires",
+        "Honoraires",
+        "Cabinet",
+        "Prendre rendez-vous"
+      ],
+      "keywords": [
+        "avocat ville",
+        "avocat divorce ville",
+        "avocat droit du travail ville",
+        "cabinet avocat ville",
+        "avocat rendez-vous ville"
+      ],
+      "articles": [
+        "Comment préparer un premier rendez-vous avec un avocat ?",
+        "Divorce : quels documents réunir avant la consultation ?",
+        "Licenciement : les délais à connaître pour contester",
+        "Créer une société : pourquoi anticiper les conflits entre associés"
+      ],
+      "erreurs": [
+        "Présenter uniquement le cabinet sans traiter les situations client",
+        "Utiliser un ton trop institutionnel qui n'aide pas à passer à l'action",
+        "Oublier les règles déontologiques dans les promesses et témoignages",
+        "Ne pas expliquer les honoraires et le déroulé du premier contact"
+      ],
+      "preuves": [
+        "barreau d'inscription",
+        "adresse du cabinet et accès",
+        "domaines traités devant les juridictions locales",
+        "modalités de rendez-vous au cabinet ou à distance"
+      ],
+      "plan": [
+        "Clarifier les trois domaines les plus stratégiques du cabinet",
+        "Écrire une page par domaine avec cas typiques et étapes",
+        "Créer une page honoraires transparente",
+        "Ajouter barreau, juridictions et modalités de rendez-vous",
+        "Préparer deux articles répondant aux questions fréquentes",
+        "Vérifier la cohérence avec les règles professionnelles",
+        "Optimiser la fiche Google Business Profile du cabinet"
+      ],
+      "faq": [
+        {
+          "q": "Un avocat peut-il publier des articles SEO ?",
+          "a": "Oui, à condition de rester pédagogique, exact et conforme aux règles de la profession, sans promettre de résultat."
+        },
+        {
+          "q": "Faut-il afficher les honoraires sur un site d'avocat ?",
+          "a": "Une page honoraires est utile car elle réduit les hésitations et explique les modes de facturation possibles avant le premier contact."
+        }
+      ]
+    },
+    "coach-sportif": {
+      "title": "Visibilité Google coach sportif : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un coach sportif : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour coach sportif : attirer plus de demandes locales qualifiées",
+      "badge": "indépendant",
+      "hero_intro": "Le coach sportif gagne en visibilité avec des pages par objectif et par zone. Les requêtes à domicile, perte de poids et reprise sportive attirent des intentions différentes qui méritent des contenus séparés.",
+      "_sections": {
+        "Le problème concret d'un coach sportif sur Google": null,
+        "Structure de site recommandée pour coach sportif": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page coach sportif": null,
+        "Questions fréquentes": null,
+        "Un coach sportif doit-il cibler la perte de poids en SEO ?": null,
+        "Quel CTA utiliser sur un site de coach sportif ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le prospect veut un coach proche, crédible et capable d'adapter le programme à son niveau sans jugement ni promesse irréaliste.",
+      "intention": "accompagnement personnalisé, remise en forme, perte de poids, reprise sportive ou coaching à domicile",
+      "exemples": [
+        "reprise du sport après plusieurs années",
+        "coaching à domicile avant un objectif de perte de poids",
+        "préparation physique pour un semi-marathon local"
+      ],
+      "structure": [
+        "Accueil orienté objectifs clients, zone et formats de coaching",
+        "Pages par objectif : remise en forme, perte de poids, performance, senior",
+        "Page méthode avec bilan, suivi et fréquence",
+        "Avis et transformations présentés avec prudence",
+        "Articles locaux autour des lieux d'entraînement et routines"
+      ],
+      "pages_indispensables": [
+        "Coaching à domicile",
+        "Remise en forme",
+        "Perte de poids",
+        "Préparation physique",
+        "Méthode et tarifs",
+        "Réserver un bilan"
+      ],
+      "keywords": [
+        "coach sportif ville",
+        "coach sportif à domicile ville",
+        "coaching perte de poids ville",
+        "préparateur physique ville",
+        "coach remise en forme ville"
+      ],
+      "articles": [
+        "Comment reprendre le sport sans se blesser ?",
+        "Coaching à domicile : pour qui et à quel rythme ?",
+        "Préparer une course locale avec un plan progressif",
+        "Les erreurs fréquentes quand on veut perdre du poids trop vite"
+      ],
+      "erreurs": [
+        "Promettre des résultats chiffrés trop rapides",
+        "Ne pas préciser les lieux ou formats de coaching",
+        "Publier un site centré sur le coach plutôt que sur les objectifs clients",
+        "Oublier le bilan initial comme première conversion"
+      ],
+      "preuves": [
+        "photos de séances dans des lieux reconnaissables",
+        "avis sur le suivi et la motivation",
+        "liste des quartiers ou communes couverts",
+        "diplômes et certifications"
+      ],
+      "plan": [
+        "Définir les profils clients prioritaires",
+        "Créer une page par objectif d'accompagnement",
+        "Ajouter zones, formats et matériel nécessaire",
+        "Rédiger une page méthode avec bilan initial",
+        "Demander des avis décrivant l'accompagnement",
+        "Optimiser Google Business Profile avec services et photos",
+        "Publier un article sur la reprise sportive progressive"
+      ],
+      "faq": [
+        {
+          "q": "Un coach sportif doit-il cibler la perte de poids en SEO ?",
+          "a": "Oui, mais avec un contenu responsable qui parle d'habitudes, de progression et d'accompagnement plutôt que de promesses rapides."
+        },
+        {
+          "q": "Quel CTA utiliser sur un site de coach sportif ?",
+          "a": "Le bilan initial ou l'appel découverte fonctionne bien, car il réduit l'engagement demandé au premier contact."
+        }
+      ]
+    },
+    "coiffeur": {
+      "title": "Visibilité Google coiffeur : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un coiffeur : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour coiffeur : attirer plus de demandes locales qualifiées",
+      "badge": "artisan",
+      "hero_intro": "Pour ressortir sur Google, un salon doit optimiser les requêtes locales par prestation : balayage, coupe homme, coiffure mariage, coloration. Les photos récentes et les avis jouent un rôle important.",
+      "_sections": {
+        "Le problème concret d'un coiffeur sur Google": null,
+        "Structure de site recommandée pour coiffeur": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page coiffeur": null,
+        "Questions fréquentes": null,
+        "Un salon de coiffure a-t-il besoin d'un site si la réservation se fait ailleurs ?": null,
+        "Quelles pages attirent le plus de recherches locales ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le client veut voir le style du salon, les prestations, les tarifs et les créneaux disponibles avant de réserver.",
+      "intention": "prise de rendez-vous, coupe, coloration, coiffure événementielle ou salon proche",
+      "exemples": [
+        "balayage naturel avec photos de résultats",
+        "coupe homme sans attente",
+        "coiffure de mariage avec essai"
+      ],
+      "structure": [
+        "Accueil avec réservation, horaires, adresse et ambiance du salon",
+        "Pages prestations : coupe, couleur, balayage, mariage, homme",
+        "Galerie de réalisations optimisée et régulièrement mise à jour",
+        "Page tarifs claire par longueur ou prestation",
+        "Articles conseils sur entretien, couleur et tendances locales"
+      ],
+      "pages_indispensables": [
+        "Coupe femme",
+        "Coupe homme",
+        "Coloration et balayage",
+        "Coiffure mariage",
+        "Tarifs",
+        "Réserver"
+      ],
+      "keywords": [
+        "coiffeur ville",
+        "salon de coiffure ville",
+        "balayage ville",
+        "coiffeur homme ville",
+        "coiffure mariage ville"
+      ],
+      "articles": [
+        "Comment entretenir un balayage entre deux rendez-vous ?",
+        "Quelle coupe choisir selon la forme du visage ?",
+        "Préparer son essai coiffure de mariage",
+        "Coloration : les questions à poser avant de changer de teinte"
+      ],
+      "erreurs": [
+        "Ne pas connecter la réservation en ligne",
+        "Laisser des photos lourdes ralentir le site",
+        "Masquer les tarifs ou les horaires",
+        "Ne pas cibler les prestations recherchées comme balayage ou mariage"
+      ],
+      "preuves": [
+        "photos de réalisations récentes",
+        "avis clients mentionnant une prestation",
+        "horaires et réservation à jour",
+        "adresse, stationnement et transports"
+      ],
+      "plan": [
+        "Lister les prestations qui remplissent le planning",
+        "Créer une page dédiée au balayage ou à la prestation phare",
+        "Ajouter tarifs, horaires et lien de réservation",
+        "Publier une galerie légère avec textes alternatifs",
+        "Mettre à jour les photos Google Business Profile",
+        "Demander des avis après les rendez-vous clés",
+        "Publier un conseil d'entretien lié à une prestation rentable"
+      ],
+      "faq": [
+        {
+          "q": "Un salon de coiffure a-t-il besoin d'un site si la réservation se fait ailleurs ?",
+          "a": "Oui, le site permet de présenter les prestations, travailler le SEO local et envoyer ensuite vers l'outil de réservation."
+        },
+        {
+          "q": "Quelles pages attirent le plus de recherches locales ?",
+          "a": "Les pages dédiées au balayage, à la coloration, à la coiffure de mariage et aux coupes homme ou femme sont souvent prioritaires."
+        }
+      ]
+    },
+    "electricien": {
+      "title": "Visibilité Google électricien : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un électricien : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour électricien : attirer plus de demandes locales qualifiées",
+      "badge": "artisan",
+      "hero_intro": "Pour gagner en visibilité, l'électricien doit combiner pages locales, contenus de prévention et preuves de savoir-faire. Les recherches liées à la mise aux normes et aux bornes de recharge méritent des pages précises.",
+      "_sections": {
+        "Le problème concret d'un électricien sur Google": null,
+        "Structure de site recommandée pour électricien": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page électricien": null,
+        "Questions fréquentes": null,
+        "Un électricien peut-il attirer des clients avec des articles de conseil ?": null,
+        "Quelle page créer en priorité pour un électricien ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Les clients craignent les pannes dangereuses et les devis flous. Ils cherchent un électricien capable d'expliquer, sécuriser et intervenir dans leur secteur.",
+      "intention": "mise aux normes, dépannage, tableau électrique, rénovation ou borne de recharge",
+      "exemples": [
+        "tableau électrique ancien à remplacer",
+        "disjoncteur qui saute régulièrement",
+        "installation d'une borne de recharge à domicile"
+      ],
+      "structure": [
+        "Accueil centré sur sécurité, conformité et intervention locale",
+        "Pages dédiées aux dépannages, rénovations, tableaux et bornes électriques",
+        "Explications pédagogiques sur normes, diagnostic et devis",
+        "Pages locales par zone desservie avec cas concrets",
+        "Preuves : habilitations, assurances, photos de tableaux propres"
+      ],
+      "pages_indispensables": [
+        "Dépannage électrique",
+        "Mise aux normes électriques",
+        "Remplacement tableau électrique",
+        "Installation borne de recharge",
+        "Rénovation électrique",
+        "Contact et devis"
+      ],
+      "keywords": [
+        "électricien ville",
+        "dépannage électrique ville",
+        "mise aux normes électrique ville",
+        "tableau électrique ville",
+        "borne recharge électricien ville"
+      ],
+      "articles": [
+        "Quand faut-il remplacer un tableau électrique ?",
+        "Pourquoi un disjoncteur saute et que vérifier avant d'appeler ?",
+        "Borne de recharge maison : étapes et points de vigilance",
+        "Mise aux normes électrique avant vente immobilière"
+      ],
+      "erreurs": [
+        "Ne pas distinguer dépannage et rénovation complète",
+        "Utiliser un vocabulaire trop technique sans bénéfice client",
+        "Oublier les preuves de conformité et d'assurance",
+        "Ne pas cibler les recherches liées aux bornes de recharge"
+      ],
+      "preuves": [
+        "photos de tableaux avant/après",
+        "avis mentionnant dépannage ou rénovation",
+        "liste des communes desservies",
+        "certificats, habilitations et assurances"
+      ],
+      "plan": [
+        "Identifier les services les plus demandés sur les 12 derniers mois",
+        "Créer une page pour chaque intention forte",
+        "Ajouter des photos de tableaux terminés et légendés",
+        "Rédiger une FAQ sur norme NF C 15-100, diagnostic et devis",
+        "Mettre à jour les catégories Google Business Profile",
+        "Demander trois avis décrivant le type d'intervention",
+        "Publier un article sur un problème électrique fréquent"
+      ],
+      "faq": [
+        {
+          "q": "Un électricien peut-il attirer des clients avec des articles de conseil ?",
+          "a": "Oui, car les clients recherchent souvent la cause d'une panne ou le coût d'une mise aux normes avant de demander un devis."
+        },
+        {
+          "q": "Quelle page créer en priorité pour un électricien ?",
+          "a": "La page de dépannage électrique est prioritaire si l'activité repose sur l'urgence. Pour les chantiers plus rentables, la page mise aux normes ou tableau électrique est souvent plus stratégique."
+        }
+      ]
+    },
+    "expert-comptable": {
+      "title": "Visibilité Google expert-comptable : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un expert-comptable : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour expert-comptable : attirer plus de demandes locales qualifiées",
+      "badge": "profession libérale",
+      "hero_intro": "La visibilité Google se travaille avec des pages missions, des contenus pour créateurs d'entreprise et des pages ciblées par profil. Les articles doivent répondre à des décisions concrètes, pas seulement commenter l'actualité fiscale.",
+      "_sections": {
+        "Le problème concret d'un expert-comptable sur Google": null,
+        "Structure de site recommandée pour expert-comptable": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page expert-comptable": null,
+        "Questions fréquentes": null,
+        "Un expert-comptable doit-il cibler les créateurs d'entreprise ?": null,
+        "Comment éviter un site de cabinet comptable trop générique ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "L'entrepreneur cherche un cabinet disponible, clair sur ses offres et capable de comprendre son secteur sans jargon comptable.",
+      "intention": "création d'entreprise, comptabilité, paie, fiscalité et accompagnement régulier",
+      "exemples": [
+        "création d'une SASU pour consultant",
+        "gestion de paie d'un commerce local",
+        "changement d'expert-comptable après croissance rapide"
+      ],
+      "structure": [
+        "Accueil par profils clients : créateur, indépendant, TPE, association",
+        "Pages missions : comptabilité, paie, fiscalité, création d'entreprise",
+        "Pages sectorielles pour métiers accompagnés",
+        "Page outils et fonctionnement collaboratif",
+        "Articles sur échéances, statuts et obligations"
+      ],
+      "pages_indispensables": [
+        "Création d'entreprise",
+        "Comptabilité TPE",
+        "Paie et social",
+        "Fiscalité",
+        "Accompagnement indépendants",
+        "Demander un rendez-vous"
+      ],
+      "keywords": [
+        "expert-comptable ville",
+        "expert-comptable création entreprise ville",
+        "cabinet comptable ville",
+        "expert-comptable indépendant ville",
+        "gestion paie ville"
+      ],
+      "articles": [
+        "SASU ou EURL : comment préparer son choix avec un expert-comptable ?",
+        "Les échéances comptables à ne pas rater pour une TPE",
+        "Quand changer d'expert-comptable ?",
+        "Créer son entreprise : documents à préparer avant le rendez-vous"
+      ],
+      "erreurs": [
+        "Présenter une liste de missions sans parler des profils clients",
+        "Ne pas expliquer le fonctionnement, les outils et la réactivité",
+        "Oublier les pages dédiées aux créateurs d'entreprise",
+        "Publier des articles trop génériques sur la fiscalité"
+      ],
+      "preuves": [
+        "adresse du cabinet et rendez-vous à distance",
+        "profils de clients accompagnés localement",
+        "avis mentionnant pédagogie et disponibilité",
+        "inscription à l'Ordre"
+      ],
+      "plan": [
+        "Identifier les profils clients les plus rentables",
+        "Créer une page par mission prioritaire",
+        "Ajouter une page création d'entreprise très complète",
+        "Décrire les outils, délais et modes d'échange",
+        "Créer une FAQ sur tarifs, lettres de mission et documents",
+        "Mettre à jour la fiche Google du cabinet",
+        "Publier un article sur un choix de statut fréquent"
+      ],
+      "faq": [
+        {
+          "q": "Un expert-comptable doit-il cibler les créateurs d'entreprise ?",
+          "a": "Oui, c'est une intention forte. Une page dédiée permet d'expliquer les statuts, les documents utiles et l'accompagnement proposé."
+        },
+        {
+          "q": "Comment éviter un site de cabinet comptable trop générique ?",
+          "a": "Il faut écrire par profil client, secteur et mission, avec des exemples de situations concrètes et un déroulé de collaboration."
+        }
+      ]
+    },
+    "osteopathe": {
+      "title": "Visibilité Google ostéopathe : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un ostéopathe : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour ostéopathe : attirer plus de demandes locales qualifiées",
+      "badge": "profession libérale",
+      "hero_intro": "Pour être visible, l'ostéopathe doit associer son métier, sa ville, les motifs de consultation et les publics accompagnés. Les contenus doivent rester prudents et informatifs.",
+      "_sections": {
+        "Le problème concret d'un ostéopathe sur Google": null,
+        "Structure de site recommandée pour ostéopathe": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page ostéopathe": null,
+        "Questions fréquentes": null,
+        "Un ostéopathe doit-il créer des pages par motif de consultation ?": null,
+        "Quel appel à l'action fonctionne le mieux ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le patient veut savoir si l'ostéopathe reçoit son profil, comment se déroule la séance et si le cabinet est facile d'accès.",
+      "intention": "prise de rendez-vous rapide, soulagement d'une douleur et choix d'un praticien rassurant",
+      "exemples": [
+        "douleur lombaire après télétravail",
+        "suivi de grossesse",
+        "consultation pour sportif après reprise intensive"
+      ],
+      "structure": [
+        "Accueil avec prise de rendez-vous visible, adresse et publics accompagnés",
+        "Pages par motif de consultation sans promesse médicale excessive",
+        "Page cabinet avec accès, stationnement et photos sobres",
+        "FAQ sur déroulé, tenue, durée et remboursement mutuelle",
+        "Articles de prévention adaptés aux habitudes locales"
+      ],
+      "pages_indispensables": [
+        "Consultation adulte",
+        "Ostéopathie grossesse",
+        "Ostéopathie sportif",
+        "Douleurs dos et cervicales",
+        "Cabinet et accès",
+        "Tarifs et rendez-vous"
+      ],
+      "keywords": [
+        "ostéopathe ville",
+        "ostéopathe près de moi",
+        "ostéopathe grossesse ville",
+        "ostéopathe sportif ville",
+        "ostéopathe mal de dos ville"
+      ],
+      "articles": [
+        "Comment se déroule une première séance d'ostéopathie ?",
+        "Mal de dos au bureau : gestes simples avant de consulter",
+        "Ostéopathie et grossesse : quand prendre rendez-vous ?",
+        "Sportifs : préparer la reprise après une pause"
+      ],
+      "erreurs": [
+        "Faire des promesses de guérison trop fortes",
+        "Ne pas afficher clairement l'adresse et le lien de réservation",
+        "Créer une page trop générale sans publics ni motifs précis",
+        "Oublier les questions pratiques qui freinent la prise de rendez-vous"
+      ],
+      "preuves": [
+        "adresse précise et indications d'accès",
+        "lien vers la plateforme de réservation",
+        "photos du cabinet",
+        "avis évoquant l'accueil et la pédagogie"
+      ],
+      "plan": [
+        "Lister les motifs de consultation les plus fréquents",
+        "Créer trois pages par public ou motif prioritaire",
+        "Ajouter photos, accès, transports et stationnement",
+        "Connecter le bouton de réservation en ligne",
+        "Rédiger une FAQ patient courte et rassurante",
+        "Mettre à jour les services sur Google Business Profile",
+        "Publier un article de prévention lié au motif principal"
+      ],
+      "faq": [
+        {
+          "q": "Un ostéopathe doit-il créer des pages par motif de consultation ?",
+          "a": "Oui, si le contenu explique le déroulé, les limites de la pratique et les cas où consulter un professionnel de santé."
+        },
+        {
+          "q": "Quel appel à l'action fonctionne le mieux ?",
+          "a": "Un bouton de prise de rendez-vous visible, accompagné de l'adresse, des horaires et des informations de remboursement éventuel."
+        }
+      ]
+    },
+    "photographe": {
+      "title": "Visibilité Google photographe : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un photographe : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour photographe : attirer plus de demandes locales qualifiées",
+      "badge": "indépendant",
+      "hero_intro": "La visibilité Google d'un photographe progresse quand les galeries sont contextualisées : type de séance, lieu, intention du client et mots-clés locaux. Les images seules ne suffisent pas.",
+      "_sections": {
+        "Le problème concret d'un photographe sur Google": null,
+        "Structure de site recommandée pour photographe": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page photographe": null,
+        "Questions fréquentes": null,
+        "Un portfolio suffit-il pour le SEO d'un photographe ?": null,
+        "Faut-il afficher ses tarifs ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Le client choisit un photographe sur la confiance visuelle. S'il ne voit pas rapidement le style, les prestations et les lieux couverts, il passe à un autre portfolio.",
+      "intention": "portfolio, style visuel, tarif et disponibilité pour une séance ou un événement",
+      "exemples": [
+        "reportage mariage dans un domaine proche",
+        "portraits professionnels pour LinkedIn",
+        "photos immobilières pour une agence locale"
+      ],
+      "structure": [
+        "Accueil visuel avec spécialités, zone et accès aux portfolios",
+        "Pages par prestation : mariage, portrait, entreprise, immobilier",
+        "Galeries rapides avec textes courts et contextuels",
+        "Pages locales pour lieux de mariage ou villes importantes",
+        "Page tarifs ou formules pour qualifier les demandes"
+      ],
+      "pages_indispensables": [
+        "Photographe mariage",
+        "Portrait professionnel",
+        "Photographe entreprise",
+        "Photographie immobilière",
+        "Portfolio",
+        "Tarifs et contact"
+      ],
+      "keywords": [
+        "photographe ville",
+        "photographe mariage ville",
+        "portrait professionnel ville",
+        "photographe entreprise ville",
+        "photographe immobilier ville"
+      ],
+      "articles": [
+        "Comment choisir son photographe de mariage ?",
+        "Préparer une séance portrait professionnel en 30 minutes",
+        "Photos immobilières : les détails qui changent une annonce",
+        "Les meilleurs lieux locaux pour une séance photo naturelle"
+      ],
+      "erreurs": [
+        "Publier de grandes images non optimisées qui ralentissent le site",
+        "Mélanger toutes les prestations dans une galerie unique",
+        "Ne pas indiquer la zone de déplacement",
+        "Oublier les textes SEO autour des portfolios"
+      ],
+      "preuves": [
+        "galeries par lieu ou type d'événement",
+        "avis clients associés à une prestation",
+        "photos géolocalisées dans Google Business Profile",
+        "liste claire des zones de déplacement"
+      ],
+      "plan": [
+        "Choisir les trois prestations les plus rentables",
+        "Sélectionner 12 images fortes par prestation",
+        "Compresser les visuels et renseigner les textes alternatifs",
+        "Créer une page par prestation avec déroulé et livrables",
+        "Ajouter les lieux et villes les plus recherchés",
+        "Mettre à jour la fiche Google avec photos récentes",
+        "Publier un guide pratique pour préparer une séance"
+      ],
+      "faq": [
+        {
+          "q": "Un portfolio suffit-il pour le SEO d'un photographe ?",
+          "a": "Non. Le portfolio doit être accompagné de pages de prestation, textes descriptifs, lieux couverts, avis et images optimisées."
+        },
+        {
+          "q": "Faut-il afficher ses tarifs ?",
+          "a": "Des formules ou prix de départ qualifient mieux les demandes et évitent les contacts très éloignés du budget."
+        }
+      ]
+    },
+    "plombier": {
+      "title": "Visibilité Google plombier : SEO local et clients",
+      "description": "Guide SEO pour améliorer la visibilité Google d’un plombier : mots-clés locaux, contenus, avis et plan d’action.",
+      "h1": "Visibilité Google pour plombier : attirer plus de demandes locales qualifiées",
+      "badge": "artisan",
+      "hero_intro": "La visibilité Google vient surtout de pages services locales, d'avis récents et de contenus qui répondent aux situations concrètes. Un plombier gagne à travailler les requêtes d'urgence, mais aussi les recherches plus rentables comme chauffe-eau, rénovation et recherche de fuite.",
+      "_sections": {
+        "Le problème concret d'un plombier sur Google": null,
+        "Structure de site recommandée pour plombier": null,
+        "Pages indispensables à créer": null,
+        "Mots-clés SEO pour gagner en visibilité": null,
+        "Idées d'articles longue traîne": null,
+        "Erreurs fréquentes à éviter": null,
+        "Preuves locales à afficher": null,
+        "7 jours pour améliorer la page plombier": null,
+        "Questions fréquentes": null,
+        "Un plombier doit-il créer une page par ville ?": null,
+        "Quel contenu rassure le plus un client en urgence ?": null,
+        "Pages liées pour renforcer le maillage interne": null
+      },
+      "persona_pain": "Un client cherche souvent un plombier dans l'urgence, compare très vite les avis et appelle le premier professionnel crédible proche de chez lui.",
+      "intention": "urgence, dépannage, devis pour travaux sanitaires ou chauffage",
+      "exemples": [
+        "fuite sous évier à réparer le jour même",
+        "remplacement de chauffe-eau avant une mise en location",
+        "rénovation de salle de bain avec devis détaillé"
+      ],
+      "structure": [
+        "Accueil orienté intervention rapide, zones desservies et preuves de confiance",
+        "Pages services séparées pour fuite, débouchage, chauffe-eau, salle de bain et chauffage",
+        "Pages locales pour les communes réellement couvertes",
+        "Galerie de chantiers avant/après avec contexte et délai d'intervention",
+        "FAQ claire sur tarifs, déplacement, urgence et assurance"
+      ],
+      "pages_indispensables": [
+        "Dépannage plomberie urgent",
+        "Recherche et réparation de fuite",
+        "Débouchage canalisation",
+        "Installation chauffe-eau",
+        "Rénovation salle de bain",
+        "Zone d'intervention"
+      ],
+      "keywords": [
+        "plombier près de moi",
+        "plombier urgence ville",
+        "dépannage plomberie ville",
+        "réparation fuite ville",
+        "plombier avis Google"
+      ],
+      "articles": [
+        "Que faire avant d'appeler un plombier pour une fuite ?",
+        "Combien coûte le remplacement d'un chauffe-eau ?",
+        "Les signes d'une canalisation bouchée à traiter rapidement",
+        "Comment préparer une rénovation de salle de bain sans mauvaise surprise"
+      ],
+      "erreurs": [
+        "Mettre tous les services sur une seule page trop générale",
+        "Ne pas afficher les villes couvertes et les délais réels",
+        "Promettre des prix fixes sans expliquer les variables du chantier",
+        "Oublier les photos de réalisations et les avis clients"
+      ],
+      "preuves": [
+        "photos de réparations avant/après",
+        "avis mentionnant la commune et le type de panne",
+        "numéro de téléphone cliquable sur mobile",
+        "attestations d'assurance ou labels visibles"
+      ],
+      "plan": [
+        "Lister les services qui génèrent les meilleurs appels",
+        "Créer une page par service prioritaire",
+        "Ajouter les communes couvertes avec exemples d'interventions",
+        "Photographier trois chantiers récents avec explications",
+        "Optimiser la fiche Google Business Profile",
+        "Rédiger une FAQ sur urgence, déplacement et garanties",
+        "Publier un article pratique lié à une panne fréquente"
+      ],
+      "faq": [
+        {
+          "q": "Un plombier doit-il créer une page par ville ?",
+          "a": "Oui, si la page apporte des informations réelles sur la zone, les délais, les interventions courantes et les preuves locales. Une page ville vide ou copiée n'aide pas durablement."
+        },
+        {
+          "q": "Quel contenu rassure le plus un client en urgence ?",
+          "a": "Un numéro visible, des avis récents, les horaires, les communes desservies et une explication simple du déroulé de l'intervention."
+        }
+      ]
+    }
+  }
+}

@@ -416,14 +416,14 @@ SECTIONS = {
     "ressources_title": "Passez de l'idée à la publication",
     "ressources_p1": (
         "Pour rédiger plus vite vos pages et vos articles sans y passer vos "
-        "soirées, <a class=\"link\" href=\"https://wisewand.ai/\" rel=\"sponsored noopener\" "
+        "soirées, <a class=\"link\" href=\"https://wisewand.ai/?fpr=wisewand-seo\" rel=\"sponsored noopener\" "
         "target=\"_blank\">Wisewand</a> vous aide à produire des contenus utiles, "
         "adaptés à votre métier et à votre ville."
     ),
     "ressources_p2": (
         "Et pour que vos pages se chargent vite — un critère que Google et vos "
         "clients regardent — hébergez votre site chez un "
-        "<a class=\"link\" href=\"https://www.hostinger.fr/\" rel=\"sponsored noopener\" "
+        "<a class=\"link\" href=\"https://www.hostg.xyz/SHJit\" rel=\"sponsored noopener\" "
         "target=\"_blank\">hébergeur web rapide et fiable</a>."
     ),
     "erreurs_eyebrow": "À éviter absolument",

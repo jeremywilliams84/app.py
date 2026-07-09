@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://localio.fr/sitemap-index.xml
+Sitemap: https://localto.fr/sitemap-index.xml

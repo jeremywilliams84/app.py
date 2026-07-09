@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Générateur du site Localio — design premium, contenus persona, SEO.
+"""Générateur du site Localto — design premium, contenus persona, SEO.
 
 Usage :  python3 site/build.py   (écrit le site final dans ./dist)
 """
@@ -128,7 +128,7 @@ def hero_art():
 # ---------------------------------------------------------------------------
 
 CSS = """
-/* Localio — design system */
+/* Localto — design system */
 :root{
   --bg:#f6f9f4; --surface:#ffffff; --ink:#0c1f16; --muted:#54655c;
   --line:#e2eae0; --brand:#15714b; --brand-deep:#0e5638; --brand-soft:#e3f2e9;
@@ -514,7 +514,7 @@ def footer():
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="/"><span class="logo-mark">L</span> Localio</a>
+        <a class="logo" href="/"><span class="logo-mark">L</span> Localto</a>
         <p class="about">{C.SITE["footer_about"]}</p>
       </div>
       <div>
@@ -533,7 +533,7 @@ def footer():
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Localio — Tous droits réservés.</span>
+      <span>© 2026 Localto — Tous droits réservés.</span>
       <span>Fait avec soin pour les professionnels de proximité.</span>
     </div>
   </div>
@@ -555,7 +555,7 @@ def page(*, path, title, description, body, jsonld, active=""):
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Localio">
+<meta property="og:site_name" content="Localto">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
@@ -575,7 +575,7 @@ def page(*, path, title, description, body, jsonld, active=""):
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="header">
   <div class="container">
-    <a class="logo" href="/" aria-label="Localio, retour à l'accueil"><span class="logo-mark">L</span> Localio</a>
+    <a class="logo" href="/" aria-label="Localto, retour à l'accueil"><span class="logo-mark">L</span> Localto</a>
     <nav class="nav" aria-label="Navigation principale">
       {nav_links(active)}
     </nav>
@@ -732,7 +732,7 @@ def render_home():
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Localio",
+            "name": "Localto",
             "url": URL + "/",
             "description": H["description"],
             "inLanguage": "fr-FR",
@@ -740,7 +740,7 @@ def render_home():
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Localio",
+            "name": "Localto",
             "url": URL + "/",
             "logo": URL + C.SITE["og_image"],
         },
@@ -798,8 +798,8 @@ def render_hub(kind):
             "@type": "Article",
             "headline": HUB["title"],
             "description": HUB["description"],
-            "author": {"@type": "Organization", "name": "Localio", "url": URL},
-            "publisher": {"@type": "Organization", "name": "Localio", "url": URL},
+            "author": {"@type": "Organization", "name": "Localto", "url": URL},
+            "publisher": {"@type": "Organization", "name": "Localto", "url": URL},
             "mainEntityOfPage": URL + HUB["path"],
             "inLanguage": "fr-FR",
         },
@@ -850,8 +850,8 @@ def render_pilier():
             "@type": "Article",
             "headline": P["title"],
             "description": P["description"],
-            "author": {"@type": "Organization", "name": "Localio", "url": URL},
-            "publisher": {"@type": "Organization", "name": "Localio", "url": URL},
+            "author": {"@type": "Organization", "name": "Localto", "url": URL},
+            "publisher": {"@type": "Organization", "name": "Localto", "url": URL},
             "mainEntityOfPage": URL + P["path"],
             "inLanguage": "fr-FR",
         },
@@ -1066,8 +1066,8 @@ def render_metier(m, kind):
             "@type": "Article",
             "headline": title,
             "description": desc,
-            "author": {"@type": "Organization", "name": "Localio", "url": URL},
-            "publisher": {"@type": "Organization", "name": "Localio", "url": URL},
+            "author": {"@type": "Organization", "name": "Localto", "url": URL},
+            "publisher": {"@type": "Organization", "name": "Localto", "url": URL},
             "mainEntityOfPage": URL + path,
             "inLanguage": "fr-FR",
         },
@@ -1123,7 +1123,7 @@ def main():
     write("assets/style.css", CSS)
     write("assets/app.js", JS)
     write("favicon.svg", FAVICON)
-    shutil.copy(ROOT / "localio-dashboard.png", OUT / "localio-dashboard.png")
+    shutil.copy(ROOT / "localto-dashboard.png", OUT / "localto-dashboard.png")
 
     pages = {"/": render_home()}
     pages[C.HUBS["creation"]["path"]] = render_hub("creation")

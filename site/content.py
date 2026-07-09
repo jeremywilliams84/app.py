@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-"""Contenus éditoriaux Localio — textes adressés au professionnel (persona),
+"""Contenus éditoriaux Localto — textes adressés au professionnel (persona),
 optimisés SEO. Les données factuelles (listes, mots-clés, FAQ) proviennent
 de data.json ; ce fichier porte la réécriture rédactionnelle."""
 
 SITE = {
-    "name": "Localio",
-    "url": "https://localio.fr",
+    "name": "Localto",
+    "url": "https://localto.fr",
     "tagline": "Le guide SEO local des indépendants, artisans et professions libérales",
     "footer_about": (
-        "Localio vous aide à créer un site internet qui inspire confiance, à "
+        "Localto vous aide à créer un site internet qui inspire confiance, à "
         "remonter sur Google dans votre ville et à attirer des clients locaux "
         "— avec des guides concrets, pensés pour votre métier."
     ),
-    "og_image": "/localio-dashboard.png",
+    "og_image": "/localto-dashboard.png",
 }
 
 # ---------------------------------------------------------------------------
@@ -456,7 +456,7 @@ SECTIONS = {
 # ---------------------------------------------------------------------------
 
 HOME = {
-    "title": "Localio : un site internet qui attire des clients locaux",
+    "title": "Localto : un site internet qui attire des clients locaux",
     "description": (
         "Créez un site internet qui inspire confiance et remontez sur Google dans "
         "votre ville. Guides SEO concrets par métier pour artisans, professions "
@@ -466,7 +466,7 @@ HOME = {
     "hero_h1_before": "Vos clients vous cherchent sur Google.",
     "hero_h1_accent": "Faites-vous trouver.",
     "hero_intro": (
-        "Localio vous donne un plan clair pour créer un site internet qui "
+        "Localto vous donne un plan clair pour créer un site internet qui "
         "inspire confiance et remonter dans les recherches locales : les bonnes "
         "pages, les bons mots-clés, les bonnes preuves — adaptés à votre métier, "
         "sans jargon."

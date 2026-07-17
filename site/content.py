@@ -8,9 +8,10 @@ SITE = {
     "url": "https://localto.fr",
     "tagline": "Le guide SEO local des indépendants, artisans et professions libérales",
     "footer_about": (
-        "Localto vous aide à créer un site internet qui inspire confiance, à "
-        "remonter sur Google dans votre ville et à attirer des clients locaux "
-        "— avec des guides concrets, pensés pour votre métier."
+        "Localto est un média de guides stratégiques sur la visibilité numérique "
+        "des indépendants, artisans et professions libérales : création de site, "
+        "référencement local, fiche Google Business et acquisition de clients, "
+        "métier par métier."
     ),
     "og_image": "/localto-dashboard.png",
 }
@@ -426,6 +427,14 @@ SECTIONS = {
         "<a class=\"link\" href=\"https://www.hostg.xyz/SHJit\" rel=\"sponsored noopener\" "
         "target=\"_blank\">hébergeur web rapide et fiable</a>."
     ),
+    "outil_title": "De la stratégie à votre page locale",
+    "outil_text": (
+        "Une fois votre stratégie définie, utilisez le générateur gratuit de "
+        "<a class=\"link\" href=\"https://visible-dans-ma-ville.fr/\" target=\"_blank\" "
+        "rel=\"noopener\">Visible dans ma ville</a> pour préparer la structure de "
+        "votre page « métier + ville » : titre, sections, questions fréquentes et "
+        "appels à l'action, prêts à rédiger."
+    ),
     "erreurs_eyebrow": "À éviter absolument",
     "erreurs_h2": "Les erreurs qui vous coûtent des clients",
     "erreurs_intro": (
@@ -456,26 +465,26 @@ SECTIONS = {
 # ---------------------------------------------------------------------------
 
 HOME = {
-    "title": "Localto : un site internet qui attire des clients locaux",
+    "title": "Localto : guides visibilité et clients locaux par métier",
     "description": (
-        "Créez un site internet qui inspire confiance et remontez sur Google dans "
-        "votre ville. Guides SEO concrets par métier pour artisans, professions "
-        "libérales et indépendants."
+        "Le média des indépendants, artisans et professions libérales : comprendre "
+        "comment développer sa visibilité en ligne et trouver des clients selon son "
+        "métier — site, SEO local, Google Business, contenus."
     ),
-    "hero_eyebrow": "Artisans · Professions libérales · Indépendants",
+    "hero_eyebrow": "Le média visibilité des pros de proximité",
     "hero_h1_before": "Vos clients vous cherchent sur Google.",
     "hero_h1_accent": "Faites-vous trouver.",
     "hero_intro": (
-        "Localto vous donne un plan clair pour créer un site internet qui "
-        "inspire confiance et remonter dans les recherches locales : les bonnes "
-        "pages, les bons mots-clés, les bonnes preuves — adaptés à votre métier, "
-        "sans jargon."
+        "Localto est un média de guides stratégiques pour artisans, professions "
+        "libérales et indépendants : création de site internet, référencement "
+        "local, fiche Google Business Profile, choix des mots-clés et acquisition "
+        "de clients — expliqués métier par métier, sans jargon."
     ),
     "hero_cta1": "Trouver mon guide métier",
     "hero_cta2": "Découvrir la méthode",
     "hero_points": ["9 métiers couverts", "Plan d'action en 7 jours", "100 % concret, 0 jargon"],
     "metiers_eyebrow": "Guides par métier",
-    "metiers_h2": "Choisissez votre métier, suivez le guide",
+    "metiers_h2": "Choisissez votre métier, suivez les guides",
     "metiers_intro": (
         "Chaque métier a ses urgences, ses preuves de confiance et ses "
         "recherches Google. Un plombier doit capter l'urgence, un avocat lever "

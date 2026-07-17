@@ -1,0 +1,794 @@
+{
+  "pisciniste": {
+    "title": "Modèle de page pisciniste + ville : structure et devis piscine",
+    "desc": "Un modèle de page locale pour pisciniste : sections construction et rénovation, preuves à afficher, erreurs à éviter et générateur de plan gratuit.",
+    "h1": "Un modèle de page pisciniste + ville pour transformer les projets piscine en devis.",
+    "lead": "Un projet piscine se décide sur plusieurs mois : vos prospects comparent les entreprises dès l'hiver et signent au printemps. Votre page locale doit répondre à leurs questions de budget, de délais et de démarches avant même le premier appel.",
+    "cta_hero": "Préparer ma page devis piscine",
+    "enjeux_h2": "Saisonnalité et comparaison : les deux réalités du pisciniste",
+    "enjeux_extra": "La saisonnalité joue contre vous si votre page arrive trop tard : elle doit être en ligne à l'automne pour capter les demandes qui se concrétisent au printemps. Et comme un chantier piscine se compare, votre page doit donner plus de matière que celles de vos concurrents.",
+    "intents_intro": "Autour d'une piscine, presque toutes les recherches contiennent un budget, un type de bassin ou une commune. Visez ces formulations concrètes :",
+    "services_h2": "Les prestations piscine à détailler sur la page",
+    "services": [
+      "Construction de piscine maçonnée ou coque",
+      "Rénovation : liner, margelles, étanchéité",
+      "Entretien annuel et hivernage",
+      "Local technique, filtration et pompe à chaleur",
+      "Sécurité : volet roulant, alarme, clôture",
+      "Spa et bassins hors-sol haut de gamme"
+    ],
+    "modele_h2": "Le plan type d'une page pisciniste qui convertit",
+    "titleExample": "Pisciniste à [ville] : construction, rénovation et entretien de piscine",
+    "metaExample": "Pisciniste à [ville] depuis [année] : construction de piscines maçonnées et coques, rénovation et entretien. Devis gratuit et visite technique sous [délai].",
+    "h1Example": "Votre pisciniste à [ville] : de l'étude du terrain à la première baignade",
+    "pageStructure": [
+      "Nos réalisations autour de [ville] : photos et contexte de chaque chantier",
+      "Construction : étapes, délais réels et démarches (déclaration de travaux)",
+      "Rénovation et entretien : liner, fuites, remise en service",
+      "Budget indicatif par type de bassin",
+      "Zone d'intervention et communes desservies",
+      "Questions à se poser avant de demander un devis"
+    ],
+    "trustSignals": [
+      "Photos de chantiers réels avant/pendant/après, avec la commune",
+      "Garantie décennale et assurance mentionnées noir sur blanc",
+      "Marques d'équipement posées (filtration, PAC, volets)",
+      "Délais moyens constatés entre devis et mise en eau",
+      "Avis clients qui citent le projet et la ville"
+    ],
+    "mistakes": [
+      "Publier des photos de catalogue fabricant au lieu de vos propres chantiers : le prospect s'en aperçoit et doute de votre expérience réelle.",
+      "Mettre la page en ligne en juin : les projets signés en été se préparent dès l'automne précédent, votre page doit exister avant la saison des devis.",
+      "Rester muet sur les fourchettes de prix : un projet à 30 000 € ne se demande pas en devis à l'aveugle, une grille indicative filtre les curieux et rassure les acheteurs.",
+      "Oublier les démarches administratives : expliquer déclaration préalable et distances légales vous positionne en expert avant le premier rendez-vous."
+    ],
+    "sidePlan": [
+      "« Pisciniste + [ville] » dans le titre et le H1.",
+      "Réalisations locales en haut de page.",
+      "Fourchettes de budget par type de bassin.",
+      "Délais et démarches expliqués.",
+      "Bouton « Demander une étude gratuite »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "couvreur": {
+    "title": "Page locale couvreur : modèle et structure pour devis toiture",
+    "desc": "Modèle de page couvreur + ville : réparation, rénovation de toiture, preuves décennale, erreurs fréquentes et plan de page généré gratuitement.",
+    "h1": "Une page couvreur + ville qui décroche les devis toiture, petits et grands.",
+    "lead": "Une fuite après une tempête, une toiture à rénover avant une vente : vos clients cherchent un couvreur au moment où le toit devient un problème. Votre page locale doit capter l'urgence comme les gros chantiers planifiés — deux recherches très différentes.",
+    "cta_hero": "Préparer ma page devis toiture",
+    "enjeux_h2": "Pourquoi un couvreur se joue tout sur la confiance locale",
+    "enjeux_extra": "La toiture est le chantier où la peur de l'arnaque est la plus forte : démarchage sauvage, acomptes envolés, malfaçons invisibles depuis le sol. Une page locale qui montre vos chantiers, votre décennale et vos coordonnées vérifiables fait la différence face aux entreprises sans adresse.",
+    "intents_intro": "Les recherches toiture se séparent en deux familles : l'urgence (fuite, tempête) et le projet (rénovation, isolation). Votre page doit viser les deux :",
+    "services_h2": "Les prestations de couverture à présenter séparément",
+    "services": [
+      "Recherche et réparation de fuite de toiture",
+      "Rénovation complète de couverture (tuiles, ardoises)",
+      "Zinguerie : gouttières, chéneaux, abergements",
+      "Démoussage et traitement hydrofuge",
+      "Isolation de toiture et combles (RGE le cas échéant)",
+      "Pose de fenêtres de toit"
+    ],
+    "modele_h2": "Le plan type d'une page couvreur crédible",
+    "titleExample": "Couvreur à [ville] : réparation et rénovation de toiture, devis gratuit",
+    "metaExample": "Couvreur à [ville] : intervention rapide après fuite ou tempête, rénovation complète de toiture. Entreprise assurée décennale, devis gratuit sous [délai].",
+    "h1Example": "Couvreur à [ville] : votre toiture réparée, rénovée et garantie",
+    "pageStructure": [
+      "Intervention rapide : fuite, tuiles envolées, bâchage d'urgence",
+      "Rénovation de toiture : matériaux, étapes et durée de chantier",
+      "Nos toitures réalisées à [ville] et alentours, photos à l'appui",
+      "Assurance décennale et garanties : ce que vous risquez sans elles",
+      "Zone d'intervention et délais de déplacement",
+      "Questions fréquentes avant un devis toiture"
+    ],
+    "trustSignals": [
+      "Attestation décennale visible ou mentionnée avec le nom de l'assureur",
+      "Photos de chantiers avec échafaudage : preuve de travail sécurisé",
+      "Avant/après de rénovations dans les communes voisines",
+      "Certification RGE si vous proposez l'isolation",
+      "Ancienneté de l'entreprise et SIRET affiché"
+    ],
+    "mistakes": [
+      "Ne parler que des rénovations complètes : les petites réparations sont la porte d'entrée qui amène les gros chantiers deux ans plus tard.",
+      "Ignorer les recherches « après tempête » : un paragraphe sur le bâchage d'urgence et les délais capte des demandes que vos concurrents ratent.",
+      "Montrer des toitures sans contexte : une photo sans commune ni type de chantier ne prouve rien, légendez chaque réalisation.",
+      "Cacher l'assurance décennale : c'est le premier critère de tri des propriétaires échaudés par le démarchage abusif."
+    ],
+    "sidePlan": [
+      "« Couvreur + [ville] » dans le titre.",
+      "Urgence et rénovation séparées.",
+      "Décennale mentionnée dès le haut de page.",
+      "Photos de chantiers légendées.",
+      "Bouton « Demander un devis toiture »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "plombier": {
+    "title": "Créer une page plombier + ville : modèle et structure SEO",
+    "desc": "Modèle de page locale pour plombier : structure dépannage + devis, transparence des prix, différenciation des plateformes et plan de page généré gratuitement.",
+    "h1": "Un modèle de page plombier + ville pour capter dépannages et devis.",
+    "lead": "Le réflexe d'un client avec une fuite : taper « plombier + sa ville » et appeler le premier artisan crédible. Votre page locale doit rendre l'appel évident — numéro visible, communes desservies, prix transparents — et rassurer aussi ceux qui planifient des travaux.",
+    "cta_hero": "Préparer ma page dépannage + devis",
+    "enjeux_h2": "Urgence et méfiance : le duo à gérer sur une page plomberie",
+    "enjeux_extra": "La plomberie souffre de la réputation des plateformes de dépannage anonymes et de leurs factures gonflées. Votre meilleur argument est votre identité locale : un nom, un visage, un SIRET et des avis de voisins valent plus qu'une promesse d'intervention en 30 minutes.",
+    "intents_intro": "Les urgences dominent, mais les recherches les plus rentables sont souvent planifiées : chauffe-eau, salle de bain, recherche de fuite. Visez les deux familles :",
+    "services_h2": "Les interventions plomberie à détailler sur la page",
+    "services": [
+      "Dépannage fuite d'eau et robinetterie",
+      "Débouchage de canalisation et WC",
+      "Remplacement et installation de chauffe-eau",
+      "Rénovation de salle de bain clé en main",
+      "Recherche de fuite non destructive",
+      "Mise en conformité et petits travaux sanitaires"
+    ],
+    "modele_h2": "Le plan type d'une page plombier qui fait sonner le téléphone",
+    "titleExample": "Plombier à [ville] : dépannage rapide et devis travaux gratuit",
+    "metaExample": "Plombier à [ville] : fuite, débouchage, chauffe-eau. Artisan local identifié, prix du déplacement annoncé, intervention sur [ville] et alentours.",
+    "h1Example": "Plombier à [ville] : dépannage le jour même et travaux au prix annoncé",
+    "pageStructure": [
+      "Numéro cliquable, horaires et délai moyen d'arrivée dès le haut de page",
+      "Dépannages urgents : fuites, débouchage, pannes d'eau chaude",
+      "Travaux planifiés : chauffe-eau, salle de bain, rénovation",
+      "Prix du déplacement et fourchettes des interventions courantes",
+      "Communes desservies avec délai réaliste",
+      "Qui je suis : nom, photo, SIRET — l'anti-plateforme"
+    ],
+    "trustSignals": [
+      "Prix du déplacement affiché avant l'appel",
+      "Photo et nom de l'artisan : un humain, pas un centre d'appel",
+      "Avis clients mentionnant la commune et le type de panne",
+      "Photos d'interventions avant/après",
+      "Assurance et garanties sur les installations"
+    ],
+    "mistakes": [
+      "Copier les codes des plateformes de dépannage (« intervention en 20 min 24h/24 ») : c'est exactement ce qui déclenche la méfiance, jouez la carte inverse de l'artisan identifiable.",
+      "Mélanger urgence et rénovation dans un même bloc : un client en panne ne lit pas, il cherche un numéro ; un client en projet compare, il veut du détail.",
+      "Taire les prix : sans fourchette ni prix de déplacement, vous héritez de la réputation des factures surprises du secteur.",
+      "Négliger l'eau chaude et le chauffe-eau : c'est la recherche planifiée la plus fréquente et la plus rentable de la plomberie."
+    ],
+    "sidePlan": [
+      "« Plombier + [ville] » dans le titre.",
+      "Numéro cliquable en haut de page.",
+      "Urgences et travaux bien séparés.",
+      "Prix de déplacement annoncé.",
+      "Identité réelle : nom, photo, SIRET."
+    ],
+    "cta_side": "Préparer mon plan de page",
+    "localto_link": {
+      "url": "https://localto.fr/visibilite-google-plombier/",
+      "text": "Pour aller au-delà de la page locale — site complet, avis, fiche Google Business —, le guide stratégique <a href=\"https://localto.fr/visibilite-google-plombier/\">visibilité Google pour plombier</a> de Localto détaille la méthode d'ensemble."
+    }
+  },
+  "electricien": {
+    "title": "Exemple de page électricien + ville : plan, sections, devis",
+    "desc": "Exemple de page locale pour électricien : structure mise aux normes et dépannage, preuves de conformité, erreurs à éviter et générateur de plan gratuit.",
+    "h1": "Une page électricien + ville qui rassure sur la sécurité et amène des devis.",
+    "lead": "Tableau vétuste, panne inexpliquée, borne de recharge à poser : vos clients cherchent un électricien capable de sécuriser sans jargon ni devis flou. Votre page locale doit prouver la conformité et rendre vos prestations compréhensibles.",
+    "cta_hero": "Préparer ma page diagnostic + devis",
+    "enjeux_h2": "L'électricité se vend sur la confiance technique",
+    "enjeux_extra": "Vos clients ne savent pas juger un tableau électrique, mais ils savent reconnaître un professionnel qui explique : ce qui est vérifié, ce qui est remplacé, ce que dit la norme NF C 15-100 et ce qu'atteste le Consuel. Cette pédagogie est votre meilleur argument de page.",
+    "intents_intro": "Entre l'urgence (panne) et les projets réglementés (mise aux normes, borne de recharge), les recherches électricité sont très typées. Voici celles à viser :",
+    "services_h2": "Les prestations électriques à mettre en avant",
+    "services": [
+      "Mise aux normes du tableau électrique",
+      "Rénovation électrique complète ou partielle",
+      "Dépannage : panne, disjoncteur, court-circuit",
+      "Installation de borne de recharge (IRVE)",
+      "Éclairage, prises et domotique",
+      "Diagnostic et attestation avant vente ou location"
+    ],
+    "modele_h2": "Le plan type d'une page électricien qui inspire confiance",
+    "titleExample": "Électricien à [ville] : mise aux normes, dépannage et devis gratuit",
+    "metaExample": "Électricien à [ville] : mise aux normes NF C 15-100, dépannage, borne de recharge. Travail certifié, devis clair et gratuit sur [ville] et alentours.",
+    "h1Example": "Électricien à [ville] : une installation sûre, conforme et expliquée",
+    "pageStructure": [
+      "Mise aux normes : ce qui est vérifié, remplacé et attesté",
+      "Dépannage électrique : pannes courantes et délai d'intervention",
+      "Borne de recharge : qualification IRVE, aides et délais",
+      "Nos chantiers récents à [ville] avec photos de tableaux avant/après",
+      "Habilitations, certifications et assurance",
+      "Questions fréquentes avant un devis électrique"
+    ],
+    "trustSignals": [
+      "Qualification IRVE pour les bornes de recharge",
+      "Photos de tableaux électriques avant/après remplacement",
+      "Mention du passage Consuel quand il est requis",
+      "Certifications (Qualifelec le cas échéant) et assurance décennale",
+      "Avis clients citant le type d'intervention et la commune"
+    ],
+    "mistakes": [
+      "Empiler du vocabulaire technique (différentiel 30 mA, GTL, ETEL) sans le traduire : le prospect décroche et appelle celui qui explique simplement.",
+      "Passer sous silence la borne de recharge : c'est la recherche qui explose et elle exige la qualification IRVE — dites-le si vous l'avez.",
+      "Promettre un prix au forfait sans visite pour une rénovation : l'électricité dépend de l'existant, expliquez plutôt comment se construit le devis.",
+      "Oublier l'attestation et la conformité : mise aux normes sans mention du Consuel ou du diagnostic, c'est une promesse invérifiable."
+    ],
+    "sidePlan": [
+      "« Électricien + [ville] » dans le titre.",
+      "Sécurité et conformité en fil rouge.",
+      "Mise aux normes détaillée pas à pas.",
+      "Borne de recharge et qualification IRVE.",
+      "Bouton « Demander un diagnostic »."
+    ],
+    "cta_side": "Préparer mon plan de page",
+    "localto_link": {
+      "url": "https://localto.fr/visibilite-google-electricien/",
+      "text": "Pour construire la stratégie complète autour de cette page — site, avis, fiche Google Business —, consultez le guide <a href=\"https://localto.fr/visibilite-google-electricien/\">visibilité Google pour électricien</a> sur Localto."
+    }
+  },
+  "chauffagiste": {
+    "title": "Page chauffagiste + ville : modèle pour devis chauffage",
+    "desc": "Modèle de page locale chauffagiste : entretien annuel, dépannage hivernal, pompe à chaleur et aides. Structure prête à rédiger avec le générateur gratuit.",
+    "h1": "Une page chauffagiste + ville qui tourne à plein régime toute l'année.",
+    "lead": "Votre activité vit au rythme des saisons : dépannages en plein hiver, remplacements de chaudière au printemps, entretiens obligatoires à l'automne. Votre page locale doit capter ces trois vagues — et rassurer sur les aides et les prix.",
+    "cta_hero": "Préparer ma page devis chauffage",
+    "enjeux_h2": "Saisonnalité extrême et aides : le contexte du chauffagiste",
+    "enjeux_extra": "Entre pompe à chaleur, chaudière gaz et aides publiques qui changent chaque année, vos clients sont perdus. Une page qui clarifie les options, les montants d'aides possibles et l'obligation d'entretien annuel transforme cette confusion en demandes de devis.",
+    "intents_intro": "Les recherches chauffage suivent la météo et la réglementation. Trois familles à couvrir : l'urgence hivernale, le remplacement et l'entretien obligatoire :",
+    "services_h2": "Les prestations chauffage à présenter clairement",
+    "services": [
+      "Dépannage chauffage et chaudière en panne",
+      "Installation et remplacement de chaudière gaz",
+      "Pompe à chaleur air/eau : étude, pose, aides",
+      "Entretien annuel obligatoire et contrat de maintenance",
+      "Désembouage et équilibrage du réseau",
+      "Thermostat connecté et régulation"
+    ],
+    "modele_h2": "Le plan type d'une page chauffagiste qui convertit en toute saison",
+    "titleExample": "Chauffagiste à [ville] : dépannage, entretien et pompe à chaleur",
+    "metaExample": "Chauffagiste à [ville] : dépannage rapide, entretien annuel de chaudière, installation de pompe à chaleur avec accompagnement aux aides. Devis gratuit.",
+    "h1Example": "Chauffagiste à [ville] : votre chauffage entretenu, dépanné, remplacé",
+    "pageStructure": [
+      "Dépannage : délai d'intervention en période de froid",
+      "Entretien annuel : obligation, contenu de la visite, contrat",
+      "Remplacement : chaudière ou pompe à chaleur, comment choisir",
+      "Aides et primes : ce à quoi vos clients peuvent prétendre",
+      "Certifications (RGE) et marques installées",
+      "Zone d'intervention autour de [ville]"
+    ],
+    "trustSignals": [
+      "Certification RGE indispensable pour déclencher les aides",
+      "Marques de chaudières et PAC installées et entretenues",
+      "Contrats d'entretien : contenu et tarif annoncés",
+      "Photos d'installations récentes (chaufferie avant/après)",
+      "Avis clients sur les délais de dépannage en hiver"
+    ],
+    "mistakes": [
+      "Ne pas afficher la certification RGE : sans elle, pas d'aides pour le client — c'est souvent le critère qui décide du devis.",
+      "Parler de la pompe à chaleur comme d'un produit miracle : expliquez plutôt dans quels logements elle est pertinente, vos devis seront mieux qualifiés.",
+      "Négliger l'entretien annuel : c'est une obligation légale et un revenu récurrent, une section dédiée avec tarif capte ces recherches faciles.",
+      "Publier la page en décembre : les remplacements de chaudière se décident au printemps et à l'automne, pas pendant la panne."
+    ],
+    "sidePlan": [
+      "« Chauffagiste + [ville] » dans le titre.",
+      "Dépannage, entretien, remplacement séparés.",
+      "RGE et aides mis en avant.",
+      "Contrat d'entretien avec tarif.",
+      "Bouton « Demander un devis chauffage »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "paysagiste": {
+    "title": "Modèle page paysagiste + ville : structure et exemples",
+    "desc": "Modèle de page locale paysagiste : création de jardin, entretien récurrent, photos de réalisations et structure de page prête à rédiger gratuitement.",
+    "h1": "Une page paysagiste + ville qui donne envie de confier son jardin.",
+    "lead": "Un jardin s'achète avec les yeux : vos prospects veulent voir vos réalisations avant de parler budget. Votre page locale doit montrer vos aménagements, distinguer création et entretien, et convertir la belle image en demande de devis.",
+    "cta_hero": "Préparer ma page devis jardin",
+    "enjeux_h2": "Le paysagiste vend un résultat visible — montrez-le",
+    "enjeux_extra": "Votre marché se partage entre projets de création (terrasse, massifs, clôture) et entretien récurrent, deux clientèles différentes. La création se gagne au portfolio, l'entretien à la confiance et à la régularité : votre page doit parler aux deux, sans les mélanger.",
+    "intents_intro": "Les recherches jardin mêlent envie et praticité : inspiration au printemps, entretien toute l'année, élagage à l'automne. Les formulations à viser :",
+    "services_h2": "Les prestations paysagères à structurer sur la page",
+    "services": [
+      "Création et aménagement de jardin",
+      "Terrasse bois ou pierre et allées",
+      "Clôtures, pergolas et brise-vues",
+      "Entretien régulier : tonte, taille, désherbage",
+      "Élagage et abattage raisonné",
+      "Arrosage automatique et éclairage extérieur"
+    ],
+    "modele_h2": "Le plan type d'une page paysagiste qui met l'eau à la bouche",
+    "titleExample": "Paysagiste à [ville] : création de jardin et entretien d'espaces verts",
+    "metaExample": "Paysagiste à [ville] : aménagement de jardin, terrasses, clôtures et contrats d'entretien. Découvrez nos réalisations et demandez un devis gratuit.",
+    "h1Example": "Paysagiste à [ville] : des jardins conçus, plantés et entretenus",
+    "pageStructure": [
+      "Nos jardins réalisés à [ville] : photos avant/après par projet",
+      "Création : de l'esquisse à la plantation, étapes et saisons idéales",
+      "Entretien à l'année : formules et fréquences",
+      "Terrasses, clôtures et aménagements extérieurs",
+      "Crédit d'impôt services à la personne pour l'entretien",
+      "Zone d'intervention et visite conseil"
+    ],
+    "trustSignals": [
+      "Portfolio avant/après daté et localisé",
+      "Mention du crédit d'impôt de 50 % sur l'entretien (services à la personne)",
+      "Formules d'entretien avec fréquence et contenu",
+      "Photos de chantiers en cours : équipe et matériel",
+      "Avis clients sur des projets livrés dans les communes voisines"
+    ],
+    "mistakes": [
+      "Ne montrer que des photos « après » : l'avant/après prouve la transformation, c'est lui qui déclenche l'appel.",
+      "Oublier le crédit d'impôt : pour l'entretien, 50 % de réduction est un argument décisif que beaucoup de particuliers ignorent.",
+      "Mélanger création et entretien dans une même offre : les budgets, les rythmes et les clients sont différents, séparez les sections.",
+      "Négliger la saisonnalité éditoriale : une section « que planter/préparer ce trimestre » donne une raison de revenir sur la page."
+    ],
+    "sidePlan": [
+      "« Paysagiste + [ville] » dans le titre.",
+      "Avant/après en haut de page.",
+      "Création et entretien séparés.",
+      "Crédit d'impôt entretien mentionné.",
+      "Bouton « Demander une visite conseil »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "menuisier": {
+    "title": "Page locale menuisier : modèle métier + ville et structure",
+    "desc": "Modèle de page menuisier + ville : sur-mesure, pose de fenêtres, agencement. Sections, preuves et erreurs à éviter, avec générateur de plan gratuit.",
+    "h1": "Une page menuisier + ville qui met le sur-mesure en valeur.",
+    "lead": "Placard sous pente, escalier, fenêtres à remplacer : vos clients hésitent entre le standard des grandes enseignes et votre sur-mesure. Votre page locale doit montrer ce que l'industriel ne sait pas faire — et rendre le devis facile à demander.",
+    "cta_hero": "Préparer ma page projet sur mesure",
+    "enjeux_h2": "Menuisier local contre catalogue industriel : votre page tranche",
+    "enjeux_extra": "Face aux cuisinistes et aux poseurs low-cost, votre force est le sur-mesure, la matière et la finition. Chaque projet montré doit raconter la contrainte (angle, pente, vieux bâti) et la solution fabriquée : c'est ce qui justifie votre prix et attire les bons clients.",
+    "intents_intro": "Les recherches menuiserie séparent la fabrication sur mesure et la pose. Les deux amènent des devis — à condition de viser les bonnes formulations :",
+    "services_h2": "Les savoir-faire menuiserie à détailler",
+    "services": [
+      "Agencement sur mesure : placards, dressings, bibliothèques",
+      "Cuisine sur mesure et plans de travail bois",
+      "Escaliers : fabrication, rénovation, habillage",
+      "Fenêtres et portes : bois, alu, mixte, pose et remplacement",
+      "Parquet : pose, rénovation, ponçage",
+      "Terrasses et menuiseries extérieures"
+    ],
+    "modele_h2": "Le plan type d'une page menuisier qui valorise l'atelier",
+    "titleExample": "Menuisier à [ville] : agencement sur mesure et pose de menuiseries",
+    "metaExample": "Menuisier à [ville] : placards et cuisines sur mesure, escaliers, fenêtres et parquet. Fabrication locale, finitions soignées, devis gratuit.",
+    "h1Example": "Menuisier à [ville] : du sur-mesure fabriqué pour votre intérieur",
+    "pageStructure": [
+      "Nos réalisations sur mesure à [ville] : photos et histoire de chaque projet",
+      "Agencement : placards, dressings, sous-pentes impossibles ailleurs",
+      "Fenêtres et portes : matériaux, performance, pose",
+      "L'atelier : machines, essences de bois, finitions",
+      "Délais de fabrication et de pose annoncés",
+      "Questions fréquentes avant un projet menuiserie"
+    ],
+    "trustSignals": [
+      "Photos d'atelier et de fabrication en cours",
+      "Projets sur mesure avec la contrainte résolue en légende",
+      "Essences et matériaux travaillés",
+      "Certification RGE si pose de menuiseries isolantes",
+      "Avis clients sur des projets livrés et posés localement"
+    ],
+    "mistakes": [
+      "Montrer des produits sans raconter la contrainte : un placard droit ne prouve rien, un aménagement sous escalier démontre le sur-mesure.",
+      "Ignorer la pose de fenêtres : c'est la recherche menuiserie la plus fréquente, avec RGE et aides à la clé si vous êtes certifié.",
+      "Ne pas annoncer de délais : le sur-mesure inquiète sur les délais, une fourchette honnête (fabrication + pose) rassure.",
+      "Laisser croire que le sur-mesure est inabordable : donnez un exemple chiffré d'entrée de gamme pour déclencher les demandes."
+    ],
+    "sidePlan": [
+      "« Menuisier + [ville] » dans le titre.",
+      "Réalisations avec contrainte expliquée.",
+      "Fenêtres et RGE mis en avant.",
+      "Délais fabrication + pose annoncés.",
+      "Bouton « Décrire mon projet »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "carreleur": {
+    "title": "Exemple page carreleur + ville : structure et devis pose",
+    "desc": "Exemple de page locale carreleur : salle de bain, grands formats, terrasse. Structure de page, preuves et erreurs à éviter, plan généré gratuitement.",
+    "h1": "Une page carreleur + ville qui prouve la qualité de pose.",
+    "lead": "La différence entre un carrelage banal et un chantier raté tient au poseur : vos clients le savent et cherchent des preuves. Votre page locale doit montrer des chantiers nets, des joints droits et des salles de bains livrées — à [ville] et pas ailleurs.",
+    "cta_hero": "Préparer ma page devis pose",
+    "enjeux_h2": "Le carreleur se juge au millimètre — et à la photo",
+    "enjeux_extra": "Grands formats, douches à l'italienne, terrasses : les supports et les formats se sont complexifiés, et les malfaçons coûtent cher à reprendre. Votre page doit rassurer sur la préparation des supports, l'étanchéité et la précision — ce que les photos de détail prouvent mieux que les mots.",
+    "intents_intro": "Les recherches carrelage sont presque toujours liées à une pièce ou un projet précis. Ciblez ces formulations concrètes :",
+    "services_h2": "Les prestations de pose à présenter",
+    "services": [
+      "Pose de carrelage sol et mur, tous formats",
+      "Salle de bain : douche à l'italienne, faïence, étanchéité",
+      "Grands formats et carreaux XXL",
+      "Terrasse extérieure et pose sur plots",
+      "Chape, ragréage et préparation des supports",
+      "Reprise et réparation de carrelage existant"
+    ],
+    "modele_h2": "Le plan type d'une page carreleur qui rassure au premier regard",
+    "titleExample": "Carreleur à [ville] : pose de carrelage et salle de bain, devis gratuit",
+    "metaExample": "Carreleur à [ville] : pose sol et mur, douche à l'italienne, grands formats, terrasse. Chantiers soignés, photos à l'appui, devis gratuit.",
+    "h1Example": "Carreleur à [ville] : une pose précise, des chantiers propres",
+    "pageStructure": [
+      "Nos chantiers carrelage à [ville] : photos de détail (joints, angles, niveaux)",
+      "Salle de bain : de la dépose à l'étanchéité, étapes du chantier",
+      "Grands formats : pourquoi la pose change tout",
+      "Terrasses et extérieurs : supports, pentes, gel",
+      "Préparation des supports : chape, ragréage, ce qui évite les fissures",
+      "Questions fréquentes avant un devis carrelage"
+    ],
+    "trustSignals": [
+      "Photos de détail : joints, alignements, finitions d'angles",
+      "Chantiers de salle de bain avant/après avec étanchéité visible",
+      "Respect des DTU et garanties sur la pose",
+      "Marques de carrelage et de colles travaillées",
+      "Avis clients avec le type de chantier et la commune"
+    ],
+    "mistakes": [
+      "Publier des photos larges et floues : le prospect cherche le détail des joints et des angles, c'est là que se juge le carreleur.",
+      "Ne pas parler de préparation des supports : chape et ragréage font la durabilité, l'expliquer justifie l'écart de prix avec les poseurs low-cost.",
+      "Zapper la douche à l'italienne : c'est la recherche salle de bain la plus fréquente et la plus sensible (étanchéité), une section dédiée s'impose.",
+      "Rester vague sur les délais de chantier : indiquer la durée type d'une salle de bain complète aide le client à se projeter."
+    ],
+    "sidePlan": [
+      "« Carreleur + [ville] » dans le titre.",
+      "Photos de détail en haut de page.",
+      "Salle de bain en section dédiée.",
+      "Préparation des supports expliquée.",
+      "Bouton « Demander un devis pose »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "macon": {
+    "title": "Page maçon + ville : modèle de structure pour devis travaux",
+    "desc": "Modèle de page locale maçon : extension, murs, ouvertures, gros œuvre. Structure, preuves décennales et erreurs à éviter, plan de page gratuit.",
+    "h1": "Une page maçon + ville qui inspire confiance pour le gros œuvre.",
+    "lead": "Extension, mur porteur, terrasse : les chantiers de maçonnerie engagent la structure de la maison et des budgets lourds. Vos clients cherchent un maçon fiable, assuré et recommandé près de chez eux — votre page locale doit le prouver point par point.",
+    "cta_hero": "Préparer ma page devis travaux",
+    "enjeux_h2": "Le gros œuvre engage la maison : la confiance avant le prix",
+    "enjeux_extra": "Un chantier de maçonnerie ne se rattrape pas facilement : vos prospects vérifient l'assurance décennale, les chantiers passés et les avis avant même de comparer les prix. Les projets d'extension impliquent aussi permis et études — les mentionner vous positionne en professionnel complet.",
+    "intents_intro": "Les recherches maçonnerie correspondent à des projets structurants, souvent précédés de démarches administratives. Les formulations à viser :",
+    "services_h2": "Les travaux de maçonnerie à détailler",
+    "services": [
+      "Extension de maison et agrandissement",
+      "Ouverture de mur porteur avec reprise en sous-œuvre",
+      "Murs de clôture et murets en parpaing ou pierre",
+      "Terrasse béton et dallage",
+      "Fondations, dalles et vides sanitaires",
+      "Rénovation : reprise de fissures, enduits, façades"
+    ],
+    "modele_h2": "Le plan type d'une page maçon solide",
+    "titleExample": "Maçon à [ville] : extension, gros œuvre et devis gratuit",
+    "metaExample": "Entreprise de maçonnerie à [ville] : extension, ouverture de mur porteur, terrasse, fondations. Assurance décennale, références locales, devis gratuit.",
+    "h1Example": "Maçon à [ville] : le gros œuvre réalisé dans les règles de l'art",
+    "pageStructure": [
+      "Nos chantiers de maçonnerie à [ville] : photos et nature des travaux",
+      "Extension : étapes, démarches (permis, étude de sol) et délais",
+      "Mur porteur : pourquoi la reprise en sous-œuvre ne s'improvise pas",
+      "Assurance décennale et garanties : les documents à demander",
+      "Comment se construit un devis de maçonnerie",
+      "Zone d'intervention autour de [ville]"
+    ],
+    "trustSignals": [
+      "Assurance décennale avec nom de l'assureur",
+      "Photos de chantiers en cours : ferraillage, coffrage, étaiement",
+      "Références d'extensions livrées dans le secteur",
+      "Ancienneté, SIRET et effectif de l'entreprise",
+      "Avis clients sur des gros chantiers menés à terme"
+    ],
+    "mistakes": [
+      "Négliger les démarches administratives : expliquer permis, déclaration préalable et étude de sol montre que vous gérez le projet, pas seulement le béton.",
+      "Montrer uniquement des chantiers finis : le ferraillage et le coffrage prouvent la qualité du travail invisible, c'est votre différence.",
+      "Rester flou sur la décennale : pour du gros œuvre, c'est LA question que se pose le client — nom de l'assureur et attestation sur demande.",
+      "Annoncer des prix au m² génériques : chaque terrain et chaque mur diffèrent, expliquez plutôt les postes d'un devis de maçonnerie."
+    ],
+    "sidePlan": [
+      "« Maçon + [ville] » dans le titre.",
+      "Décennale citée dès l'introduction.",
+      "Extension en section détaillée.",
+      "Chantiers en cours photographiés.",
+      "Bouton « Faire chiffrer mon projet »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "serrurier": {
+    "title": "Créer une page serrurier + ville : modèle anti-arnaque",
+    "desc": "Modèle de page locale serrurier : transparence des prix, urgence maîtrisée, différenciation des plateformes. Structure prête à rédiger gratuitement.",
+    "h1": "Une page serrurier + ville qui rassure avant même l'appel.",
+    "lead": "Porte claquée à 22 h : votre client est stressé, pressé — et terrorisé par les arnaques à la serrurerie. Votre page locale doit faire l'inverse des plateformes : prix annoncés, identité réelle, conseils honnêtes. C'est cette transparence qui déclenche l'appel.",
+    "cta_hero": "Préparer ma page urgence + prix clairs",
+    "enjeux_h2": "La serrurerie, métier le plus touché par la méfiance",
+    "enjeux_extra": "Les factures à 1 500 € pour une porte claquée ont ruiné la confiance du public. Votre page doit désamorcer cette peur frontalement : prix de l'ouverture simple affiché, engagement sans destruction inutile, identité vérifiable. Le serrurier honnête gagne en le prouvant, pas en le disant.",
+    "intents_intro": "L'urgence domine les recherches serrurerie, mais la sécurisation planifiée (serrure, blindage) est plus rentable et moins disputée. Visez les deux :",
+    "services_h2": "Les interventions de serrurerie à afficher avec leurs prix",
+    "services": [
+      "Ouverture de porte claquée sans destruction",
+      "Ouverture de porte verrouillée et serrure bloquée",
+      "Changement et remplacement de serrure",
+      "Sécurisation après cambriolage",
+      "Blindage de porte et cylindres haute sécurité",
+      "Double de clés et cylindres sur organigramme"
+    ],
+    "modele_h2": "Le plan type d'une page serrurier qui désamorce la méfiance",
+    "titleExample": "Serrurier à [ville] : ouverture de porte au prix annoncé",
+    "metaExample": "Serrurier à [ville] : ouverture de porte claquée à partir de [prix] €, changement de serrure, blindage. Artisan local identifié, prix confirmés avant intervention.",
+    "h1Example": "Serrurier à [ville] : dépannage honnête, prix confirmé avant d'intervenir",
+    "pageStructure": [
+      "Prix affichés : ouverture simple, ouverture verrouillée, déplacement",
+      "Notre engagement : pas de destruction inutile, prix confirmé avant",
+      "Qui je suis : nom, photo, SIRET, ancienneté à [ville]",
+      "Changement de serrure et sécurisation après effraction",
+      "Blindage et haute sécurité : quand c'est utile, quand ça ne l'est pas",
+      "Comment éviter les arnaques à la serrurerie (guide honnête)"
+    ],
+    "trustSignals": [
+      "Grille de prix publique pour les interventions courantes",
+      "Engagement écrit : devis confirmé avant toute intervention",
+      "Identité complète : nom, photo, SIRET, adresse",
+      "Avis clients mentionnant le prix payé conforme à l'annonce",
+      "Marques de serrures certifiées A2P posées"
+    ],
+    "mistakes": [
+      "Copier le vocabulaire des plateformes (« serrurier 24h/24 le moins cher ») : il déclenche la méfiance au lieu de la lever.",
+      "Cacher les prix : c'est l'unique critère de tri d'un client échaudé — une grille publique vous distingue instantanément.",
+      "Ignorer la sécurisation planifiée : blindage et cylindres de qualité sont plus rentables que l'urgence et fidélisent la clientèle.",
+      "Ne pas expliquer l'ouverture fine : dire que vous ouvrez sans destruction quand c'est possible évite au client de payer une porte neuve."
+    ],
+    "sidePlan": [
+      "« Serrurier + [ville] » dans le titre.",
+      "Prix des ouvertures affichés.",
+      "Identité réelle mise en avant.",
+      "Section anti-arnaque assumée.",
+      "Bouton « Appeler / prix confirmé »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "conciergerie-airbnb": {
+    "title": "Page conciergerie Airbnb + ville : modèle pour propriétaires",
+    "desc": "Modèle de page locale conciergerie Airbnb : services de gestion, revenus locatifs, réglementation. Structure de page orientée propriétaires, gratuite.",
+    "h1": "Une page conciergerie + ville qui convainc les propriétaires de déléguer.",
+    "lead": "Vos clients ne sont pas les voyageurs : ce sont les propriétaires de votre secteur qui hésitent à déléguer la gestion de leur location. Votre page locale doit chiffrer ce que vous leur faites gagner — en revenus, en temps et en tranquillité réglementaire.",
+    "cta_hero": "Préparer ma page gestion locative",
+    "enjeux_h2": "Convaincre un propriétaire : rentabilité, confiance, réglementation",
+    "enjeux_extra": "La location courte durée s'est professionnalisée : tarification dynamique, exigences des voyageurs, numéro d'enregistrement, quotas municipaux. Le propriétaire cherche un gestionnaire qui maîtrise son marché local — taux d'occupation, saisons, règles de la commune — pas une plateforme nationale anonyme.",
+    "intents_intro": "Les propriétaires cherchent avec des mots de rentabilité et de délégation, très différents des recherches voyageurs. Les formulations à viser :",
+    "services_h2": "Les services de conciergerie à détailler pour les propriétaires",
+    "services": [
+      "Création et optimisation des annonces (photos, textes, prix)",
+      "Tarification dynamique selon saison et événements locaux",
+      "Accueil des voyageurs : check-in, check-out, assistance",
+      "Ménage professionnel et gestion du linge",
+      "Maintenance et petites réparations entre deux séjours",
+      "Accompagnement réglementaire : numéro d'enregistrement, changement d'usage"
+    ],
+    "modele_h2": "Le plan type d'une page conciergerie orientée propriétaires",
+    "titleExample": "Conciergerie Airbnb à [ville] : gestion complète de votre location",
+    "metaExample": "Conciergerie Airbnb à [ville] : annonces, voyageurs, ménage, tarification. Déléguez votre location courte durée et optimisez vos revenus. Estimation gratuite.",
+    "h1Example": "Conciergerie Airbnb à [ville] : vos revenus locatifs, sans la charge",
+    "pageStructure": [
+      "Ce que change une conciergerie : temps gagné, revenus optimisés",
+      "Nos services de A à Z : annonce, voyageurs, ménage, maintenance",
+      "Notre connaissance du marché de [ville] : saisons, quartiers, événements",
+      "Tarifs : commission et ce qu'elle comprend",
+      "Réglementation locale : enregistrement, quotas, fiscalité de base",
+      "Estimation gratuite de revenus pour votre bien"
+    ],
+    "trustSignals": [
+      "Nombre de biens gérés dans le secteur (sans exagérer)",
+      "Exemples de biens en gestion avec taux d'occupation réels",
+      "Commission claire et sans frais cachés",
+      "Partenaires locaux : ménage, linge, maintenance",
+      "Connaissance de la réglementation de la commune"
+    ],
+    "mistakes": [
+      "Écrire pour les voyageurs au lieu des propriétaires : « appartement cosy centre-ville » attire des locataires, pas des mandats de gestion.",
+      "Promettre des revenus irréalistes : un propriétaire averti fuit les « +40 % garantis », proposez plutôt une estimation personnalisée.",
+      "Éluder la réglementation : numéro d'enregistrement et quotas municipaux sont la première angoisse des propriétaires urbains — votre maîtrise du sujet est un argument.",
+      "Rester vague sur la commission : « tarifs sur demande » fait fuir, une fourchette claire préqualifie vos contacts."
+    ],
+    "sidePlan": [
+      "« Conciergerie + [ville] » dans le titre.",
+      "S'adresser au propriétaire, pas au voyageur.",
+      "Commission et services détaillés.",
+      "Marché local chiffré prudemment.",
+      "Bouton « Estimer mes revenus »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "sophrologue": {
+    "title": "Page sophrologue + ville : modèle pour remplir son agenda",
+    "desc": "Modèle de page locale sophrologue : motifs de consultation, déroulé de séance, cadre de pratique. Structure douce et rassurante, générée gratuitement.",
+    "h1": "Une page sophrologue + ville qui transforme l'hésitation en premier rendez-vous.",
+    "lead": "Prendre rendez-vous avec un sophrologue est souvent une première fois : votre visiteur ne sait pas comment se déroule une séance ni si son motif « mérite » de consulter. Votre page locale doit accueillir cette hésitation et rendre le premier pas naturel.",
+    "cta_hero": "Préparer ma page prise de rendez-vous",
+    "enjeux_h2": "La sophrologie se choisit à la confiance, pas au devis",
+    "enjeux_extra": "Contrairement aux artisans, vous ne vendez pas une intervention mais un accompagnement : la proximité du cabinet, la clarté du déroulé et le sentiment d'être au bon endroit décident du rendez-vous. Votre page doit être aussi apaisante que votre pratique — et rester dans un discours prudent, sans promesse thérapeutique.",
+    "intents_intro": "Vos futurs clients cherchent rarement « sophrologie » seule : ils associent un motif (stress, sommeil, examen) et une ville. Les formulations à viser :",
+    "services_h2": "Les accompagnements à présenter par motif",
+    "services": [
+      "Gestion du stress et de l'anxiété au quotidien",
+      "Amélioration du sommeil",
+      "Préparation aux examens et à la prise de parole",
+      "Préparation à la naissance en complément du suivi médical",
+      "Accompagnement des douleurs chroniques (en complément)",
+      "Ateliers de groupe et interventions en entreprise"
+    ],
+    "modele_h2": "Le plan type d'une page sophrologue qui met en confiance",
+    "titleExample": "Sophrologue à [ville] : gestion du stress, sommeil, préparation",
+    "metaExample": "Sophrologue certifié(e) à [ville] : séances individuelles pour stress, sommeil, préparation aux examens. Cabinet [quartier], premier échange offert.",
+    "h1Example": "Sophrologue à [ville] : retrouver calme et équilibre, séance après séance",
+    "pageStructure": [
+      "Les motifs qui amènent à consulter (sans jargon médical)",
+      "Comment se déroule une séance, de l'accueil à la fin",
+      "Qui je suis : parcours, certification, approche",
+      "Publics accompagnés : adultes, adolescents, futurs parents",
+      "Tarifs, durée et fréquence recommandée",
+      "Accès au cabinet : quartier, parking, transports"
+    ],
+    "trustSignals": [
+      "Certification et école de formation (RNCP le cas échéant)",
+      "Photo du cabinet : lumière, calme, fauteuil",
+      "Déroulé de séance expliqué pas à pas",
+      "Positionnement clair : complément, pas substitut médical",
+      "Avis clients sobres, centrés sur l'accueil et l'écoute"
+    ],
+    "mistakes": [
+      "Promettre des résultats thérapeutiques (« guérir l'anxiété ») : c'est non conforme au cadre de la pratique et cela détruit la crédibilité.",
+      "Lister des techniques (relaxation dynamique, visualisation) sans parler des motifs : le visiteur cherche « mieux dormir », pas un vocabulaire de formation.",
+      "Oublier l'accès au cabinet : quartier, parking et transports pèsent dans une pratique de proximité choisie pour sa régularité.",
+      "Négliger le premier pas : proposer un échange téléphonique gratuit de 15 minutes lève l'hésitation bien mieux qu'un bouton « réserver »."
+    ],
+    "sidePlan": [
+      "« Sophrologue + [ville] » dans le titre.",
+      "Motifs de consultation en haut de page.",
+      "Déroulé de séance expliqué.",
+      "Discours prudent, sans promesse.",
+      "Bouton « Premier échange offert »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "secretaire-independante": {
+    "title": "Page secrétaire indépendante + ville : modèle et structure",
+    "desc": "Modèle de page locale secrétaire indépendante : services aux TPE et artisans, forfaits, télétravail et proximité. Structure prête à rédiger gratuitement.",
+    "h1": "Une page secrétaire indépendante + ville qui parle aux artisans débordés.",
+    "lead": "Vos clients sont des artisans et dirigeants de TPE qui croulent sous les devis à envoyer et les factures en retard. Votre page locale doit leur montrer ce que vous leur enlevez des épaules — et combien coûte cette tranquillité, en forfait ou à l'heure.",
+    "cta_hero": "Préparer ma page offre de services",
+    "enjeux_h2": "Vendre de la délégation à des pros qui n'ont jamais délégué",
+    "enjeux_extra": "Votre prospect type n'a jamais eu de secrétaire : il ne sait pas ce qui se délègue ni comment ça fonctionne à distance. Votre page doit être pédagogique — exemples concrets de tâches reprises, fonctionnement à l'heure ou au forfait — et jouer la carte locale : connaître les entreprises du secteur rassure.",
+    "intents_intro": "Vos clients cherchent une solution à un débordement précis : administratif en retard, appels manqués, facturation. Les formulations à viser :",
+    "services_h2": "Les services d'assistanat à détailler",
+    "services": [
+      "Gestion administrative courante : courriers, classement, mails",
+      "Devis et factures : création, envoi, suivi",
+      "Relances d'impayés avec tact et méthode",
+      "Permanence téléphonique et prise de rendez-vous",
+      "Pré-comptabilité : préparation des pièces pour l'expert-comptable",
+      "Appels d'offres et dossiers administratifs BTP"
+    ],
+    "modele_h2": "Le plan type d'une page secrétaire indépendante convaincante",
+    "titleExample": "Secrétaire indépendante à [ville] : administratif d'artisans et TPE",
+    "metaExample": "Secrétaire indépendante à [ville] : devis, factures, relances, téléphone. Déléguez votre administratif à l'heure ou au forfait, sans embauche.",
+    "h1Example": "Secrétaire indépendante à [ville] : votre administratif à jour, sans embauche",
+    "pageStructure": [
+      "Ce que vous pouvez déléguer dès demain : exemples concrets",
+      "Comment ça marche : à distance, sur place, ou les deux",
+      "Forfaits et tarif horaire : des formules sans engagement",
+      "Pour qui : artisans, professions libérales, TPE de [ville]",
+      "Confidentialité et outils utilisés",
+      "Premier échange gratuit pour évaluer vos besoins"
+    ],
+    "trustSignals": [
+      "Exemples de missions types avec volume horaire",
+      "Tarifs ou fourchettes affichés (heure et forfaits)",
+      "Expérience sectorielle : BTP, santé, juridique selon votre parcours",
+      "Engagement de confidentialité mentionné",
+      "Témoignages de dirigeants locaux (avec leur accord)"
+    ],
+    "mistakes": [
+      "Lister des compétences (Word, Excel) au lieu de problèmes résolus : votre client achète « mes factures partent à l'heure », pas un logiciel.",
+      "Rester floue sur les prix : le dirigeant de TPE compare mentalement à une embauche, montrez que quelques heures par semaine suffisent.",
+      "Négliger l'angle local : « secrétaire indépendante + ville » est une recherche de confiance — être de la région est un argument, dites-le.",
+      "Oublier les spécialités sectorielles : les dossiers d'appels d'offres BTP ou le vocabulaire médical valent plus cher que le courrier générique."
+    ],
+    "sidePlan": [
+      "« Secrétaire indépendante + [ville] » dans le titre.",
+      "Problèmes résolus plutôt que compétences.",
+      "Formules à l'heure et au forfait.",
+      "Spécialités sectorielles affichées.",
+      "Bouton « Évaluer mes besoins »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "wedding-planner": {
+    "title": "Page wedding planner + région : modèle et structure",
+    "desc": "Modèle de page locale wedding planner : formules, portfolio, lieux et partenaires régionaux. Structure de page inspirante et concrète, générée gratuitement.",
+    "h1": "Une page wedding planner + région qui fait rêver et réserver.",
+    "lead": "Les futurs mariés cherchent un style, une région et une personne de confiance — souvent un an avant le jour J. Votre page locale doit faire les trois à la fois : inspirer par vos mariages passés, prouver votre connaissance des lieux et déclencher le premier rendez-vous.",
+    "cta_hero": "Préparer ma page premiers rendez-vous",
+    "enjeux_h2": "Un mariage se vend à l'émotion et se signe à la confiance",
+    "enjeux_extra": "Votre zone naturelle est la région plus que la ville : les couples cherchent « wedding planner Provence » ou « mariage champêtre Vaucluse ». Votre connaissance des lieux, des traiteurs et des prestataires locaux est un actif que les concurrents parisiens n'ont pas — c'est elle qu'il faut raconter.",
+    "intents_intro": "Les recherches mariage mêlent la région, le style et le budget, avec une longue phase d'inspiration avant le contact. Les formulations à viser :",
+    "services_h2": "Les formules d'accompagnement à clarifier",
+    "services": [
+      "Organisation complète, de la conception au jour J",
+      "Coordination du jour J seul",
+      "Décoration et scénographie de mariage",
+      "Recherche de lieu et de prestataires régionaux",
+      "Mariage intime et elopement",
+      "Cérémonie laïque : création et officiants partenaires"
+    ],
+    "modele_h2": "Le plan type d'une page wedding planner qui convertit l'inspiration",
+    "titleExample": "Wedding planner en [région] : mariages sur mesure et coordination",
+    "metaExample": "Wedding planner en [région] : organisation complète ou coordination jour J. Découvrez nos mariages, nos lieux coups de cœur et réservez un premier échange.",
+    "h1Example": "Wedding planner en [région] : votre mariage, orchestré sereinement",
+    "pageStructure": [
+      "Nos mariages en [région] : reportages avec lieu, saison et ambiance",
+      "Formules : organisation complète ou coordination jour J, ce que chacune couvre",
+      "Nos lieux coups de cœur : domaines, mas, châteaux de la région",
+      "Comment nous travaillons : rencontres, budget, rétroplanning",
+      "Prestataires partenaires : traiteurs, photographes, fleuristes",
+      "Réserver un premier rendez-vous découverte"
+    ],
+    "trustSignals": [
+      "Reportages de vrais mariages avec lieu et saison",
+      "Partenariats avec des domaines et prestataires régionaux",
+      "Nombre de mariages orchestrés par saison (restez honnête)",
+      "Témoignages de couples avec prénoms et lieu",
+      "Présence presse ou blogs mariage le cas échéant"
+    ],
+    "mistakes": [
+      "Cibler seulement sa ville : les couples cherchent par région ou département — « wedding planner [région] » capte bien plus de projets.",
+      "Montrer des photos d'inspiration Pinterest au lieu de vos mariages : le couple veut voir ce que VOUS avez orchestré.",
+      "Rester floue sur les formules : « à partir de » sans expliquer ce que couvre chaque formule fait fuir des couples déjà noyés de choix.",
+      "Négliger le calendrier : rappeler que les beaux lieux se réservent 12 à 18 mois à l'avance crée une urgence naturelle et honnête."
+    ],
+    "sidePlan": [
+      "« Wedding planner + [région] » dans le titre.",
+      "Vrais mariages, lieux et saisons.",
+      "Formules clairement délimitées.",
+      "Partenaires régionaux valorisés.",
+      "Bouton « Rendez-vous découverte »."
+    ],
+    "cta_side": "Préparer mon plan de page"
+  },
+  "photographe-mariage": {
+    "title": "Page photographe de mariage + ville : modèle et plan",
+    "desc": "Modèle de page locale photographe de mariage : portfolio par style, formules, lieux couverts. Structure de page qui convertit, générée gratuitement.",
+    "h1": "Une page photographe de mariage + ville qui remplit le calendrier des saisons.",
+    "lead": "Les mariés réservent leur photographe 12 à 18 mois à l'avance, après avoir écumé les portfolios. Votre page locale doit montrer votre style en quelques secondes, prouver que vous connaissez les lieux de la région et donner envie de bloquer la date.",
+    "cta_hero": "Préparer ma page réservations mariage",
+    "enjeux_h2": "Le photographe de mariage se choisit au style — et à la date",
+    "enjeux_extra": "Votre contrainte est unique : chaque samedi d'été ne se vend qu'une fois. Votre page doit donc convertir vite les couples dont le style correspond au vôtre, et filtrer les autres. Montrer vos reportages dans les lieux emblématiques de la région rassure aussi sur votre aisance le jour J.",
+    "intents_intro": "Les couples croisent le style, le lieu et le budget dans leurs recherches, très en amont de la date. Les formulations à viser :",
+    "services_h2": "Les prestations photo à présenter en formules",
+    "services": [
+      "Reportage complet : préparatifs, cérémonie, soirée",
+      "Séance engagement avant le mariage",
+      "Séance couple « day after » ou « trash the dress »",
+      "Album photo et tirages d'art",
+      "Second photographe pour les grands mariages",
+      "Vidéo ou drone en partenariat le cas échéant"
+    ],
+    "modele_h2": "Le plan type d'une page photographe de mariage qui fait réserver",
+    "titleExample": "Photographe de mariage à [ville] : reportages naturels et lumineux",
+    "metaExample": "Photographe de mariage à [ville] et en [région] : reportages complets, séance engagement, albums. Découvrez mes mariages et vérifiez ma disponibilité.",
+    "h1Example": "Photographe de mariage à [ville] : vos souvenirs, sans pose forcée",
+    "pageStructure": [
+      "Mes mariages récents : reportages complets par lieu et saison",
+      "Mon style en trois mots — et ce que je ne fais pas",
+      "Formules et tarifs : ce que couvre chaque forfait",
+      "Les lieux que je connais : domaines et mairies de la région",
+      "Comment vérifier ma disponibilité pour votre date",
+      "Questions fréquentes des futurs mariés"
+    ],
+    "trustSignals": [
+      "Reportages complets (pas seulement les 10 meilleures photos)",
+      "Lieux de mariage de la région déjà couverts, cités nommément",
+      "Délai de livraison des photos annoncé",
+      "Contrat, acompte et matériel de secours mentionnés",
+      "Témoignages de mariés avec lieu et année"
+    ],
+    "mistakes": [
+      "Montrer un best-of sans reportage complet : les couples veulent juger la constance sur une journée entière, pas dix photos parfaites.",
+      "Cacher les tarifs : les mariés budgètent tôt — une grille de formules évite les demandes hors budget et les silences gênés.",
+      "Négliger la disponibilité : un module ou une mention « vérifiez votre date » convertit mieux que « contactez-moi ».",
+      "Rester générique sur les lieux : citer les domaines et mairies déjà couverts dans la région crée une connivence immédiate avec les couples qui y ont réservé."
+    ],
+    "sidePlan": [
+      "« Photographe mariage + [ville] » dans le titre.",
+      "Reportages complets en avant.",
+      "Style assumé, clientèle filtrée.",
+      "Formules et délais annoncés.",
+      "Bouton « Vérifier ma date »."
+    ],
+    "cta_side": "Préparer mon plan de page",
+    "localto_link": {
+      "url": "https://localto.fr/visibilite-google-photographe/",
+      "text": "Pour la stratégie globale de visibilité d'un photographe — portfolio, référencement des galeries, fiche Google —, le guide <a href=\"https://localto.fr/visibilite-google-photographe/\">visibilité Google pour photographe</a> de Localto complète cette page."
+    }
+  }
+}

@@ -834,9 +834,18 @@ def render_pilier():
 </section>"""
 
     steps = "".join(f"<li class='reveal'>{p}</li>" for p in P["method_points"])
+    outil_card = f"""
+<div class="res-card reveal" style="max-width:820px">
+  <div class="icon-tile">{icon("pin")}</div>
+  <div>
+    <h3>{C.SECTIONS["outil_title"]}</h3>
+    <p>{C.SECTIONS["outil_text"]}</p>
+  </div>
+</div>"""
     method = section(
         head_block(P["method_eyebrow"], P["method_h2"], P["method_intro"])
         + f'<ol class="steps" style="max-width:820px">{steps}</ol>'
+        + outil_card
         + resources_card()
     )
     grid = section(
@@ -988,11 +997,20 @@ def render_metier(m, kind):
         alt=True,
     )
 
-    # --- plan 7 jours ---
+    # --- plan 7 jours (+ passerelle outil VDMV) ---
     plan = "".join(f"<li class='reveal'>{p}</li>" for p in d["plan"])
+    outil_card = f"""
+<div class="res-card reveal" style="max-width:760px">
+  <div class="icon-tile">{icon("pin")}</div>
+  <div>
+    <h3>{S["outil_title"]}</h3>
+    <p>{S["outil_text"]}</p>
+  </div>
+</div>"""
     plan_sec = section(
         head_block(S["plan_eyebrow"], S["plan_h2"], S["plan_intro"])
-        + f'<ol class="timeline" style="max-width:760px">{plan}</ol>',
+        + f'<ol class="timeline" style="max-width:760px">{plan}</ol>'
+        + outil_card,
         sid="plan-7-jours",
     )
 

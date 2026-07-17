@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /leads/
+Sitemap: https://visible-dans-ma-ville.fr/sitemap.xml

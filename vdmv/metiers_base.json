@@ -1,0 +1,707 @@
+{
+ "carreleur": {
+  "title": "Créer une page carreleur + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour carreleur : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page carreleur + ville pour recevoir plus de demandes locales.",
+  "nom": "Carreleur",
+  "objectif": "Demandes de devis carrelage.",
+  "tags": [
+   "carreleur + ville",
+   "devis carrelage + ville",
+   "pose carrelage + ville"
+  ],
+  "pourquoi": "Un client recherche des exemples, des prix indicatifs et un artisan disponible près de chez lui. La page ville doit donner confiance dès les premières secondes.",
+  "recherches": [
+   "carreleur + ville",
+   "devis carrelage + ville",
+   "pose carrelage + ville",
+   "faïence salle de bain + ville",
+   "carrelage terrasse + ville"
+  ],
+  "sections": [
+   "Pose intérieure",
+   "Salle de bain et faïence",
+   "Terrasse extérieure",
+   "Préparation du support",
+   "Prix et délais"
+  ],
+  "titre_exemple": "Carreleur à [ville] : pose de carrelage et devis personnalisé",
+  "service_defaut": "pose de carrelage",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est carreleur ?",
+    "a": "Oui : « carreleur + ville » et « pose carrelage + ville » sont des recherches directes de particuliers en plein projet. Une page par commune prioritaire capte ces demandes."
+   },
+   {
+    "q": "Faut-il afficher un prix au m² pour la pose de carrelage ?",
+    "a": "Des fourchettes au m² selon le format et le support (sol, mur, douche à l’italienne) rassurent et filtrent les demandes. C’est l’une des questions les plus tapées sur Google."
+   },
+   {
+    "q": "Quelles réalisations montrer sur une page carreleur ?",
+    "a": "Des chantiers finis et variés : salle de bain, terrasse, grand format, faïence. Ajoutez la commune et une phrase sur la difficulté technique résolue : cela parle aux particuliers comme à Google."
+   },
+   {
+    "q": "Comment obtenir des demandes de devis mieux qualifiées ?",
+    "a": "Listez les informations à préparer : surface, type de carrelage, état du support, délai souhaité. Un petit encadré « pour un devis rapide, indiquez… » améliore la qualité des contacts."
+   }
+  ]
+ },
+ "chauffagiste": {
+  "title": "Créer une page chauffagiste + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour chauffagiste : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page chauffagiste + ville pour recevoir plus de demandes locales.",
+  "nom": "Chauffagiste",
+  "objectif": "Demandes de devis chauffage.",
+  "tags": [
+   "chauffagiste + ville",
+   "devis pompe à chaleur + ville",
+   "installation chaudière + ville"
+  ],
+  "pourquoi": "Entre chaudière, pompe à chaleur, entretien et dépannage, le client a besoin d’explications simples avant de demander un devis.",
+  "recherches": [
+   "chauffagiste + ville",
+   "devis pompe à chaleur + ville",
+   "installation chaudière + ville",
+   "entretien chauffage + ville",
+   "dépannage chauffage + ville"
+  ],
+  "sections": [
+   "Solutions de chauffage",
+   "Pompe à chaleur",
+   "Entretien annuel",
+   "Dépannage et urgence",
+   "Aides et devis"
+  ],
+  "titre_exemple": "Chauffagiste à [ville] : installation pompe à chaleur et devis personnalisé",
+  "service_defaut": "installation pompe à chaleur",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est chauffagiste ?",
+    "a": "Oui : « chauffagiste + ville » et « installation pompe à chaleur + ville » sont des recherches à forte intention. Une page locale complète capte ces demandes avant les plateformes nationales."
+   },
+   {
+    "q": "Faut-il parler des aides (MaPrimeRénov’, CEE) sur la page ?",
+    "a": "Oui, c’est souvent le premier frein du client. Expliquez simplement les aides mobilisables, les conditions et votre accompagnement dans les démarches. Mentionnez votre certification RGE, indispensable pour ces aides."
+   },
+   {
+    "q": "Comment rassurer un client qui compare plusieurs devis chauffage ?",
+    "a": "Détaillez ce que comprend votre devis : matériel, pose, mise en service, entretien. Ajoutez des exemples d’installations locales avec le type de logement et le gain constaté."
+   },
+   {
+    "q": "Faut-il afficher des prix pour une pompe à chaleur ?",
+    "a": "Des fourchettes pose comprise, avant et après aides, aident le visiteur à se projeter. C’est un contenu que peu de concurrents locaux affichent : un vrai avantage pour se positionner."
+   }
+  ]
+ },
+ "conciergerie-airbnb": {
+  "title": "Page conciergerie Airbnb + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour conciergerie Airbnb : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page conciergerie Airbnb + ville pour recevoir plus de demandes locales.",
+  "nom": "Conciergerie Airbnb",
+  "objectif": "Demandes de propriétaires.",
+  "tags": [
+   "conciergerie Airbnb + ville",
+   "gestion Airbnb + ville",
+   "conciergerie location saisonnière + ville"
+  ],
+  "pourquoi": "Les propriétaires veulent déléguer sans perdre le contrôle. Ils cherchent une conciergerie locale capable d’optimiser annonces, ménage, voyageurs et revenus.",
+  "recherches": [
+   "conciergerie Airbnb + ville",
+   "gestion Airbnb + ville",
+   "conciergerie location saisonnière + ville",
+   "gestion location courte durée + ville",
+   "service Airbnb propriétaire + ville"
+  ],
+  "sections": [
+   "Gestion des voyageurs",
+   "Ménage et linge",
+   "Optimisation annonce",
+   "Photos et tarifs",
+   "Commission et rentabilité"
+  ],
+  "titre_exemple": "Conciergerie airbnb à [ville] : gestion de location courte durée et devis personnalisé",
+  "service_defaut": "gestion de location courte durée",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville pour une conciergerie Airbnb ?",
+    "a": "Oui : un propriétaire cherche « conciergerie Airbnb + sa ville » ou « gestion location courte durée + ville ». Une page par zone touristique ou ville gérée capte exactement ces recherches."
+   },
+   {
+    "q": "Comment présenter ses tarifs de conciergerie ?",
+    "a": "Annoncez votre modèle clairement : commission sur les revenus (souvent 15 à 25 %) ou forfait, et ce qui est inclus (annonces, voyageurs, ménage, linge). La transparence évite les demandes non qualifiées."
+   },
+   {
+    "q": "Quels résultats mettre en avant pour convaincre un propriétaire ?",
+    "a": "Taux d’occupation moyen, note des annonces gérées, revenus générés sur des biens comparables dans la même ville. Des chiffres locaux, même sur peu de biens, valent mieux que des promesses générales."
+   },
+   {
+    "q": "Faut-il parler de la réglementation locale sur la page ?",
+    "a": "Oui : numéro d’enregistrement, changement d’usage, taxe de séjour. Montrer que vous maîtrisez les règles de la commune rassure le propriétaire et répond à des recherches réelles."
+   }
+  ]
+ },
+ "couvreur": {
+  "title": "Créer une page couvreur + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour couvreur : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page couvreur + ville pour recevoir plus de demandes locales.",
+  "nom": "Couvreur",
+  "objectif": "Demandes de devis toiture.",
+  "tags": [
+   "couvreur + ville",
+   "devis toiture + ville",
+   "réparation toiture + ville"
+  ],
+  "pourquoi": "Les recherches toiture sont souvent urgentes : fuite, tuiles cassées, isolation, zinguerie. Une page ville claire peut rassurer et transformer une recherche locale en appel.",
+  "recherches": [
+   "couvreur + ville",
+   "devis toiture + ville",
+   "réparation toiture + ville",
+   "fuite toiture + ville",
+   "entreprise couverture + ville"
+  ],
+  "sections": [
+   "Diagnostic toiture",
+   "Urgences et fuites",
+   "Zinguerie et gouttières",
+   "Photos avant/après",
+   "Garanties et assurance"
+  ],
+  "titre_exemple": "Couvreur à [ville] : réparation de toiture et devis personnalisé",
+  "service_defaut": "réparation de toiture",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est couvreur ?",
+    "a": "Oui si vous couvrez plusieurs communes. Les recherches toiture se font presque toujours avec une ville (« réparation toiture Cavaillon ») : chaque page ville dédiée capte ces demandes avec des exemples de chantiers locaux."
+   },
+   {
+    "q": "Comment capter les recherches urgentes de fuite de toiture ?",
+    "a": "Affichez clairement le délai d’intervention, un numéro de téléphone cliquable dès le haut de page et une section « urgence fuite » dédiée. Sur mobile, l’appel doit être possible en un geste."
+   },
+   {
+    "q": "Faut-il indiquer des prix pour des travaux de toiture ?",
+    "a": "Donnez des fourchettes par type d’intervention : réparation ponctuelle, réfection partielle, réfection complète au m². Cela rassure, évite les appels hors budget et enrichit le contenu de la page."
+   },
+   {
+    "q": "Quelles preuves de confiance ajouter sur une page couvreur ?",
+    "a": "Assurance décennale, années d’expérience, photos avant/après avec la commune, avis clients locaux. Ces éléments font la différence quand le prospect compare deux artisans."
+   }
+  ]
+ },
+ "electricien": {
+  "title": "Créer une page électricien + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour électricien : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page électricien + ville pour recevoir plus de demandes locales.",
+  "nom": "Électricien",
+  "objectif": "Demandes de diagnostic et devis électrique.",
+  "tags": [
+   "électricien + ville",
+   "devis électricité + ville",
+   "mise aux normes électrique + ville"
+  ],
+  "pourquoi": "Les prospects cherchent un professionnel fiable pour une panne, une rénovation ou une mise aux normes. La page doit prouver votre sérieux et expliquer vos interventions.",
+  "recherches": [
+   "électricien + ville",
+   "devis électricité + ville",
+   "mise aux normes électrique + ville",
+   "dépannage électrique + ville",
+   "tableau électrique + ville"
+  ],
+  "sections": [
+   "Dépannage électrique",
+   "Mise aux normes",
+   "Tableau électrique",
+   "Rénovation logement",
+   "Sécurité et garanties"
+  ],
+  "titre_exemple": "Électricien à [ville] : mise aux normes électrique et devis personnalisé",
+  "service_defaut": "mise aux normes électrique",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est électricien ?",
+    "a": "Oui, une page par commune d’intervention prioritaire. « Électricien + ville » et « mise aux normes + ville » sont des recherches fréquentes avec une vraie intention de devis."
+   },
+   {
+    "q": "Faut-il mentionner ses certifications sur la page ?",
+    "a": "Absolument : qualification, habilitations, garantie décennale et attestation Consuel le cas échéant. C’est un critère de choix fort pour un client qui compare, et un signal de confiance pour Google."
+   },
+   {
+    "q": "Comment présenter une prestation de mise aux normes électrique ?",
+    "a": "Expliquez les étapes : diagnostic, devis détaillé, travaux, attestation. Ajoutez les signes d’alerte (tableau ancien, fusibles, prises qui chauffent) : ce sont exactement les questions que se posent les particuliers."
+   },
+   {
+    "q": "Faut-il afficher des prix pour les interventions électriques ?",
+    "a": "Donnez des fourchettes : remplacement de tableau, mise à la terre, rénovation complète au m². Ces repères filtrent les demandes et enrichissent le contenu de la page."
+   }
+  ]
+ },
+ "macon": {
+  "title": "Créer une page maçon + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour maçon : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page maçon + ville pour recevoir plus de demandes locales.",
+  "nom": "Maçon",
+  "objectif": "Demandes de devis travaux.",
+  "tags": [
+   "maçon + ville",
+   "devis maçonnerie + ville",
+   "mur clôture + ville"
+  ],
+  "pourquoi": "Les projets de maçonnerie engagent un budget important. Le site doit expliquer les types de chantiers, la zone d’intervention et les étapes de devis.",
+  "recherches": [
+   "maçon + ville",
+   "devis maçonnerie + ville",
+   "mur clôture + ville",
+   "dalle béton + ville",
+   "extension maison + ville"
+  ],
+  "sections": [
+   "Petite maçonnerie",
+   "Dalle et fondations",
+   "Mur et clôture",
+   "Extension et ouverture",
+   "Étapes du chantier"
+  ],
+  "titre_exemple": "Maçon à [ville] : travaux de maçonnerie et devis personnalisé",
+  "service_defaut": "travaux de maçonnerie",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est maçon ?",
+    "a": "Oui : les projets de maçonnerie se cherchent localement (« maçon + ville », « extension maison + ville »). Une page par commune avec des chantiers locaux vous positionne sur ces recherches."
+   },
+   {
+    "q": "Quels types de travaux détailler sur une page maçon ?",
+    "a": "Séparez clairement : extension, élévation, mur de clôture, terrasse, rénovation. Chaque type de travaux correspond à des recherches différentes et mérite sa section, voire sa page."
+   },
+   {
+    "q": "Faut-il mentionner l’assurance décennale sur la page ?",
+    "a": "Oui, dès le haut de page. Pour des travaux structurels, c’est le premier critère de confiance. Ajoutez vos années d’expérience et des photos de chantiers livrés dans la zone."
+   },
+   {
+    "q": "Comment donner des repères de prix en maçonnerie ?",
+    "a": "Des fourchettes par projet type (extension au m², mur en parpaing au mètre linéaire) suffisent. Précisez que chaque devis dépend du terrain et de l’accès : cela justifie la visite."
+   }
+  ]
+ },
+ "menuisier": {
+  "title": "Créer une page menuisier + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour menuisier : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page menuisier + ville pour recevoir plus de demandes locales.",
+  "nom": "Menuisier",
+  "objectif": "Demandes de devis fenêtres, portes et agencement.",
+  "tags": [
+   "menuisier + ville",
+   "devis menuiserie + ville",
+   "pose fenêtre + ville"
+  ],
+  "pourquoi": "Le prospect veut comparer matériaux, finitions, délais et qualité de pose. Une page locale bien structurée peut générer des demandes qualifiées.",
+  "recherches": [
+   "menuisier + ville",
+   "devis menuiserie + ville",
+   "pose fenêtre + ville",
+   "porte sur mesure + ville",
+   "agencement intérieur + ville"
+  ],
+  "sections": [
+   "Menuiserie intérieure",
+   "Menuiserie extérieure",
+   "Sur-mesure",
+   "Matériaux et finitions",
+   "Réalisations locales"
+  ],
+  "titre_exemple": "Menuisier à [ville] : pose de menuiseries et devis personnalisé",
+  "service_defaut": "pose de menuiseries",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est menuisier ?",
+    "a": "Oui, pour chaque zone où vous voulez plus de chantiers. « Menuisier + ville » et « pose de fenêtres + ville » sont des recherches avec un vrai besoin derrière."
+   },
+   {
+    "q": "Faut-il séparer menuiserie sur mesure et pose de menuiseries ?",
+    "a": "Idéalement oui : ce sont deux clientèles différentes. Une page pour l’agencement sur mesure (dressing, escalier, cuisine) et une pour la pose (fenêtres, portes, volets) répondent chacune à des recherches précises."
+   },
+   {
+    "q": "Quels matériaux mettre en avant sur la page ?",
+    "a": "Précisez bois, PVC, alu et leurs usages. Les particuliers comparent souvent les matériaux avant de choisir l’artisan : répondre à cette question sur votre page vous positionne sur leurs recherches."
+   },
+   {
+    "q": "Comment montrer la qualité de son travail de menuisier ?",
+    "a": "Photos de réalisations locales avec détails (essence de bois, finition), mention des garanties et de l’assurance décennale, avis clients. Le sur-mesure se vend sur la preuve."
+   }
+  ]
+ },
+ "paysagiste": {
+  "title": "Créer une page paysagiste + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour paysagiste : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page paysagiste + ville pour recevoir plus de demandes locales.",
+  "nom": "Paysagiste",
+  "objectif": "Demandes de devis jardin et extérieur.",
+  "tags": [
+   "paysagiste + ville",
+   "aménagement jardin + ville",
+   "devis paysagiste + ville"
+  ],
+  "pourquoi": "Les clients cherchent des idées, des exemples locaux et un prestataire capable de transformer un jardin. Les photos et pages par ville sont décisives.",
+  "recherches": [
+   "paysagiste + ville",
+   "aménagement jardin + ville",
+   "devis paysagiste + ville",
+   "création jardin + ville",
+   "entretien jardin + ville"
+  ],
+  "sections": [
+   "Création de jardin",
+   "Entretien régulier",
+   "Terrasses et allées",
+   "Exemples de réalisations",
+   "Budget et devis"
+  ],
+  "titre_exemple": "Paysagiste à [ville] : aménagement de jardin et devis personnalisé",
+  "service_defaut": "aménagement de jardin",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est paysagiste ?",
+    "a": "Oui si vous intervenez sur plusieurs communes. « Paysagiste + ville » et « aménagement jardin + ville » sont des recherches saisonnières régulières avec une vraie intention de projet."
+   },
+   {
+    "q": "Comment utiliser les photos avant/après sur une page paysagiste ?",
+    "a": "C’est votre meilleur argument : montrez le terrain avant, le résultat après, la commune et le type de projet. Trois transformations locales bien présentées valent mieux qu’une longue liste de prestations."
+   },
+   {
+    "q": "Faut-il parler d’entretien ou seulement de création ?",
+    "a": "Les deux : la création attire les gros projets, l’entretien régulier assure des revenus récurrents. Précisez si vous proposez des contrats annuels et le crédit d’impôt service à la personne le cas échéant."
+   },
+   {
+    "q": "Quand publier sa page paysagiste pour être visible au bon moment ?",
+    "a": "Le plus tôt possible : les recherches explosent au printemps, mais Google a besoin de quelques semaines pour positionner une page. Publiez en hiver pour être prêt à la belle saison."
+   }
+  ]
+ },
+ "photographe-mariage": {
+  "title": "Page photographe mariage + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour photographe mariage : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page photographe mariage + ville pour recevoir plus de demandes locales.",
+  "nom": "Photographe de mariage",
+  "objectif": "Demandes de devis photo mariage.",
+  "tags": [
+   "photographe mariage + ville",
+   "reportage mariage + ville",
+   "tarif photographe mariage + ville"
+  ],
+  "pourquoi": "Les couples comparent beaucoup avant de réserver. Une page ville doit montrer le style, les lieux couverts, les prestations et faciliter la prise de contact.",
+  "recherches": [
+   "photographe mariage + ville",
+   "reportage mariage + ville",
+   "tarif photographe mariage + ville",
+   "photo couple mariage + ville",
+   "photographe mariage naturel + ville"
+  ],
+  "sections": [
+   "Style photo",
+   "Reportage complet",
+   "Séance couple",
+   "Galeries et exemples",
+   "Tarifs et disponibilités"
+  ],
+  "titre_exemple": "Photographe mariage à [ville] : reportage photo mariage et devis personnalisé",
+  "service_defaut": "reportage photo mariage",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est photographe de mariage ?",
+    "a": "Oui, par ville ou région de cœur (« photographe mariage Avignon », « photographe mariage Provence »). Les couples cherchent quelqu’un qui connaît les lieux de réception locaux."
+   },
+   {
+    "q": "Faut-il afficher ses tarifs de photographe de mariage ?",
+    "a": "Affichez au moins un « à partir de » et le contenu des forfaits : heures de présence, galerie, album, séance couple. Cela évite les demandes hors budget et répond à la recherche « prix photographe mariage »."
+   },
+   {
+    "q": "Comment présenter son portfolio pour convaincre ?",
+    "a": "Montrez des mariages complets plutôt que des photos isolées : préparatifs, cérémonie, soirée, dans des lieux identifiés de la région. Le couple doit pouvoir se projeter dans son propre lieu de réception."
+   },
+   {
+    "q": "Combien de temps à l’avance faut-il être visible sur Google ?",
+    "a": "Les couples réservent leur photographe 8 à 14 mois avant le mariage. Une page qui se positionne aujourd’hui génère des contrats pour l’année suivante : plus tôt elle est publiée, mieux c’est."
+   }
+  ]
+ },
+ "pisciniste": {
+  "title": "Créer une page pisciniste + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour pisciniste : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page pisciniste + ville pour recevoir plus de demandes locales.",
+  "nom": "Pisciniste",
+  "objectif": "Demandes de devis piscine.",
+  "tags": [
+   "pisciniste + ville",
+   "devis piscine + ville",
+   "construction piscine + ville"
+  ],
+  "pourquoi": "Un particulier compare souvent plusieurs entreprises avant de lancer un projet piscine. Si votre site ne répond pas aux questions sur le budget, les modèles, les délais et la zone d’intervention, il part chez un concurrent.",
+  "recherches": [
+   "pisciniste + ville",
+   "devis piscine + ville",
+   "construction piscine + ville",
+   "rénovation piscine + ville",
+   "prix piscine + ville"
+  ],
+  "sections": [
+   "Prix et types de piscines",
+   "Réalisations locales",
+   "Délais et démarches",
+   "Entretien et rénovation",
+   "Questions fréquentes avant devis"
+  ],
+  "titre_exemple": "Pisciniste à [ville] : construction de piscine et devis personnalisé",
+  "service_defaut": "construction de piscine",
+  "faq": [
+   {
+    "q": "Faut-il créer une page par ville quand on est pisciniste ?",
+    "a": "Oui, dès que vous intervenez sur plusieurs communes. Un particulier qui tape « pisciniste Avignon » cherche une entreprise proche de chez lui : une page dédiée à chaque ville prioritaire répond exactement à cette recherche, avec des réalisations et des zones d’intervention locales."
+   },
+   {
+    "q": "Faut-il afficher les prix des piscines sur la page ?",
+    "a": "Des fourchettes indicatives par type de projet (coque, béton, rénovation) suffisent. Elles rassurent le visiteur, filtrent les demandes hors budget et donnent à Google un contenu concret que la plupart des concurrents n’affichent pas."
+   },
+   {
+    "q": "Comment mettre en avant ses réalisations locales ?",
+    "a": "Ajoutez des photos de chantiers avec le nom de la commune, le type de piscine et un mot sur le projet. Une galerie « nos piscines autour d’Avignon » vaut mieux que dix photos anonymes : elle prouve que vous travaillez vraiment dans la zone."
+   },
+   {
+    "q": "Combien de temps avant d’apparaître sur Google avec une page pisciniste + ville ?",
+    "a": "Comptez généralement quelques semaines à quelques mois selon la concurrence locale. Une page complète (prestations, prix indicatifs, FAQ, photos) sur un site rapide se positionne beaucoup plus vite qu’une simple page de contact."
+   }
+  ]
+ },
+ "plombier": {
+  "title": "Créer une page plombier + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour plombier : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page plombier + ville pour recevoir plus de demandes locales.",
+  "nom": "Plombier",
+  "objectif": "Appels pour dépannage ou devis plomberie.",
+  "tags": [
+   "plombier + ville",
+   "dépannage plomberie + ville",
+   "fuite eau + ville"
+  ],
+  "pourquoi": "Un client qui cherche un plombier veut savoir si vous intervenez vite, dans sa commune, pour quel type de panne, et comment vous contacter sans friction.",
+  "recherches": [
+   "plombier + ville",
+   "dépannage plomberie + ville",
+   "fuite eau + ville",
+   "devis plomberie + ville",
+   "plombier urgence + ville"
+  ],
+  "sections": [
+   "Dépannages fréquents",
+   "Zone d’intervention",
+   "Tarifs et devis",
+   "Remplacement équipements",
+   "Disponibilités"
+  ],
+  "titre_exemple": "Plombier à [ville] : dépannage plomberie et devis personnalisé",
+  "service_defaut": "dépannage plomberie",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est plombier ?",
+    "a": "Oui : les recherches plomberie sont très locales (« plombier Vitrolles », « fuite d’eau Salon-de-Provence »). Une page par commune prioritaire vous positionne exactement là où vos clients cherchent."
+   },
+   {
+    "q": "Comment capter les urgences plomberie sur Google ?",
+    "a": "Mettez le numéro cliquable en haut de page, précisez les horaires (soir, week-end) et le délai moyen d’arrivée. Une section « dépannage urgent » avec les pannes courantes répond aux recherches de dernière minute."
+   },
+   {
+    "q": "Faut-il afficher ses tarifs de dépannage ?",
+    "a": "Indiquez au minimum le prix du déplacement et des fourchettes pour les interventions courantes (fuite, débouchage, chauffe-eau). La transparence évite la méfiance liée aux dépannages abusifs."
+   },
+   {
+    "q": "Que mettre sur la page pour se différencier des plateformes de dépannage ?",
+    "a": "Votre identité réelle : nom, photo, SIRET, commune, avis clients. Les plateformes anonymes inspirent la méfiance ; un artisan local identifiable gagne le clic et l’appel."
+   }
+  ]
+ },
+ "secretaire-independante": {
+  "title": "Page secrétaire indépendante + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour secrétaire indépendante : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page secrétaire indépendante + ville pour recevoir plus de demandes locales.",
+  "nom": "Secrétaire indépendante",
+  "objectif": "Demandes de missions administratives.",
+  "tags": [
+   "secrétaire indépendante + ville",
+   "assistante administrative + ville",
+   "télésecrétariat + ville"
+  ],
+  "pourquoi": "Les dirigeants, artisans et professions libérales cherchent une aide fiable pour gagner du temps. La page doit expliquer les missions et les bénéfices concrets.",
+  "recherches": [
+   "secrétaire indépendante + ville",
+   "assistante administrative + ville",
+   "télésecrétariat + ville",
+   "secrétaire freelance + ville",
+   "aide administrative entreprise + ville"
+  ],
+  "sections": [
+   "Missions administratives",
+   "Télésecrétariat",
+   "Gestion d’agenda",
+   "Relances et facturation",
+   "Tarifs et forfaits"
+  ],
+  "titre_exemple": "Secrétaire indépendante à [ville] : assistance administrative et devis personnalisé",
+  "service_defaut": "assistance administrative",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est secrétaire indépendante ?",
+    "a": "Oui pour votre zone de proximité, même si vous travaillez à distance : « secrétaire indépendante + ville » reste la recherche principale des artisans et TPE qui préfèrent une collaboration locale."
+   },
+   {
+    "q": "Comment présenter ses prestations administratives ?",
+    "a": "Par besoin client : devis et factures, relances impayés, gestion de boîte mail, pré-comptabilité, permanence téléphonique. Un dirigeant doit reconnaître son problème en dix secondes."
+   },
+   {
+    "q": "Faut-il afficher ses tarifs de secrétariat indépendant ?",
+    "a": "Indiquez votre taux horaire ou vos forfaits mensuels avec ce qu’ils incluent. Cela filtre les demandes et rassure les TPE qui comparent avec un salarié à temps partiel."
+   },
+   {
+    "q": "Comment rassurer sur le travail à distance ?",
+    "a": "Précisez vos outils, vos horaires de disponibilité, la confidentialité et une période d’essai éventuelle. Ajoutez des témoignages de clients locaux : la proximité rassure même à distance."
+   }
+  ]
+ },
+ "serrurier": {
+  "title": "Créer une page serrurier + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour serrurier : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page serrurier + ville pour recevoir plus de demandes locales.",
+  "nom": "Serrurier",
+  "objectif": "Appels pour urgence serrurerie.",
+  "tags": [
+   "serrurier + ville",
+   "ouverture porte + ville",
+   "serrurier urgence + ville"
+  ],
+  "pourquoi": "La serrurerie est une recherche sensible : le prospect veut éviter les abus. Une page claire doit rassurer sur la transparence, la zone et le mode d’intervention.",
+  "recherches": [
+   "serrurier + ville",
+   "ouverture porte + ville",
+   "serrurier urgence + ville",
+   "changement serrure + ville",
+   "devis serrurier + ville"
+  ],
+  "sections": [
+   "Ouverture de porte",
+   "Changement de serrure",
+   "Transparence des prix",
+   "Zone d’intervention",
+   "Conseils anti-arnaque"
+  ],
+  "titre_exemple": "Serrurier à [ville] : ouverture de porte et devis personnalisé",
+  "service_defaut": "ouverture de porte",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est serrurier ?",
+    "a": "Oui : une ouverture de porte se cherche toujours avec une ville ou « près de moi ». Une page par commune d’intervention capte ces urgences locales."
+   },
+   {
+    "q": "Comment rassurer face aux arnaques à la serrurerie ?",
+    "a": "Affichez des prix clairs avant intervention : fourchette pour une ouverture simple, majoration soir et week-end, devis annoncé au téléphone. La transparence tarifaire est votre meilleur argument face aux dépanneurs abusifs."
+   },
+   {
+    "q": "Que mettre en avant pour les urgences serrurerie ?",
+    "a": "Numéro cliquable immédiatement visible, délai moyen d’arrivée, horaires réels. Précisez les cas courants : porte claquée, clé cassée, cambriolage. Le visiteur doit pouvoir appeler en moins de dix secondes."
+   },
+   {
+    "q": "Faut-il aussi parler d’installation et de blindage ?",
+    "a": "Oui : l’urgence attire le trafic, mais le remplacement de serrure, le blindage et les cylindres haute sécurité font le panier moyen. Une section dédiée capte aussi ces recherches préparées."
+   }
+  ]
+ },
+ "sophrologue": {
+  "title": "Créer une page sophrologue + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour sophrologue : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page sophrologue + ville pour recevoir plus de demandes locales.",
+  "nom": "Sophrologue",
+  "objectif": "Prises de rendez-vous locales.",
+  "tags": [
+   "sophrologue + ville",
+   "séance sophrologie + ville",
+   "cabinet sophrologie + ville"
+  ],
+  "pourquoi": "La personne qui cherche un praticien veut comprendre l’approche, le déroulé d’une séance et savoir si le cabinet est proche. Le ton doit rester pédagogique et prudent.",
+  "recherches": [
+   "sophrologue + ville",
+   "séance sophrologie + ville",
+   "cabinet sophrologie + ville",
+   "sophrologue stress + ville",
+   "prendre rendez-vous sophrologue + ville"
+  ],
+  "sections": [
+   "Déroulé d’une séance",
+   "Publics accompagnés",
+   "Cadre et limites",
+   "Tarifs et rendez-vous",
+   "Accès au cabinet"
+  ],
+  "titre_exemple": "Sophrologue à [ville] : séances de sophrologie et devis personnalisé",
+  "service_defaut": "séances de sophrologie",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est sophrologue ?",
+    "a": "Oui : les personnes cherchent « sophrologue + ville » ou « + quartier » (Lyon 3, Marseille 8e). Une page par lieu de consultation, avec l’adresse du cabinet et l’accès, répond à ces recherches."
+   },
+   {
+    "q": "Comment présenter les motifs de consultation sur la page ?",
+    "a": "Listez les demandes fréquentes : stress, sommeil, préparation aux examens, gestion des émotions. Chaque motif correspond à des recherches réelles et aide le visiteur à se reconnaître."
+   },
+   {
+    "q": "Faut-il afficher le prix des séances de sophrologie ?",
+    "a": "Oui : prix de la séance individuelle, des forfaits et des séances de groupe. Précisez que certaines mutuelles remboursent, c’est une question systématique."
+   },
+   {
+    "q": "Faut-il proposer la prise de rendez-vous en ligne ?",
+    "a": "C’est un vrai plus : un bouton de réservation (ou un lien vers votre agenda en ligne) transforme la visite en rendez-vous sans friction, y compris le soir quand les gens cherchent."
+   }
+  ]
+ },
+ "wedding-planner": {
+  "title": "Créer une page wedding planner + ville | Plus de demandes locales",
+  "desc": "Exemple de page métier + ville pour wedding planner : structure, recherches simples, sections utiles et générateur gratuit pour attirer des clients locaux.",
+  "h1": "Créer une page wedding planner + ville pour recevoir plus de demandes locales.",
+  "nom": "Wedding planner",
+  "objectif": "Demandes de rendez-vous futurs mariés.",
+  "tags": [
+   "wedding planner + ville",
+   "organisatrice mariage + ville",
+   "organisation mariage + ville"
+  ],
+  "pourquoi": "Les futurs mariés cherchent des idées, un style, une zone et une personne de confiance. La page locale doit mêler inspiration, méthode et preuves.",
+  "recherches": [
+   "wedding planner + ville",
+   "organisatrice mariage + ville",
+   "organisation mariage + ville",
+   "wedding planner tarif + ville",
+   "mariage champêtre + région"
+  ],
+  "sections": [
+   "Style de mariages",
+   "Accompagnement complet",
+   "Coordination jour J",
+   "Lieux et partenaires locaux",
+   "Budget et rendez-vous"
+  ],
+  "titre_exemple": "Wedding planner à [ville] : organisation de mariage et devis personnalisé",
+  "service_defaut": "organisation de mariage",
+  "faq": [
+   {
+    "q": "Faut-il une page par ville quand on est wedding planner ?",
+    "a": "Oui, par ville ou par zone (« wedding planner Provence », « organisation mariage Lyon »). Les futurs mariés cherchent quelqu’un qui connaît les lieux et prestataires de leur région."
+   },
+   {
+    "q": "Comment présenter ses formules d’organisation de mariage ?",
+    "a": "Détaillez vos offres : organisation complète, coordination jour J, décoration. Donnez une fourchette de budget pour chaque formule : c’est la première question des couples."
+   },
+   {
+    "q": "Quel portfolio mettre sur une page wedding planner ?",
+    "a": "Deux ou trois mariages racontés : lieu, ambiance, nombre d’invités, ce que vous avez géré. Une histoire avec photos convainc plus qu’une galerie muette, et le nom des lieux renforce l’ancrage local."
+   },
+   {
+    "q": "Combien de temps à l’avance les couples réservent-ils ?",
+    "a": "Souvent 12 à 18 mois avant la date. Votre page doit donc être visible toute l’année et indiquer vos disponibilités par saison : c’est aussi un excellent contenu à mettre à jour régulièrement."
+   }
+  ]
+ }
+}

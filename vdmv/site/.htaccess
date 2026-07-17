@@ -6,8 +6,11 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Forcer HTTPS
+  # Forcer HTTPS — version compatible proxy/CDN : on ne redirige que si
+  # ni la connexion directe ni l'en-tête du proxy n'indiquent déjà du HTTPS
+  # (sinon boucle ERR_TOO_MANY_REDIRECTS sur hébergement mutualisé).
   RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # /index.html -> / (évite le contenu dupliqué)

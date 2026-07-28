@@ -59,9 +59,7 @@ nav.sc{padding:.65rem 3rem;box-shadow:0 4px 20px rgba(15,35,55,.06)}
 @media(max-width:560px){.nav-phone-t{display:none}.nav-phone{padding:.55rem;border-radius:50%}.nav-phone-ic{width:22px;height:22px}}
 
 /* FAB */
-.fab{position:fixed;right:1.4rem;bottom:1.4rem;z-index:250;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;box-shadow:0 10px 30px rgba(201,79,31,.4);opacity:0;transform:scale(.75);pointer-events:none;transition:opacity .3s ease,transform .3s ease}
-.fab.show{opacity:1;transform:scale(1);pointer-events:auto}
-@media(prefers-reduced-motion:reduce){.fab{transition:none}}
+.fab{position:fixed;right:1.4rem;bottom:1.4rem;z-index:250;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;box-shadow:0 10px 30px rgba(201,79,31,.4)}
 .pulse::before{content:'';position:absolute;inset:0;border-radius:50%;background:var(--accent);opacity:.55;animation:pulse 2.2s ease-out infinite}
 @keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.9);opacity:0}}
 
@@ -99,7 +97,10 @@ h1 span{color:var(--brand-l)}
 .hero-r img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-r-ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,36,56,.55),transparent 45%)}
 .hero-badge{position:absolute;left:6%;bottom:8%;background:#fff;border-radius:12px;padding:1.1rem 1.4rem;box-shadow:0 20px 50px rgba(15,35,55,.25);display:flex;align-items:center;gap:.9rem;z-index:3;max-width:230px}
-@media(max-width:960px){.hero-badge{position:static;margin:1.2rem 1.4rem 0;max-width:none;box-shadow:0 14px 34px rgba(15,35,55,.18)}}
+@media(max-width:960px){.hero-badge{position:static;margin:1.4rem 1.4rem 2rem;max-width:none;padding:1.3rem 1.5rem;box-shadow:0 16px 38px rgba(0,0,0,.28)}
+.hero-badge-ic{width:46px;height:46px;font-size:1.3rem}
+.hero-badge-tt{font-size:.95rem}
+.hero-badge-ss{font-size:.76rem}}
 .hero-badge-ic{width:42px;height:42px;background:var(--accent);border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
 .hero-badge-tt{font-size:.85rem;font-weight:700;color:var(--ink);line-height:1.25}
 .hero-badge-ss{font-size:.7rem;color:var(--muted);margin-top:.1rem}
@@ -334,7 +335,7 @@ html,body{overflow-x:hidden;max-width:100vw} img{max-width:100%;display:block}
     </div>
     <div class="hero-badge">
       <div class="hero-badge-ic">⏱️</div>
-      <div><div class="hero-badge-tt">Intervention en<br>moins d'1h</div><div class="hero-badge-ss">Sur zone Grenoble / Voiron</div></div>
+      <div><div class="hero-badge-tt">Intervention en moins d'1h</div><div class="hero-badge-ss">Sur zone Grenoble / Voiron</div></div>
     </div>
   </div>
 </section>
@@ -669,19 +670,6 @@ html,body{overflow-x:hidden;max-width:100vw} img{max-width:100%;display:block}
     if(b)b.classList.remove('open');
     if(m){m.classList.remove('open');document.body.style.overflow='';}
   };
-
-  /* Bouton d'appel flottant : masqué tant que le hero (déjà riche en CTA) est visible */
-  var fab=document.querySelector('.fab'),heroEl=document.querySelector('.hero');
-  if(fab&&heroEl){
-    if('IntersectionObserver' in window){
-      var fabIo=new IntersectionObserver(function(entries){
-        entries.forEach(function(e){fab.classList.toggle('show',!e.isIntersecting)});
-      },{threshold:0});
-      fabIo.observe(heroEl);
-    }else{
-      fab.classList.add('show');
-    }
-  }
 
   /* Révélation au scroll */
   var els=document.querySelectorAll('.rv');
